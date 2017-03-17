@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="css/index.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/ucoin.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/area.css" type="text/css" media="screen">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>联盟商家-分类</title>
+</head>
+<body>
+
+<header class="top-bg" id="top-height">
+    <div class="container area-top-box">
+        <ul>
+            <li><a href=""><img src="images/mx-icon_03.png"></a></li>
+            <li><h4>联盟商家(台州)</h4></li>
+            <li><a href="javascript:void(0);" class="menuIcon">
+                <img class="img-responsive pull-leftl" src="images/u-coin-icon_06.png"/></a></li>
+        </ul>
+        <script type="text/javascript">
+            $(function () {
+                $(".menuIcon").click(function () {
+                    $(".hidden-box").toggle();
+                    var topWidth = document.getElementById('top-height').offsetHeight;
+                    $(".select-bg").css('margin-top', topWidth);
+                });
+            });
+
+            $(function () {
+                $(".top-bg").ready(function () {
+                    var topWidth = document.getElementById('top-height').offsetHeight;
+                    $(".select-bg").css('margin-top', topWidth);
+                });
+            });
+        </script>
+
+    </div>
+
+    <div class="hidden-box" style="display: none;">
+        <ol>
+            <li class="box-bg ">
+                <a href="">
+                    <div><img src="images/u-coin-icon_15.png" class="img-responsive"></div>
+                    <div><p>U币兑换</p></div>
+                </a>
+            </li>
+            <li class="box-bg box-selected">
+                <a href="">
+                    <div><img src="images/u-coin-icon_15.png" class="img-responsive"></div>
+                    <div><p>联名商家</p></div>
+                </a>
+            </li>
+            <li class="box-bg ">
+                <a href="">
+                    <div><img src="images/u-coin-icon_15.png" class="img-responsive"></div>
+                    <div><p>购物车</p></div>
+                </a>
+            </li>
+            <li class="box-bg ">
+                <a href="">
+                    <div><img src="images/u-coin-icon_15.png" class="img-responsive"></div>
+                    <div><p>会员中心</p></div>
+                </a>
+            </li>
+
+        </ol>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            $(".hidden-box ol li").click(function () {
+                $(this).addClass("box-selected").siblings().removeClass("box-selected");
+            });
+        });
+    </script>
+</header>
+
+<!-- alt by xzh 20150527 -->
+<!-- start -->
+
+<style type="text/css">
+    .select-bg {
+        overflow: hidden;
+        margin: 0px auto;
+    }
+
+    .select-bg ol {
+        /* overflow: hidden;*/
+        list-style-type: none;
+    }
+
+    .select-bg ol li {
+        float: left;
+        width: 33.33333333%;
+        border: 1px solid #eee;
+        margin-right: -1px;
+        cursor: pointer;
+    }
+
+    .select-bg ol li .pane-split {
+        width: 95%;
+        margin: 8px auto;
+        overflow: hidden;
+    }
+
+    .select-bg ol li .pane-split i {
+        width: 25% !important;
+        line-height: 25px;
+        margin-left: 0px;
+    }
+
+    .select-bg ol li .pane-split i img {
+        margin: 3px auto;
+        vertical-align: middle;
+    }
+
+    .select-bg ol li .pane-split em {
+        width: 75%;
+        font-family: "Arail";
+        font-size: small;
+        font-style: normal;
+        text-align: center;
+        color: #8c8c8c;
+    }
+
+    .select-bg ol .orangeColor .pane-split em {
+        color: #f6781c;
+    }
+
+    /*折叠列表*/
+    .select-bg ol .sub-spary {
+        background: #fff;
+        z-index: 999999;
+        position: absolute;
+        width: 33.3333333333%;
+        margin-left: -1px;
+        border-top: 1px dotted #eee;
+        border-left: 1px solid #eee;
+        border-right: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+    }
+
+    .select-bg ol li .sub-list {
+        border-bottom: 1px dotted #eee;
+        margin-bottom: -1px;
+        cursor:pointer;
+    }
+
+</style>
+
+<section class="select-bg">
+    <ol>
+        <li class="orangeColor">
+            <div class="pane-split"><em>全部分类</em><i>&nbsp;</i></div>
+        </li>
+        <li >
+            <div class="spary" style="display: block;">
+                <div class="pane-split"><em>全城</em><i><img src="images/businessType-icon_06.png"
+                                                           class="img-responsive"></i></div>
+
+            </div>
+
+            <div class="sub-spary">
+                <div class="sub-list">
+                    <div class="pane-split"><em>全城</em></div>
+                </div>
+                <div class="sub-list">
+                    <div class="pane-split"><em>椒江</em></div>
+                </div>
+                <div class="sub-list">
+                    <div class="pane-split"><em>黄岩</em></div>
+                </div>
+                <div class="sub-list">
+                    <div class="pane-split"><em>溧水</em></div>
+                </div>
+                <div class="sub-list">
+                    <div class="pane-split"><em>仙居</em></div>
+                </div>
+                <div class="sub-list">
+                    <div class="pane-split"><em>椒江</em></div>
+                </div>
+
+
+            </div>
+
+        </li>
+        <li>
+
+            <div class="pane-split"><em>好评率</em><i>&nbsp;</i></div>
+
+        </li>
+    </ol>
+</section>
+
+<script type="text/javascript">
+    $(function () {
+        $(".select-bg ol li").click(function () {
+            $(this).addClass("orangeColor").siblings('li').removeClass("orangeColor");
+        });
+    });
+
+    $(function () {
+        $(".sub-spary").hide();
+
+        $(".spary").click(function () {
+            $(".sub-spary").toggle();
+        });
+
+        $(".sub-spary .sub-list").click(function () {
+            var curCity = $("div>em", this).html();
+            $(".spary .pane-split em").html(curCity);
+            $(".sub-spary").toggle();
+
+        });
+
+    });
+</script>
+
+<!-- end -->
+
+
+<section class="pro-info-center">
+    <div class="pro-box">
+        <dl>
+            <dt><a href="spmx.html?id=005"><img src="image/u-coin-icon_33.png" class="img-responsive"></a></dt>
+            <dd>
+                <div class="pro-name"><a href="spmx.html">枝昌杨梅酒</a></div>
+                <div class="pro-price">
+                    <span style="font-family:'微软雅黑';color:#ff6500;">★</span>
+                    <span style="font-family:'微软雅黑';color:#ff6500;">★</span>
+                    <span style="font-family:'微软雅黑';color:#ff6500;">★</span>
+                    <span style="font-family:'微软雅黑';color:#ff6500;">★</span>
+                    <span style="font-family:'微软雅黑';color:#ff6500;">☆</span>
+                    <span class="pro-business-eva"><em>好评率：</em>99.8%</span>
+                </div>
+                <div class="pro-evaluate"><span>浙江东服务区</span><span> 5.8km</span></div>
+
+            </dd>
+        </dl>
+    </div>
+
+</section>
+
+<section>
+    <div class="loading-more" style="display: none;">上拉加载更多</div>
+</section>
+
+<footer>
+    <section class="container index-foot">
+        <div class="index-opera">
+            <div>
+                <span style="float:left"><a href="javascript:void(0);">登录</a>|<a
+                        href="javascript:void(0);">注册</a></span>
+                <span style="float: right"><!--<a href="javascript:scroll(0,0)">回到顶部</a>--></span>
+            </div>
+            <div class="index-version"><a href="javascript:void(0);" class="redColor">手机版</a><a
+                    href="javascript:void(0);">电脑版</a></div>
+            <div class="index-copyRight">Copyright © 2015 上下网智能营销平台 版权所有</div>
+        </div>
+    </section>
+</footer>
+
+<section>
+    <div class="top-home-operate" style="display: none;"><a href="javascript:void(0);" onclick="returnTop();"><img
+            src="images/u-coin-icon_36.png"
+            class="img-responsive"></a><a
+            href="javascript:void(0);" onclick="returnHome();"><img src="images/u-coin-icon_45.png"
+</section>
+<script type="text/javascript">
+    $(document).on("scroll", function () {
+        var scrollTop = $(document).scrollTop();
+        if (scrollTop > 0) {
+            $(".top-home-operate").css('display', '');
+        } else {
+            $(".top-home-operate").css('display', 'none');
+        }
+    });
+</script>
+
+</body>
+<script type="text/javascript">
+
+    function returnTop() {
+        window.scrollTo(0, 0);
+    }
+
+    function returnHome() {
+        location.href = "ucoin.html";
+    }
+</script>
+</html>

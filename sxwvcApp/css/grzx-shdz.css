@@ -1,0 +1,121 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: "Arail";
+}
+
+.shdz-center-box {
+    min-height: 280px;
+    margin-bottom: 10px;
+}
+
+.grzx-shdz-dzinfo {
+    width: 100%;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    background: #fff;
+}
+
+.grzx-shdz-dzinfo .grzx-shdz-box {
+    margin: 10px auto;
+    border-bottom: 1px dotted #e5e5e5;
+}
+
+.grzx-shdz-dzinfo .grzx-shdz-box p {
+    text-align: left
+}
+
+.grzx-shdz-dzinfo .grzx-shdz-state {
+    margin: 5px auto;
+}
+
+.grzx-shdz-dzinfo .grzx-shdz-state span {
+    display: block;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.grzx-shdz-dzinfo .grzx-shdz-state span:nth-child(1) {
+    width: 80%;
+}
+
+.grzx-shdz-dzinfo .grzx-shdz-state span:nth-child(1) img {
+    margin-right: 5px;
+}
+
+.grzx-shdz-dzinfo .grzx-shdz-state span:nth-child(2) {
+    width: 20%;
+    color: #8c8c8c;
+}
+
+.grzx-shdz-operatePane {
+    width: 100%;
+    background: #fff;
+    border-bottom: #e5e5e5;
+}
+
+.grzx-shdz-operatePane .operate-box .pull-left span {
+    display: block;
+    float: left;
+    padding: 5px 8px;
+    margin: 5px auto
+}
+
+.grzx-shdz-operatePane .operate-box .pull-left span a {
+    color: #8c8c8c;
+    text-decoration: none;
+}
+
+.grzx-shdz-operatePane .operate-box .pull-left span a:hover {
+    text-decoration: none;
+}
+
+.grzx-shdz-operatePane .operate-box .pull-right span {
+    display: block;
+    float: left;
+    padding: 5px 8px;
+    margin: 5px auto
+}
+
+.grzx-shdz-operatePane .operate-box .pull-right span a {
+    color: #8c8c8c;
+    text-decoration: none;
+}
+
+.grzx-shdz-operatePane .operate-box .pull-right span a:hover {
+    text-decoration: none;
+}
+
+.sxwvc-copyright-pane {
+    width: 100%;
+    background: #fff;
+}
+
+.sxwvc-copyright-pane .sxwvc-copyright-box {
+    margin: 0px auto;
+}
+
+.sxwvc-copyright-pane .sxwvc-copyright-box .sxwvc-version {
+    width: 30%;
+    margin: 0px auto;
+}
+
+.sxwvc-copyright-pane .sxwvc-copyright-box div:nth-child(2) {
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+
+
+
+

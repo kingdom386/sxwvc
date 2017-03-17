@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+    <link rel=" stylesheet" href="css/bootstrap-datetimepicker.min.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/bussiness.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/ucoin.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/area.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/grzx.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/grzx_grzl.css" type="text/css" media="screen">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+    <title>会员中心-个人资料</title>
+</head>
+<body>
+
+<header class="top-bg" id="top-height">
+    <div class="container area-top-box">
+        <ul>
+            <li><a href=""><img src="images/mx-icon_03.png"></a></li>
+            <li><h4>个人资料</h4></li>
+            <li>
+                <button class="btn  btn-sm btn-click">保存</button>
+            </li>
+        </ul>
+        <script type="text/javascript">
+
+            $(".btn-click").click(function () {
+                var idCardReg = /^([\d]{15}|[\d]{18}|([\d]{17}[\d|X|x]))$/
+                var IDVal = $(".IDCard").val();
+
+                if (!idCardReg.test(IDVal)) {
+                    $(".IDmsg").addClass("has-error");
+                    $(".IDmsg").removeClass("has-success");
+                } else {
+                    $(".IDmsg").addClass("has-success");
+                    $(".IDmsg").removeClass("has-error");
+                    document.getElementById("grzx-grzl-form").submit();
+                }
+            });
+
+        </script>
+
+    </div>
+
+    <script type="text/javascript">
+        $(function () {
+            $(function () {
+                $(".top-bg").ready(function () {
+                    var topHeight = document.getElementById('top-height').offsetHeight;
+                    $(".grzx-skin-bg").css('margin-top', topHeight);
+                });
+            });
+        });
+
+    </script>
+</header>
+
+<section class="grzx-skin-bg">
+    <div class="grzx-head-pic">
+        <div><a href="javascript:void(0);"><img src="image/img_01.png" class="img-circle img-responsive"></a></div>
+        <div><p>二傻中的逗比</p></div>
+    </div>
+</section>
+
+<section class="grzx-info-pane">
+    <div class="container grzx-info-box">
+        <form action="" method="post" role="form" id="grzx-grzl-form">
+            <ul>
+                <li>
+                    <div class="pull-left"><label class="control-label">手机号码：</label></div>
+                    <div class="pull-right form-control-static">email@example.com</div>
+                </li>
+
+                <li>
+                    <div class="pull-left"><label class="control-label">区域地质：</label></div>
+                    <div class="pull-right form-control-static area-address">
+                        <span class="form-group pull-left"><select>
+                            <option>省</option>
+                            <option>省</option>
+                            <option>省</option>
+                            <option>省</option>
+                        </select></span>
+                        <span class="form-group pull-left"><select>
+                            <option>市</option>
+                        </select></span>
+                        <span class="form-group pull-left"><select>
+                            <option>区</option>
+                        </select></span>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="pull-left"><label class="control-label">真实姓名：</label></div>
+                    <div class="pull-right"><input type="text" class="form-control input-sm" name="trueName"></div>
+                </li>
+
+                <li>
+                    <div class="pull-left"><label class="control-label">邮箱：</label></div>
+                    <div class="pull-right"><input type="text" class="form-control input-sm" name="email"></div>
+                </li>
+
+                <li>
+                    <div class="pull-left"><label class="control-label">性别：</label></div>
+                    <div class="pull-right form-control-static area-address">
+                        <span class="form-group pull-left"><select>
+                            <option>性别</option>
+                            <option>男</option>
+                            <option>女</option>
+                        </select></span>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="pull-left"><label class="control-label">出生日期：</label></div>
+                    <div class="pull-right form-control-static area-address">
+                        <span class="form-group pull-left"><select>
+                            <option>年</option>
+                            <option>1990</option>
+                            <option>1991</option>
+                            <option>1992</option>
+                        </select></span>
+                        <span class="form-group pull-left"><select>
+                            <option>月</option>
+                        </select></span>
+                        <span class="form-group pull-left"><select>
+                            <option>日</option>
+                        </select></span>
+                    </div>
+                </li>
+
+            </ul>
+        </form>
+    </div>
+
+</section>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="css/ucoin.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/area.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/thgl.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/thmx.css" type="text/css" media="screen">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>商家中心-结算记录中心</title>
+</head>
+<body>
+<header class="top-bg" id="top-height">
+    <div class="container area-top-box">
+        <ul>
+            <li><a href=""><img src="images/mx-icon_03.png"></a></li>
+            <li><h4>结算记录</h4></li>
+            <li></li>
+        </ul>
+    </div>
+</header>
+<script type="text/javascript">
+    $(function () {
+        $(".top-bg").ready(function () {
+            var topWidth = document.getElementById('top-height').offsetHeight;
+            $(".thmx-count-bg").css('margin-top', topWidth);
+        });
+    });
+</script>
+
+<section class="thmx-count-bg">
+    <div class="container thmx-count">
+        2015-05-12 至2015-05-13 <em>结算总额：500</em>， 共100条记录
+    </div>
+</section>
+
+<SECTION class="thmx-thead">
+    <div class="container">
+        <ul>
+            <li>操作时间<p>（结算时间）</p></li>
+            <li>银行名称<p></p></li>
+            <li>金额<p>（状态）</p></li>
+        </ul>
+    </div>
+</SECTION>
+
+<section class="thmx-body">
+    <div class="container body-box">
+        <ul>
+            <li>2015-07-15 12：15 <p>2015-07-15 12：15</p></li>
+            <li>中国工商银行<p>6227001731320184296</p></li>
+            <li>5000000<p>已完成</p></li>
+        </ul>
+    </div>
+
+</section>
+
+<section class="thmx-footer">
+    <div class="container">
+        <div class="loading-more-btn">点击加载更多</div>
+        <script type="text/javascript">
+            $(".loading-more-btn").click(function () {
+                $.ajax({
+                    url: "xx.php",
+                    type: "post",
+                    dataType: "json",
+                    success: function (msgData) {
+
+                    }
+
+                });
+            });
+        </script>
+    </div>
+</section>
+</body>
+</html>

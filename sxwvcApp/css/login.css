@@ -1,0 +1,55 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: #ffffff;
+    font-family: "微软雅黑";
+}
+
+.top-bg {
+    background: #eee;
+}
+
+.top-bg .container .title-font {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: center;
+    color: #000;
+}
+
+.top-bg .container .col-xs-6 .zhuce-font {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: center;
+    color: #000;
+}
+
+.user-info {
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.user-icon {
+    margin: 5px 5px;
+    position: absolute;
+    overflow: hidden;
+}
+
+/*reward password style */
+
+.yamBg {
+    background-color: #f7771c;
+    color: #fff;
+}
+
+.yamBg :active,.yamBg :hover{
+    color:#fff;
+}
+button:hover{color: #fff;}
+button:active{color: #fff;}

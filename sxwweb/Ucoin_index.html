@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/merchant.css"/>
+    <link rel="stylesheet" type="text/css" href="css/merchantList.css">
+<!--    <link rel="stylesheet" type="text/css" href="css/proList.css"/>-->
+    <script type="text/javascript" src="js/jquery1.42.min.js"></script>
+    <title>U币兑换-首页</title>
+</head>
+<body>
+
+<!--在线客服-->
+<div class="kf-box">
+    <div id="box">
+        <div class="hid">
+            <a href=""></a>
+        </div>
+        <div class="dis" style="display:none;">
+            <a href="http://wpa.qq.com/msgrd?v=3&uin=707896515&site=qq&menu=yes" target="_blank" title="在线客服"></a>
+            <a href="javascript:void(0);"></a>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(".kf-box #box").mouseover(function () {
+        $("#box").stop();
+        $("#box").animate({marginRight: "80px"}, 1000);
+        $(".hid").css({display: "none"});
+        $(".dis").css({display: "block"});
+    });
+
+    $(".kf-box #box").mouseout(function () {
+        $("#box").stop();
+        $("#box").animate({marginRight: "0px"}, 1000);
+        $(".hid").css({display: "block"});
+        $(".dis").css({display: "none"});
+    });
+
+</script>
+
+<div class="header">
+    <div class="top">
+        <div class="index-top-left">
+            <ul>
+                <li><a href="" class="colorGray">您好，欢迎进入上下网智能营销平台 ！</a></li>
+                <li><a href="" class="colorBlack">请登录</a></li>
+                <li><a href="" class="colorGreen">免费注册</a></li>
+            </ul>
+        </div>
+        <!--index-top-left-->
+        <div class="index-top-right">
+            <ul>
+                <li class="borderRight"><a href="Recruitment.html"><i class="cart-icon"></i><em class="cart-markup">购物车</em></a></li>
+                <li class="borderRight"><a href="">我的订单</a></li>
+                <li class="borderRight"><a href="">我的收藏</a></li>
+                <li class="borderRight"><a href="">我是商家</a></li>
+                <li><a href="Recruitment.html">商家入驻</a></li>
+            </ul>
+
+        </div>
+        <!--index-top-right-->
+    </div>
+    <!--top-->
+</div>
+
+<!--当前位置 搜索栏 标签-->
+<div class="index-head">
+    <div class="index-head-left">
+        <div class="i-head-left-logo"><a href="index-1.html"><img src="images/logoin.png"></a></div>
+        <div class="i-head-left-loc">
+            <div class="i-headLeft-curLoc">台州</div>
+            <div class="i-headLeft-changeLoc"><a href="area.html">切换城市</a></div>
+        </div>
+    </div>
+    <!--index-head-left-->
+    <div class="index-head-mid">
+        <div class="index-head-mid-searchBox">
+            <div class="i-head-mid-sList">
+                <div class="s-list">
+                    <div class="index-spCp">
+                        <a href="javascript:void(0);" class="index-sp">商品</a>
+                        <a href="javascript:void(0);" class="index-cp">产品</a>
+                    </div>
+                    <div class="down-arrow arrow"></div>
+                    <script type="text/javascript" src="js/spcp.js"></script>
+
+                </div>
+            </div>
+            <div class="i-head-mid-sInput"><input type="text" placeholder="男装"></div>
+            <div class="i-head-mid-sBtn"><a href="noResult.html">搜索</a></div>
+
+        </div>
+        <div class="i-head-mid-sLabel">
+            <a href="">手表</a>
+            <a href="">内衣</a>
+            <a href="" class="sHot">IPhone6s</a>
+            <a href="">笔记本电脑</a>
+        </div>
+
+    </div>
+    <!--index-head-mid-->
+    <div class="index-head-right">
+        <ul>
+            <li>
+                <div class="i-head-right-serverIcon"><img src="images/index_10.png"></div>
+                <div class="i-head-right-serverText">精致服务</div>
+            </li>
+            <li>
+                <div class="i-head-right-serverIcon"><img src="images/index_08.png"></div>
+                <div class="i-head-right-serverText">正品保证</div>
+            </li>
+            <li>
+                <div class="i-head-right-serverIcon"><img src="images/index_06.png"></div>
+                <div class="i-head-right-serverText">随时退</div>
+            </li>
+        </ul>
+
+    </div>
+    <!--index-head-right-->
+
+</div>
+<!--index-head-->
+<!--导航栏-->
+<!--navigator-->
+<div class="index-navigator">
+    <div class="index-nav-main"><a href="">全部分类</a></div>
+    <div class="index-nav-sub">
+        <ul>
+            <li><a href="index-1.html">首页</a></li>
+            <li><a href="merchant.html">联盟商家</a></li>
+            <li><a href="merchantList.html">商家产品</a></li>
+            <li><a href="">U币兑换</a></li>
+            <li><a href="">代理加盟</a></li>
+        </ul>
+    </div>
+
+</div>
+<!--index-navigator-->
+
+<div class="merchantList-box">
+    <!--row-box-->
+    <div class="row-box borderLine">
+        <dl class="row-hot">
+            <dt>热门：</dt>
+            <dd class="row-fl">
+                <a href="javascript:void(0);" class="selected">全部</a>
+                <a href="javascript:void(0);">火锅</a>
+                <a href="javascript:void(0);">蛋糕</a>
+                <a href="javascript:void(0);">炒饭</a>
+                <a href="javascript:void(0);">火锅</a>
+                <a href="javascript:void(0);">盖浇饭</a>
+                <a href="javascript:void(0);">红酒拉斐尔</a>
+                <a href="javascript:void(0);">火锅</a>
+                <a href="javascript:void(0);">蛋糕</a>
+                <a href="javascript:void(0);">炒饭</a>
+                <a href="javascript:void(0);">火锅</a>
+                <a href="javascript:void(0);">盖浇饭</a>
+                <a href="javascript:void(0);">红酒拉斐尔</a>
+                <a href="javascript:void(0);">火锅</a>
+                <a href="javascript:void(0);">蛋糕</a>
+            </dd>
+            <script>
+                $(function () {
+                    $(".row-box .row-hot .row-fl a").click(function () {
+                        $(this).addClass("selected").siblings().removeClass("selected");
+                        /*遍历标签框*/
+                        //$(".span-fl").css({display: "block"});
+                        //$(".span-fl em").html($(this).html());
+                    });
+                });
+            </script>
+        </dl>
+    </div>
+    <!--row-box-->
+
+    <div class="row-box">
+        <dl class="row-hot row-area">
+            <dt>品牌：</dt>
+            <dd class="row-dq">
+                <a href="javascript:void(0);" class="selected">全部</a>
+                <a href="javascript:void(0);">汾酒</a>
+                <a href="javascript:void(0);">A'CYCLE</a>
+                <a href="javascript:void(0);">枝昌</a>
+                <a href="javascript:void(0);">乌岩春</a>
+                <a href="javascript:void(0);">佳居宝</a>
+            </dd>
+            <script>
+            $(function () {
+                $(".row-box .row-area .row-dq a").click(function () {
+                    $(this).addClass("selected").siblings().removeClass("selected");
+                    //$(".span-hover .span-dq").css({display: "block"});
+                    //$(".span-hover .span-dq em").html($(this).html());
+                });
+            });
+        </script>
+        </dl>
+    </div>
+    <!--row-box-->
+</div>
+<!--merchantList-box-->
+
+<!--排序导航栏-->
+<div class="merchantNav-sort">
+    <div class="row-sort">
+        <ul>
+            <li><a href="javascript:void(0);" >默认排序</a></li>
+            <li><a href="javascript:void(0);"  class="selected"><em>人气</em><i class="row-asc"></i></a></li>
+            <li><a href="javascript:void(0);" ><em>发布时间</em><i class="row-dsc"></i></a></li>
+            <li><a href="javascript:void(0);" ><em>销量</em><i class="row-asc"></i></a></li>
+            <li><a href="javascript:void(0);" ><em>好评</em><i class="row-asc"></i></a></li>
+            <li><a href="javascript:void(0);" ><em>价格</em><i class="row-asc"></i></a></li>
+        </ul>
+    </div>
+    <!--row-sort-->
+    <script>
+        $(function () {
+            $(".row-sort ul li").click(function () {
+                $("a", this).addClass("selected").parent().siblings("li").children("a").removeClass("selected");
+                if($("a i",this).hasClass("row-asc")){
+
+                }else if($("a i",this).hasClass("row-dsc")){
+
+                }
+            });
+            //鼠标悬停事件
+            $(".row-sort ul li").hover(
+               function(){
+                   $(this).addClass("hover");
+            },function(){
+                 $(this).removeClass("hover");
+            });
+
+        });
+    </script>
+</div>
+<!--merchantNav-sort-->
+<!--U币兑换产品-->
+<div class="U-pro-list">
+    <div class="u-pro-list-left">
+
+        <div class="u-list-box marginLeft">
+            <a href="" class="list-pic"><img src="images/ucoin_03.gif"></a>
+            <p class="list-intro"><a href="">佳居宝可折叠长方形全硅胶保鲜盒XF9101-2硅胶保鲜盒XF9101-2</a></p>
+            <p class="list-price"><em>2147</em>U币</p>
+            <p class="list-info"><span class="u-left"><a href=""><i>☆</i><em>收藏</em></a></span><span class="u-right">已兑：55455件</span></p>
+        </div>
+        <div class="u-list-box ">
+            <a href="" class="list-pic"><img src="images/ucoin_03.gif"></a>
+            <p class="list-intro"><a href="">佳居宝可折叠长方形全硅胶保鲜盒XF9101-2硅胶保鲜盒XF9101-2</a></p>
+            <p class="list-price"><em>35479</em>U币</p>
+            <p class="list-info"><span class="u-left"><a href=""><i>☆</i><em>收藏</em></a></span><span class="u-right">已兑：55455件</span></p>
+
+        </div>
+        <div class="u-list-box ">
+            <a href="" class="list-pic"><img src="images/ucoin_03.gif"></a>
+            <p class="list-intro"><a href="">佳居宝可折叠长方形全硅胶保鲜盒XF9101-2硅胶保鲜盒XF9101-2</a></p>
+            <p class="list-price"><em>66548.25</em>U币</p>
+            <p class="list-info"><span class="u-left"><a href=""><i>☆</i><em>收藏</em></a></span><span class="u-right">已兑：55455件</span></p>
+        </div>
+
+        <!--列表三列一循环-->
+
+        <div class="u-list-box marginLeft">
+            <a href="" class="list-pic"><img src="images/ucoin_03.gif"></a>
+            <p class="list-intro"><a href="">佳居宝可折叠长方形全硅胶保鲜盒XF9101-2硅胶保鲜盒XF9101-2</a></p>
+            <p class="list-price"><em>2147</em>U币</p>
+            <p class="list-info"><span class="u-left"><a href=""><i>☆</i><em>收藏</em></a></span><span class="u-right">已兑：55455件</span></p>
+        </div>
+        <div class="u-list-box ">
+            <a href="" class="list-pic"><img src="images/ucoin_03.gif"></a>
+            <p class="list-intro"><a href="">佳居宝可折叠长方形全硅胶保鲜盒XF9101-2硅胶保鲜盒XF9101-2</a></p>
+            <p class="list-price"><em>35479</em>U币</p>
+            <p class="list-info"><span class="u-left"><a href=""><i>☆</i><em>收藏</em></a></span><span class="u-right">已兑：55455件</span></p>
+
+        </div>
+        <div class="u-list-box ">
+            <a href="" class="list-pic"><img src="images/ucoin_03.gif"></a>
+            <p class="list-intro"><a href="">佳居宝可折叠长方形全硅胶保鲜盒XF9101-2硅胶保鲜盒XF9101-2</a></p>
+            <p class="list-price"><em>66548.25</em>U币</p>
+            <p class="list-info"><span class="u-left"><a href=""><i>☆</i><em>收藏</em></a></span><span class="u-right">已兑：55455件</span></p>
+        </div>
+
+        <!--列表三列一循环-->
+
+        <div class="u-list-box marginLeft">
+            <a href="" class="list-pic"><img src="images/ucoin_03.gif"></a>
+            <p class="list-intro"><a href="">佳居宝可折叠长方形全硅胶保鲜盒XF9101-2硅胶保鲜盒XF9101-2</a></p>
+            <p class="list-price"><em>2147</em>U币</p>
+            <p class="list-info"><span class="u-left"><a href=""><i>☆</i><em>收藏</em></a></span><span class="u-right">已兑：55455件</span></p>
+        </div>
+        <div class="u-list-box ">
+            <a href="" class="list-pic"><img src="images/ucoin_03.gif"></a>
+            <p class="list-intro"><a href="">佳居宝可折叠长方形全硅胶保鲜盒XF9101-2硅胶保鲜盒XF9101-2</a></p>
+            <p class="list-price"><em>35479</em>U币</p>
+            <p class="list-info"><span class="u-left"><a href=""><i>☆</i><em>收藏</em></a></span><span class="u-right">已兑：55455件</span></p>
+
+        </div>
+        <div class="u-list-box ">
+            <a href="" class="list-pic"><img src="images/ucoin_03.gif"></a>
+            <p class="list-intro"><a href="">佳居宝可折叠长方形全硅胶保鲜盒XF9101-2硅胶保鲜盒XF9101-2</a></p>
+            <p class="list-price"><em>66548.25</em>U币</p>
+            <p class="list-info"><span class="u-left"><a href=""><i>☆</i><em>收藏</em></a></span><span class="u-right">已兑：55455件</span></p>
+        </div>
+
+        <!--列表三列一循环-->
+
+        <div class="u-list-box marginLeft">
+            <a href="" class="list-pic"><img src="images/ucoin_03.gif"></a>
+            <p class="list-intro"><a href="">佳居宝可折叠长方形全硅胶保鲜盒XF9101-2硅胶保鲜盒XF9101-2</a></p>
+            <p class="list-price"><em>2147</em>U币</p>
+            <p class="list-info"><span class="u-left"><a href=""><i>☆</i><em>收藏</em></a></span><span class="u-right">已兑：55455件</span></p>
+        </div>
+        <div class="u-list-box ">
+            <a href="" class="list-pic"><img src="images/ucoin_03.gif"></a>
+            <p class="list-intro"><a href="">佳居宝可折叠长方形全硅胶保鲜盒XF9101-2硅胶保鲜盒XF9101-2</a></p>
+            <p class="list-price"><em>35479</em>U币</p>
+            <p class="list-info"><span class="u-left"><a href=""><i>☆</i><em>收藏</em></a></span><span class="u-right">已兑：55455件</span></p>
+
+        </div>
+        <div class="u-list-box ">
+            <a href="" class="list-pic"><img src="images/ucoin_03.gif"></a>
+            <p class="list-intro"><a href="">佳居宝可折叠长方形全硅胶保鲜盒XF9101-2硅胶保鲜盒XF9101-2</a></p>
+            <p class="list-price"><em>66548.25</em>U币</p>
+            <p class="list-info"><span class="u-left"><a href=""><i>☆</i><em>收藏</em></a></span><span class="u-right">已兑：55455件</span></p>
+        </div>
+
+        <!--列表三列一循环-->
+
+        <div class="u-list-box marginLeft">
+            <a href="" class="list-pic"><img src="images/ucoin_03.gif"></a>
+            <p class="list-intro"><a href="">佳居宝可折叠长方形全硅胶保鲜盒XF9101-2硅胶保鲜盒XF9101-2</a></p>
+            <p class="list-price"><em>2147</em>U币</p>
+            <p class="list-info"><span class="u-left"><a href=""><i>☆</i><em>收藏</em></a></span><span class="u-right">已兑：55455件</span></p>
+        </div>
+        <div class="u-list-box ">
+            <a href="" class="list-pic"><img src="images/ucoin_03.gif"></a>
+            <p class="list-intro"><a href="">佳居宝可折叠长方形全硅胶保鲜盒XF9101-2硅胶保鲜盒XF9101-2</a></p>
+            <p class="list-price"><em>35479</em>U币</p>
+            <p class="list-info"><span class="u-left"><a href=""><i>☆</i><em>收藏</em></a></span><span class="u-right">已兑：55455件</span></p>
+
+        </div>
+        <div class="u-list-box ">
+            <a href="" class="list-pic"><img src="images/ucoin_03.gif"></a>
+            <p class="list-intro"><a href="">佳居宝可折叠长方形全硅胶保鲜盒XF9101-2硅胶保鲜盒XF9101-2</a></p>
+            <p class="list-price"><em>66548.25</em>U币</p>
+            <p class="list-info"><span class="u-left"><a href=""><i>☆</i><em>收藏</em></a></span><span class="u-right">已兑：55455件</span></p>
+        </div>
+
+        <!--列表三列一循环-->
+
+        <div class="u-list-box marginLeft">
+            <a href="" class="list-pic"><img src="images/ucoin_03.gif"></a>
+            <p class="list-intro"><a href="">佳居宝可折叠长方形全硅胶保鲜盒XF9101-2硅胶保鲜盒XF9101-2</a></p>
+            <p class="list-price"><em>2147</em>U币</p>
+            <p class="list-info"><span class="u-left"><a href=""><i>☆</i><em>收藏</em></a></span><span class="u-right">已兑：55455件</span></p>
+        </div>
+        <div class="u-list-box ">
+            <a href="" class="list-pic"><img src="images/ucoin_03.gif"></a>
+            <p class="list-intro"><a href="">佳居宝可折叠长方形全硅胶保鲜盒XF9101-2硅胶保鲜盒XF9101-2</a></p>
+            <p class="list-price"><em>35479</em>U币</p>
+            <p class="list-info"><span class="u-left"><a href=""><i>☆</i><em>收藏</em></a></span><span class="u-right">已兑：55455件</span></p>
+
+        </div>
+        <div class="u-list-box ">
+            <a href="" class="list-pic"><img src="images/ucoin_03.gif"></a>
+            <p class="list-intro"><a href="">佳居宝可折叠长方形全硅胶保鲜盒XF9101-2硅胶保鲜盒XF9101-2</a></p>
+            <p class="list-price"><em>66548.25</em>U币</p>
+            <p class="list-info"><span class="u-left"><a href=""><i>☆</i><em>收藏</em></a></span><span class="u-right">已兑：55455件</span></p>
+        </div>
+
+        <!--列表三列一循环-->
+        <div class="u-list-box marginLeft">
+            <a href="" class="list-pic"><img src="images/ucoin_03.gif"></a>
+            <p class="list-intro"><a href="">佳居宝可折叠长方形全硅胶保鲜盒XF9101-2硅胶保鲜盒XF9101-2</a></p>
+            <p class="list-price"><em>2147</em>U币</p>
+            <p class="list-info"><span class="u-left"><a href=""><i>☆</i><em>收藏</em></a></span><span class="u-right">已兑：55455件</span></p>
+        </div>
+        <div class="u-list-box ">
+            <a href="" class="list-pic"><img src="images/ucoin_03.gif"></a>
+            <p class="list-intro"><a href="">佳居宝可折叠长方形全硅胶保鲜盒XF9101-2硅胶保鲜盒XF9101-2</a></p>
+            <p class="list-price"><em>35479</em>U币</p>
+            <p class="list-info"><span class="u-left"><a href=""><i>☆</i><em>收藏</em></a></span><span class="u-right">已兑：55455件</span></p>
+
+        </div>
+        <div class="u-list-box ">
+            <a href="" class="list-pic"><img src="images/ucoin_03.gif"></a>
+            <p class="list-intro"><a href="">佳居宝可折叠长方形全硅胶保鲜盒XF9101-2硅胶保鲜盒XF9101-2</a></p>
+            <p class="list-price"><em>66548.25</em>U币</p>
+            <p class="list-info"><span class="u-left"><a href=""><i>☆</i><em>收藏</em></a></span><span class="u-right">已兑：55455件</span></p>
+        </div>
+
+        <!--列表三列一循环-->
+
+    </div>
+    <div class="u-pro-list-right">
+        <div class="u-pub-wechat">
+            <div class="u-pub-left"><img src="images/merchantList_13.png"></div>
+            <div class="u-pub-right"><p class="wechat-title">扫一扫二维码</p><p class="wechat-btn">关注公众微信号</p></div>
+        </div>
+
+        <!--精品推荐-->
+        <div class="u-rec">
+            <div class="u-rec-title">精品推荐</div>
+            <div class="u-rec-content">
+               <div class="u-rec-box">
+                    <div class="box-left"><a href=""><img src="image/ucoin.jpg"></a></div>
+                    <div class="box-right">
+                       <div class="u-rec-intro"><a href="">上下网O2O异业联盟商业圈交流</a></div>
+                        <p class="u-rec-price"><em>4587</em>U币</p>
+                        <p class="u-rec-exchange"><span class="exchange-markup">已兑:</span><span class="u-count">554121件</span></p>
+                    </div>
+                 </div>
+                <!--u-rec-box-->
+                <div class="u-rec-box">
+                    <div class="box-left"><a href=""><img src="image/ucoin.jpg"></a></div>
+                    <div class="box-right">
+                        <div class="u-rec-intro"><a href="">上下网O2O异业联盟商业圈交流</a></div>
+                        <p class="u-rec-price"><em>4587</em>U币</p>
+                        <p class="u-rec-exchange"><span class="exchange-markup">已兑:</span><span class="u-count">554121件</span></p>
+                    </div>
+                </div>
+                <!--u-rec-box-->
+                <div class="u-rec-box">
+                    <div class="box-left"><a href=""><img src="image/ucoin.jpg"></a></div>
+                    <div class="box-right">
+                        <div class="u-rec-intro"><a href="">上下网O2O异业联盟商业圈交流</a></div>
+                        <p class="u-rec-price"><em>4587</em>U币</p>
+                        <p class="u-rec-exchange"><span class="exchange-markup">已兑:</span><span class="u-count">554121件</span></p>
+                    </div>
+                </div>
+                <!--u-rec-box-->
+                <div class="u-rec-box">
+                    <div class="box-left"><a href=""><img src="image/ucoin.jpg"></a></div>
+                    <div class="box-right">
+                        <div class="u-rec-intro"><a href="">上下网O2O异业联盟商业圈交流</a></div>
+                        <p class="u-rec-price"><em>4587</em>U币</p>
+                        <p class="u-rec-exchange"><span class="exchange-markup">已兑:</span><span class="u-count">554121件</span></p>
+                    </div>
+                </div>
+                <!--u-rec-box-->
+                <div class="borderNone u-rec-box ">
+                    <div class="box-left"><a href=""><img src="image/ucoin.jpg"></a></div>
+                    <div class="box-right">
+                        <div class="u-rec-intro"><a href="">上下网O2O异业联盟商业圈交流</a></div>
+                        <p class="u-rec-price"><em>47325.2</em>U币</p>
+                        <p class="u-rec-exchange"><span class="exchange-markup">已兑:</span><span class="u-count">554121件</span></p>
+                    </div>
+                </div>
+                <!--u-rec-box-->
+            </div>
+        </div>
+
+        <!--历史浏览-->
+
+        <div class="u-history">
+             <div class="u-history-title">我的足迹</div>
+             <div class="u-history-content">
+                 <div class="u-history-box">
+                     <a href="" title="上下网O2O异业联盟商业圈交流"><img src="image/ucoin.jpg" alt="上下网O2O异业联盟商业圈交流"></a>
+                     <p class="u-history-info"><span class="history-left"><em>24851.5</em>U币</span><span class="history-right">已兑：524180件</span></p>
+                 </div>
+                 <div class="u-history-box">
+                     <a href="" title="上下网O2O异业联盟商业圈交流"><img src="image/ucoin.jpg" alt="上下网O2O异业联盟商业圈交流"></a>
+                     <p class="u-history-info"><span class="history-left"><em>24851.5</em>U币</span><span class="history-right">已兑：524180件</span></p>
+                 </div>
+                 <div class="u-history-box borderNone">
+                     <a href="" title="上下网O2O异业联盟商业圈交流"><img src="image/ucoin.jpg" alt="上下网O2O异业联盟商业圈交流"></a>
+                     <p class="u-history-info"><span class="history-left"><em>24851.5</em>U币</span><span class="history-right">已兑：524180件</span></p>
+                 </div>
+
+
+             </div>
+
+
+        </div>
+
+
+
+    </div>
+</div>
+
+</body>
+</html>

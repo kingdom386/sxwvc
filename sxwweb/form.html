@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        *{padding: 0px;margin: 0px;border: 0 none;}
+        a{text-decoration: none;}
+        a:hover{text-decoration: none;}
+        .form-content-box{width: 950px;height: auto;margin: 0px auto;padding-left:10px;padding-bottom:10px;background: #f9f9f9;}
+        .form-title{text-indent: 10px; font:20px/45px "微软雅黑";color: #222;background: #e9e9e9 !important;}
+        .form-box{margin: 0px auto; width: 927px;min-height: 350px;overflow: hidden;border:1px solid #eee;}
+        .form-group{width:930px;height: 45px; margin:0px auto;border-bottom: 1px solid #eee; background: #fff;line-height: 45px}
+        .form-th{background: #E1E1E1;font-weight: 600;border-right: 1px solid #fff; }
+        .form-group .form-col{float:left;height: 45px; text-align: center;color: #222;}
+        .form-group .borderRight{border-right: 1px solid #E1E1E1;}
+        .form-group .borderRightLine{border-right: 1px solid #eee;}
+        .form-group .borderRightNone{border-right: 1px solid transparent;}
+        .form-group .first-col,.form-group .second-col,.form-group .third-col{width:308px;}
+        .form-group .calc-pane{width: 200px;height: 35px;overflow: hidden;margin:5px auto;}
+        .form-group .calc-pane a{float:left;width: 35px;height: 35px;font: 20px/35px "微软雅黑";color: #fff;font-weight:600;background: #d2d2d2}
+        .form-group .calc-pane input[type^="text"]{float:left;width:128px;height: 33px;border: 1px solid #e8e8e8;text-align: center;   }
+        .form-group .calc-all{font-style: normal;}
+        .form-group .sub-btn{width: 100px;height: 35px;background: #f26020;float:right;margin-top: 5px;margin-right: 15px;text-align: center;font: 15px/35px "微软雅黑";color:#fff; border-radius: 5px;-webkit-border-radius: 5px;-o-border-radius: 5px;-ms-border-radius: 5px;-moz-border-radius: 5px;}
+        .form-group .sub-btn:hover{background: #f14000;}
+        .post-info{text-indent: 10px;}
+        .post-info .info-title{width:130px;display: inline-block;}
+        .post-info  input[type^="text"]{width: 500px;height:35px;border: 1px solid #d5d5d5;}
+        .msgColor{color: indianred;font: 14px/45px "宋体"}
+
+
+    </style>
+</head>
+<body>
+<div class="form-content-box">
+    <form action="#" method="post">
+    <div class="form-group form-title">产品列表：</div>
+    <div class="form-box">
+        <div class="form-group form-th">
+            <div class="form-col first-col ">POS型号</div>
+            <div class="form-col second-col ">价格(元/台)</div>
+            <div class="form-col third-col  borderRight">数量(台)</div>
+        </div>
+
+        <div class="form-group form-td">
+            <div class="form-col first-col borderRightLine">旺POS</div>
+            <div class="form-col second-col borderRightLine">1800</div>
+            <div class="form-col third-col  borderRightLine borderRightNone">
+                <div class="calc-pane"><a href="javascript:void(0);">-</a><input type="text" name="counts" value="1"/><a
+                        href="javascript:void(0);">+</a></div>
+            </div>
+        </div>
+
+        <div class="form-group form-td">
+            <div class="form-col first-col borderRightLine">掌POS</div>
+            <div class="form-col second-col borderRightLine">1800</div>
+            <div class="form-col third-col  borderRightLine borderRightNone">
+                <div class="calc-pane"><a href="javascript:void(0);">-</a><input type="text" name="counts" value="1"/><a
+                        href="javascript:void(0);">+</a></div>
+            </div>
+        </div>
+
+        <div class="form-group form-td">
+            <div class="form-col first-col borderRightLine">拉卡啦</div>
+            <div class="form-col second-col borderRightLine">1800</div>
+            <div class="form-col third-col  borderRightLine borderRightNone">
+                <div class="calc-pane"><a href="javascript:void(0);">-</a><input type="text" name="counts" value="1"/><a
+                        href="javascript:void(0);">+</a></div>
+            </div>
+        </div>
+
+        <div class="form-group form-td">
+            <div class="form-col first-col borderRightLine">掌POS</div>
+            <div class="form-col second-col borderRightLine">1800</div>
+            <div class="form-col third-col  borderRightLine borderRightNone">
+                <div class="calc-pane"><a href="javascript:void(0);">-</a><input type="text" name="counts" value="1"/><a
+                        href="javascript:void(0);">+</a></div>
+            </div>
+        </div>
+
+        <div class="form-group form-td">
+            <div class="form-col first-col borderRightLine">拉卡啦</div>
+            <div class="form-col second-col borderRightLine">1800</div>
+            <div class="form-col third-col  borderRightLine borderRightNone">
+                <div class="calc-pane"><a href="javascript:void(0);">-</a><input type="text" name="counts" value="1"/><a
+                        href="javascript:void(0);">+</a></div>
+            </div>
+        </div>
+
+        <div class="form-group form-td">
+            <div class="form-col first-col borderRightLine">旺POS</div>
+            <div class="form-col second-col borderRightLine">1800</div>
+            <div class="form-col third-col  borderRightLine borderRightNone">
+                <div class="calc-pane"><a href="javascript:void(0);">-</a><input type="text" name="counts" value="1"/><a
+                        href="javascript:void(0);">+</a></div>
+            </div>
+        </div>
+
+        <div class="form-group form-td">
+            <div class="form-col first-col borderRightLine">掌POS</div>
+            <div class="form-col second-col borderRightLine">1800</div>
+            <div class="form-col third-col  borderRightLine borderRightNone">
+                <div class="calc-pane"><a href="javascript:void(0);">-</a><input type="text" name="counts" value="1"/><a
+                        href="javascript:void(0);">+</a></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="form-group ">
+        <div class="form-col first-col "></div>
+        <div class="form-col second-col "></div>
+        <div class="form-col third-col ">
+            合计：<i class="calc-all">333333</i>
+        </div>
+    </div>
+    <div class="form-group post-info">
+        <span class="info-title">收货人：</span><span><input type="text" name="username" /></span>
+    </div>
+    <div class="form-group post-info">
+        <span class="info-title">联系方式：</span><span><input type="text" name="usermobile" /></span>
+    </div>
+    <div class="form-group post-info">
+        <span class="info-title">收货地址：</span><span><input type="text" name="useraddress" /></span>
+    </div>
+
+    <div class="form-group post-info">
+            <a href="javascript:void(0);" class="sub-btn">提交</a>
+    </div>
+
+    </form>
+
+    <div class="form-group post-info msgColor">
+        温馨提示：提示个啥呢？我也不知道啊
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery1.42.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+       $(".form-box").ready(function(){
+          $(".form-td:odd").css("background","rgb(250,250,250)");
+           $(".form-td:even").css("background","rgb(255,255,255)");
+       });
+    });
+</script>
+</body>
+</html>

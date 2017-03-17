@@ -1,0 +1,626 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/merchant.css"/>
+    <link rel="stylesheet" type="text/css" href="css/merchantList.css">
+    <link rel="stylesheet" type="text/css" href="css/proList.css"/>
+    <script type="text/javascript" src="js/jquery1.42.min.js"></script>
+    <title>产品列表</title>
+</head>
+<body>
+
+<!--在线客服-->
+<div class="kf-box">
+    <div id="box">
+        <div class="hid">
+            <a href=""></a>
+        </div>
+        <div class="dis" style="display:none;">
+            <a href="http://wpa.qq.com/msgrd?v=3&uin=707896515&site=qq&menu=yes" target="_blank" title="在线客服"></a>
+            <a href="javascript:void(0);"></a>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(".kf-box #box").mouseover(function () {
+        $("#box").stop();
+        $("#box").animate({marginRight: "80px"}, 1000);
+        $(".hid").css({display: "none"});
+        $(".dis").css({display: "block"});
+    });
+
+    $(".kf-box #box").mouseout(function () {
+        $("#box").stop();
+        $("#box").animate({marginRight: "0px"}, 1000);
+        $(".hid").css({display: "block"});
+        $(".dis").css({display: "none"});
+    });
+
+</script>
+
+<div class="header">
+    <div class="top">
+        <div class="index-top-left">
+            <ul>
+                <li><a href="" class="colorGray">您好，欢迎进入上下网智能营销平台 ！</a></li>
+                <li><a href="" class="colorBlack">请登录</a></li>
+                <li><a href="" class="colorGreen">免费注册</a></li>
+            </ul>
+        </div>
+        <!--index-top-left-->
+        <div class="index-top-right">
+            <ul>
+                <li class="borderRight"><a href="Recruitment.html"><i class="cart-icon"></i><em class="cart-markup">购物车</em></a></li>
+                <li class="borderRight"><a href="">我的订单</a></li>
+                <li class="borderRight"><a href="">我的收藏</a></li>
+                <li class="borderRight"><a href="">我是商家</a></li>
+                <li><a href="Recruitment.html">商家入驻</a></li>
+            </ul>
+
+        </div>
+        <!--index-top-right-->
+    </div>
+    <!--top-->
+</div>
+<!--header-->
+<!--当前位置 搜索栏 标签-->
+<div class="index-head">
+    <div class="index-head-left">
+        <div class="i-head-left-logo"><a href="index-1.html"><img src="images/logoin.png"></a></div>
+        <div class="i-head-left-loc">
+            <div class="i-headLeft-curLoc">台州</div>
+            <div class="i-headLeft-changeLoc"><a href="area.html">切换城市</a></div>
+        </div>
+    </div>
+    <!--index-head-left-->
+    <div class="index-head-mid">
+        <div class="index-head-mid-searchBox">
+            <div class="i-head-mid-sList">
+                <div class="s-list">
+                    <div class="index-spCp">
+                        <a href="javascript:void(0);" class="index-sp">商品</a>
+                        <a href="javascript:void(0);" class="index-cp">产品</a>
+                    </div>
+                    <div class="down-arrow arrow"></div>
+                    <script type="text/javascript" src="js/spcp.js"></script>
+
+                </div>
+            </div>
+            <div class="i-head-mid-sInput"><input type="text" placeholder="男装"></div>
+            <div class="i-head-mid-sBtn"><a href="noResult.html">搜索</a></div>
+
+        </div>
+        <div class="i-head-mid-sLabel">
+            <a href="">女装</a>
+            <a href="">男装</a>
+            <a href="" class="sHot">IPhone6</a>
+            <a href="">鞋子</a>
+        </div>
+
+    </div>
+    <!--index-head-mid-->
+    <div class="index-head-right">
+        <ul>
+            <li>
+                <div class="i-head-right-serverIcon"><img src="images/index_10.png"></div>
+                <div class="i-head-right-serverText">精致服务</div>
+            </li>
+            <li>
+                <div class="i-head-right-serverIcon"><img src="images/index_08.png"></div>
+                <div class="i-head-right-serverText">正品保证</div>
+            </li>
+            <li>
+                <div class="i-head-right-serverIcon"><img src="images/index_06.png"></div>
+                <div class="i-head-right-serverText">随时退</div>
+            </li>
+        </ul>
+
+    </div>
+    <!--index-head-right-->
+
+</div>
+<!--index-head-->
+<!--导航栏-->
+<!--navigator-->
+<div class="index-navigator">
+    <div class="index-nav-main"><a href="">全部分类</a></div>
+    <div class="index-nav-sub">
+        <ul>
+            <li><a href="index-1.html">首页</a></li>
+            <li><a href="merchant.html">联盟商家</a></li>
+            <li><a href="merchantList.html">商家产品</a></li>
+            <li><a href="">U币兑换</a></li>
+            <li><a href="">代理加盟</a></li>
+        </ul>
+    </div>
+
+</div>
+<!--index-navigator-->
+
+<div class="temp-div">
+    <a href="javascript:void(0);" class="tempClose">X</a>
+
+    <p>您还有4875积分可用，还有1个评价订单，<a href="" class="revolutionNow">立即评价</a></p>
+</div>
+<script type="text/javascript">
+    $(function () {
+        $(".tempClose").click(function () {
+            $(".temp-div").css({display: "none"});
+        });
+    });
+</script>
+
+<!--筛选框-->
+<div class="merchantList-box">
+    <div class="row-box borderLine">
+        <div class="row-list">
+            <span class="row-span row-padding">全部</span>
+            <span class="row-span row-padding">&gt;</span>
+            <span class="row-span span-hover">
+                <span class="span-selCon selHoverOut span-fl" style="display: none"><em></em><i
+                        class="selConClose">X</i></span>
+                <span class="span-selCon selHoverOut span-dq" style="display: none"><em></em><i
+                        class="selConClose">X</i></span>
+            </span>
+            <script type="text/javascript">
+                $(function () {
+                    $(".span-selCon").hover(
+                            function () {
+                                $(this).addClass("selHover").removeClass("selHoverOut");
+                            }
+                            ,
+                            function () {
+                                $(this).removeClass("selHover").addClass("selHoverOut");
+                            }
+                    )
+
+                    $(".span-selCon .selConClose").click(function () {
+                        $(".selHover").hide();
+                    });
+
+                });
+
+            </script>
+
+        </div>
+    </div>
+    <!--row-box-->
+    <div class="row-box borderLine">
+        <dl class="row-hot">
+            <dt>热门：</dt>
+            <dd class="row-fl">
+                <a href="javascript:void(0);" class="selected">全部</a>
+                <a href="javascript:void(0);">火锅</a>
+                <a href="javascript:void(0);">蛋糕</a>
+                <a href="javascript:void(0);">炒饭</a>
+                <a href="javascript:void(0);">火锅</a>
+                <a href="javascript:void(0);">盖浇饭</a>
+                <a href="javascript:void(0);">红酒拉斐尔</a>
+                <a href="javascript:void(0);">火锅</a>
+                <a href="javascript:void(0);">蛋糕</a>
+                <a href="javascript:void(0);">炒饭</a>
+                <a href="javascript:void(0);">火锅</a>
+                <a href="javascript:void(0);">盖浇饭</a>
+                <a href="javascript:void(0);">红酒拉斐尔</a>
+                <a href="javascript:void(0);">火锅</a>
+                <a href="javascript:void(0);">蛋糕</a>
+                <a href="javascript:void(0);">炒饭</a>
+                <a href="javascript:void(0);">火锅</a>
+                <a href="javascript:void(0);">盖浇饭</a>
+                <a href="javascript:void(0);">红酒拉斐尔</a>
+                <a href="javascript:void(0);">火锅</a>
+                <a href="javascript:void(0);">蛋糕</a>
+                <a href="javascript:void(0);">炒饭</a>
+                <a href="javascript:void(0);">火锅</a>
+                <a href="javascript:void(0);">盖浇饭</a>
+                <a href="javascript:void(0);">红酒拉斐尔</a>
+                <a href="javascript:void(0);">火锅</a>
+                <a href="javascript:void(0);">蛋糕</a>
+                <a href="javascript:void(0);">炒饭</a>
+                <a href="javascript:void(0);">火锅</a>
+                <a href="javascript:void(0);">盖浇饭</a>
+                <a href="javascript:void(0);">红酒拉斐尔</a>
+                <a href="javascript:void(0);">火锅</a>
+                <a href="javascript:void(0);">蛋糕</a>
+                <a href="javascript:void(0);">炒饭</a>
+                <a href="javascript:void(0);">火锅</a>
+                <a href="javascript:void(0);">盖浇饭</a>
+                <a href="javascript:void(0);">红酒拉斐尔</a>
+
+            </dd>
+            <script>
+                $(function () {
+                    $(".row-box .row-hot .row-fl a").click(function () {
+                        $(this).addClass("selected").siblings().removeClass("selected");
+                        /*遍历标签框*/
+                        $(".span-fl").css({display: "block"});
+                        $(".span-fl em").html($(this).html());
+                    });
+                });
+            </script>
+        </dl>
+    </div>
+    <!--row-box-->
+
+    <div class="row-box">
+        <dl class="row-hot row-area">
+            <dt>地区：</dt>
+            <dd class="row-dq">
+                <a href="javascript:void(0);" class="selected">全部</a>
+                <a href="javascript:void(0);">椒江区</a>
+                <a href="javascript:void(0);">临海区</a>
+                <a href="javascript:void(0);">黄岩区</a>
+                <a href="javascript:void(0);">椒江区</a>
+                <a href="javascript:void(0);">临海区</a>
+                <a href="javascript:void(0);">黄岩区</a>
+            </dd>
+            <script>
+                $(function () {
+                    $(".row-box .row-area .row-dq a").click(function () {
+                        $(this).addClass("selected").siblings().removeClass("selected");
+                        $(".span-hover .span-dq").css({display: "block"});
+                        $(".span-hover .span-dq em").html($(this).html());
+                    });
+                });
+            </script>
+        </dl>
+    </div>
+    <!--row-box-->
+</div>
+<!--merchantList-box-->
+
+
+
+
+<!--排序导航栏-->
+<div class="merchantNav-sort">
+    <div class="row-sort">
+        <ul>
+            <li><a href="javascript:void(0);" class="selected">默认排序</a></li>
+            <li><a href="javascript:void(0);" class=""><em>人气</em><i class="row-asc"></i></a></li>
+            <li><a href="javascript:void(0);" class=""><em>发布时间</em><i class="row-dsc"></i></a></li>
+            <li><a href="javascript:void(0);" class=""><em>销量</em><i class="row-asc"></i></a></li>
+            <li><a href="javascript:void(0);" class=""><em>好评</em><i class="row-asc"></i></a></li>
+            <li><a href="javascript:void(0);" class=""><em>价格</em><i class="row-asc"></i></a></li>
+        </ul>
+    </div>
+    <!--row-sort-->
+    <script>
+        $(function () {
+            $(".row-sort ul li").click(function () {
+                $("a", this).addClass("selected").parent().siblings("li").children("a").removeClass("selected");
+            });
+        });
+    </script>
+</div>
+<!--merchantNav-sort-->
+
+<!--主内容块-->
+<div class="merchantList-info">
+    <div class="info-left">
+        <div class="info-left-content">
+            <div><a href="product.html" class="info-img" alt="婚纱照"><img src="images/proList_03.png"> </a></div>
+            <div><a href="product.html" class="info-left-name" title="婚纱">上下网蛋糕产品</a></div>
+            <div class="info-left-intro">上下网蛋糕产品上下网蛋糕产品上下网蛋糕产品上下网蛋糕产品</div>
+            <div class="jf-sale"><span class="jf"><em>85547</em>积分</span><span class="sj">已售 55588件</span></div>
+        </div>
+        <!--info-left-content-->
+        <div class="info-left-content">
+            <div><a href="product.html" class="info-img" alt="婚纱照"><img src="images/proList_05.png"> </a></div>
+            <div><a href="product.html" class="info-left-name" title="婚纱">上下网蛋糕产品</a></div>
+            <div class="info-left-intro">上下网蛋糕产品上下网蛋糕产品上下网蛋糕产品上下网蛋糕产品</div>
+            <div class="jf-sale"><span class="jf"><em>85547</em>积分</span><span class="sj">已售 55588件</span></div>
+        </div>
+        <!--info-left-content-->
+        <div class="info-left-content">
+            <div><a href="product.html" class="info-img" alt="婚纱照"><img src="images/proList_03.png"> </a></div>
+            <div><a href="product.html" class="info-left-name" title="婚纱">上下网蛋糕产品</a></div>
+            <div class="info-left-intro">上下网蛋糕产品上下网蛋糕产品上下网蛋糕产品上下网蛋糕产品</div>
+            <div class="jf-sale"><span class="jf"><em>85547</em>积分</span><span class="sj">已售 55588件</span></div>
+        </div>
+        <!--info-left-content-->
+        <div class="info-left-content">
+            <div><a href="product.html" class="info-img" alt="婚纱照"><img src="images/proList_05.png"> </a></div>
+            <div><a href="product.html" class="info-left-name" title="婚纱">上下网蛋糕产品</a></div>
+            <div class="info-left-intro">上下网蛋糕产品上下网蛋糕产品上下网蛋糕产品上下网蛋糕产品</div>
+            <div class="jf-sale"><span class="jf"><em>85547</em>积分</span><span class="sj">已售 55588件</span></div>
+        </div>
+        <!--info-left-content-->
+
+        <div class="info-left-content">
+            <div><a href="product.html" class="info-img" alt="婚纱照"><img src="images/proList_03.png"> </a></div>
+            <div><a href="product.html" class="info-left-name" title="婚纱">上下网蛋糕产品</a></div>
+            <div class="info-left-intro">上下网蛋糕产品上下网蛋糕产品上下网蛋糕产品上下网蛋糕产品</div>
+            <div class="jf-sale"><span class="jf"><em>85547</em>积分</span><span class="sj">已售 55588件</span></div>
+        </div>
+        <!--info-left-content-->
+        <div class="info-left-content">
+            <div><a href="product.html" class="info-img" alt="婚纱照"><img src="images/proList_05.png"> </a></div>
+            <div><a href="product.html" class="info-left-name" title="婚纱">上下网蛋糕产品</a></div>
+            <div class="info-left-intro">上下网蛋糕产品上下网蛋糕产品上下网蛋糕产品上下网蛋糕产品</div>
+            <div class="jf-sale"><span class="jf"><em>85547</em>积分</span><span class="sj">已售 55588件</span></div>
+        </div>
+        <!--info-left-content-->
+
+        <div class="info-left-content">
+            <div><a href="product.html" class="info-img" alt="婚纱照"><img src="images/proList_03.png"> </a></div>
+            <div><a href="product.html" class="info-left-name" title="婚纱">上下网蛋糕产品</a></div>
+            <div class="info-left-intro">上下网蛋糕产品上下网蛋糕产品上下网蛋糕产品上下网蛋糕产品</div>
+            <div class="jf-sale"><span class="jf"><em>85547</em>积分</span><span class="sj">已售 55588件</span></div>
+        </div>
+        <!--info-left-content-->
+        <div class="info-left-content">
+            <div><a href="product.html" class="info-img" alt="婚纱照"><img src="images/proList_05.png"> </a></div>
+            <div><a href="product.html" class="info-left-name" title="婚纱">上下网蛋糕产品</a></div>
+            <div class="info-left-intro">上下网蛋糕产品上下网蛋糕产品上下网蛋糕产品上下网蛋糕产品</div>
+            <div class="jf-sale"><span class="jf"><em>85547</em>积分</span><span class="sj">已售 55588件</span></div>
+        </div>
+        <!--info-left-content-->
+
+        <div class="info-left-content">
+            <div><a href="product.html" class="info-img" alt="婚纱照"><img src="images/proList_03.png"> </a></div>
+            <div><a href="product.html" class="info-left-name" title="婚纱">上下网蛋糕产品</a></div>
+            <div class="info-left-intro">上下网蛋糕产品上下网蛋糕产品上下网蛋糕产品上下网蛋糕产品</div>
+            <div class="jf-sale"><span class="jf"><em>85547</em>积分</span><span class="sj">已售 55588件</span></div>
+        </div>
+        <!--info-left-content-->
+        <div class="info-left-content">
+            <div><a href="product.html" class="info-img" alt="婚纱照"><img src="images/proList_05.png"> </a></div>
+            <div><a href="product.html" class="info-left-name" title="婚纱">上下网蛋糕产品</a></div>
+            <div class="info-left-intro">上下网蛋糕产品上下网蛋糕产品上下网蛋糕产品上下网蛋糕产品</div>
+            <div class="jf-sale"><span class="jf"><em>85547</em>积分</span><span class="sj">已售 55588件</span></div>
+        </div>
+        <!--info-left-content-->
+
+        <div class="info-left-content">
+            <div><a href="product.html" class="info-img" alt="婚纱照"><img src="images/proList_03.png"> </a></div>
+            <div><a href="product.html" class="info-left-name" title="婚纱">上下网蛋糕产品</a></div>
+            <div class="info-left-intro">上下网蛋糕产品上下网蛋糕产品上下网蛋糕产品上下网蛋糕产品</div>
+            <div class="jf-sale"><span class="jf"><em>85547</em>积分</span><span class="sj">已售 55588件</span></div>
+        </div>
+        <!--info-left-content-->
+        <div class="info-left-content">
+            <div><a href="product.html" class="info-img" alt="婚纱照"><img src="images/proList_05.png"> </a></div>
+            <div><a href="product.html" class="info-left-name" title="婚纱">上下网蛋糕产品</a></div>
+            <div class="info-left-intro">上下网蛋糕产品上下网蛋糕产品上下网蛋糕产品上下网蛋糕产品</div>
+            <div class="jf-sale"><span class="jf"><em>85547</em>积分</span><span class="sj">已售 55588件</span></div>
+        </div>
+        <!--info-left-content-->
+
+        <div class="info-left-content">
+            <div><a href="product.html" class="info-img" alt="婚纱照"><img src="images/proList_03.png"> </a></div>
+            <div><a href="product.html" class="info-left-name" title="婚纱">上下网蛋糕产品</a></div>
+            <div class="info-left-intro">上下网蛋糕产品上下网蛋糕产品上下网蛋糕产品上下网蛋糕产品</div>
+            <div class="jf-sale"><span class="jf"><em>85547</em>积分</span><span class="sj">已售 55588件</span></div>
+        </div>
+        <!--info-left-content-->
+        <div class="info-left-content">
+            <div><a href="product.html" class="info-img" alt="婚纱照"><img src="images/proList_05.png"> </a></div>
+            <div><a href="product.html" class="info-left-name" title="婚纱">上下网蛋糕产品</a></div>
+            <div class="info-left-intro">上下网蛋糕产品上下网蛋糕产品上下网蛋糕产品上下网蛋糕产品</div>
+            <div class="jf-sale"><span class="jf"><em>85547</em>积分</span><span class="sj">已售 55588件</span></div>
+        </div>
+        <!--info-left-content-->
+        <div class="info-left-content">
+            <div><a href="product.html" class="info-img" alt="婚纱照"><img src="images/proList_03.png"> </a></div>
+            <div><a href="product.html" class="info-left-name" title="婚纱">上下网蛋糕产品</a></div>
+            <div class="info-left-intro">上下网蛋糕产品上下网蛋糕产品上下网蛋糕产品上下网蛋糕产品</div>
+            <div class="jf-sale"><span class="jf"><em>85547</em>积分</span><span class="sj">已售 55588件</span></div>
+        </div>
+        <!--info-left-content-->
+        <div class="info-left-content">
+            <div><a href="product.html" class="info-img" alt="婚纱照"><img src="images/proList_05.png"> </a></div>
+            <div><a href="product.html" class="info-left-name" title="婚纱">上下网蛋糕产品</a></div>
+            <div class="info-left-intro">上下网蛋糕产品上下网蛋糕产品上下网蛋糕产品上下网蛋糕产品</div>
+            <div class="jf-sale"><span class="jf"><em>85547</em>积分</span><span class="sj">已售 55588件</span></div>
+        </div>
+        <!--info-left-content-->
+
+
+    </div>
+    <!--info-left-->
+    <div class="info-right">
+        <!--扫一扫微信-->
+        <div class="scan-wx">
+            <div class="wx-left">
+                <div class="wx-img"></div>
+            </div>
+            <div class="wx-right">
+                <p style="letter-spacing: 3px;word-spacing: 2px">扫一扫二维码</p>
+
+                <p><a href="" class="cp-gzh">加上下网微信公众号</a></p>
+            </div>
+        </div>
+        <!--scan-wx-->
+        <!--精品推荐-->
+        <div class="merchant-hot">
+            <div class="hot-title">精品推荐</div>
+            <div class="hot-jptj borderLine">
+               <a href=""><img src="images/proList_08.png"></a>
+               <a href="" class="jptj-name">上下网蛋糕产品</a>
+               <P class="jptj-jfjs"><span class="jf"><em>5222244</em>积分</span><span class="js">已售 <em>888888</em></span></P>
+            </div>
+            <!--hot-jptj-->
+            <div class="hot-jptj borderLine">
+                <a href=""><img src="images/proList_08.png"></a>
+                <a href="" class="jptj-name">上下网蛋糕产品</a>
+                <P class="jptj-jfjs"><span class="jf"><em>5222244</em>积分</span><span class="js">已售 <em>888888</em></span></P>
+            </div>
+            <!--hot-jptj-->
+            <div class="hot-jptj borderLine">
+                <a href=""><img src="images/proList_08.png"></a>
+                <a href="" class="jptj-name">上下网蛋糕产品</a>
+                <P class="jptj-jfjs"><span class="jf"><em>5222244</em>积分</span><span class="js">已售 <em>888888</em></span></P>
+            </div>
+            <!--hot-jptj-->
+            <div class="hot-jptj borderLine">
+                <a href=""><img src="images/proList_08.png"></a>
+                <a href="" class="jptj-name">上下网蛋糕产品</a>
+                <P class="jptj-jfjs"><span class="jf"><em>5222244</em>积分</span><span class="js">已售 <em>888888</em></span></P>
+            </div>
+            <!--hot-jptj-->
+            <div class="hot-jptj borderLine">
+                <a href=""><img src="images/proList_08.png"></a>
+                <a href="" class="jptj-name">上下网蛋糕产品</a>
+                <P class="jptj-jfjs"><span class="jf"><em>5222244</em>积分</span><span class="js">已售 <em>888888</em></span></P>
+            </div>
+            <!--hot-jptj-->
+            <div class="hot-jptj">
+                <a href=""><img src="images/proList_08.png"></a>
+                <a href="" class="jptj-name">上下网蛋糕产品</a>
+                <P class="jptj-jfjs"><span class="jf"><em>5222244</em>积分</span><span class="js">已售 <em>888888</em></span></P>
+            </div>
+            <!--hot-jptj-->
+
+        </div>
+
+        <!--最近浏览-->
+        <div class="merchant-hot" style="margin-top: 20px">
+            <div class="hot-title">最近浏览</div>
+            <div class="hot-box borderLine">
+                <div class="box-left"><a href=""><img src="images/merchantList_18.png"></a></div>
+                <div class="box-right">
+                    <p class="hot-intro"><a href="" title="台州市黄岩缘爱婚礼订制">台州市黄岩缘爱婚礼订制</a></p>
+                    <p class="hot-count"><em>887积分</em></p>
+                </div>
+            </div>
+            <!--hot-box-->
+            <div class="hot-box borderLine">
+                <div class="box-left"><a href=""><img src="images/merchantList_18.png"></a></div>
+                <div class="box-right">
+                    <p class="hot-intro"><a href="" title="台州市黄岩缘爱婚礼订制">台州市黄岩缘爱婚礼订制</a></p>
+                    <p class="hot-count"><em>887积分</em></p>
+                </div>
+            </div>
+            <!--hot-box-->
+            <div class="hot-box borderLine">
+                <div class="box-left"><a href=""><img src="images/merchantList_18.png"></a></div>
+                <div class="box-right">
+                    <p class="hot-intro"><a href="" title="台州市黄岩缘爱婚礼订制">台州市黄岩缘爱婚礼订制</a></p>
+                    <p class="hot-count"><em>887积分</em></p>
+                </div>
+            </div>
+            <!--hot-box-->
+            <div class="hot-box borderLine">
+                <div class="box-left"><a href=""><img src="images/merchantList_18.png"></a></div>
+                <div class="box-right">
+                    <p class="hot-intro"><a href="" title="台州市黄岩缘爱婚礼订制">台州市黄岩缘爱婚礼订制</a></p>
+                    <p class="hot-count"><em>887积分</em></p>
+                </div>
+            </div>
+            <!--hot-box-->
+            <div class="hot-box">
+                <div class="box-left"><a href=""><img src="images/merchantList_18.png"></a></div>
+                <div class="box-right">
+                    <p class="hot-intro"><a href="" title="台州市黄岩缘爱婚礼订制">台州市黄岩缘爱婚礼订制</a></p>
+                    <p class="hot-count"><em>887积分</em></p>
+                </div>
+            </div>
+            <!--hot-box-->
+        </div>
+
+    </div>
+</div>
+<!--merchantList-info-->
+
+<!--页底 footer-->
+<div class="index-footer"></div>
+<!--index-footer-->
+<div class="index-footer-list">
+    <div class="index-footer-listBox">
+        <ul>
+            <li class="borderLine">
+                <div class="index-footer-box">
+                    <div class="F-floor">
+                        <i class="footer-icon"></i>
+                        <em>购物指南</em>
+                    </div>
+                    <div class="S-floor">
+                        <span class="left-txt"><a href="">购物流程</a></span> <span class="right-txt"><a
+                            href="">会员介绍</a></span>
+                    </div>
+                    <div class="S-floor">
+                        <span class="left-txt"><a href="">常见问题</a></span> <span class="right-txt"><a
+                            href="">联系客户</a></span>
+                    </div>
+                </div>
+            </li>
+            <li class="borderLine">
+                <div class="index-footer-box">
+                    <div class="F-floor">
+                        <i class="pay-icon "></i>
+                        <em>支付方式</em>
+                    </div>
+                    <div class="S-floor">
+                        <span class="left-txt"><a href="">在线支付</a></span> <span class="right-txt"><a
+                            href="">公司转账</a></span>
+                    </div>
+                    <div class="S-floor">
+                        <span class="left-txt"><a href="">线下实体</a></span> <span class="right-txt"><a
+                            href="">联盟商家</a></span>
+                    </div>
+                </div>
+            </li>
+            <li class="borderLine">
+                <div class="index-footer-box">
+                    <div class="F-floor">
+                        <i class="safeguard-icon"></i>
+                        <em>服务保障</em>
+                    </div>
+                    <div class="S-floor">
+                        <span class="left-txt"><a href="">价格优惠</a></span> <span class="right-txt"><a
+                            href="">退款说明</a></span>
+                    </div>
+                    <div class="S-floor">
+                        <span class="left-txt"><a href="">返修/退换货</a></span> <span class="right-txt"><a href="">取消订单</a></span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="index-footer-box">
+                    <div class="F-floor">
+                        <i class="feature-icon"></i>
+                        <em>特色服务</em>
+                    </div>
+                    <div class="S-floor">
+                        <span class="left-txt"><a href="">微信平台</a></span> <span class="right-txt"><a
+                            href="">在线竞拍</a></span>
+                    </div>
+                    <div class="S-floor">
+                        <span class="left-txt"><a href="">1元兑换</a></span> <span class="right-txt"><a
+                            href="">申请商家</a></span>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <!--index-footer-listBox-->
+    <div class="sub-index-page">
+        <a href="" class="borderLine">首页</a>
+        <a href="" class="borderLine">关于我们</a>
+        <a href="" class="borderLine">联系我们</a>
+        <a href="" class="borderLine">人才招聘</a>
+        <a href="" class="borderLine">商家入驻</a>
+        <a href="">广告服务</a>
+    </div>
+
+    <div class="index-copyRights">Copyrigh©2014-2016 上下网智能营销平台 www.sxwvc.com Inc.,All rights reserved.
+        浙ICP备14036505号-1
+    </div>
+    <div class="index-copyRights">
+        <ul>
+            <li><a href=""><img src="images/index_82.png"></a></li>
+            <li><a href=""><img src="images/index_84.png"></a></li>
+            <li><a href=""><img src="images/index_86.png"></a></li>
+            <li><a href=""><img src="images/index_88.png"></a></li>
+        </ul>
+    </div>
+
+</div>
+<!--index-footer-list-->
+</body>
+</html>

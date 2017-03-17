@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="css/ucoin.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/area.css" type="text/css" media="screen">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>联盟商家-地区</title>
+</head>
+<body>
+<header class="top-bg" id="top-height">
+    <div class="container area-top-box">
+        <ul>
+            <li><a href=""><img src="images/mx-icon_03.png"></a></li>
+            <li><h4>联盟商家</h4></li>
+            <li><a href="javascript:void(0);" class="menuIcon">
+                <img class="img-responsive pull-leftl" src="images/u-coin-icon_06.png"/></a></li>
+        </ul>
+        <script type="text/javascript">
+            $(function () {
+                $(".menuIcon").click(function () {
+                    $(".hidden-box").toggle();
+                    var topWidth = document.getElementById('top-height').offsetHeight;
+                    $(".select-box").css('margin-top', topWidth);
+                });
+            });
+
+            $(function () {
+                $(".top-bg").ready(function () {
+                    var topWidth = document.getElementById('top-height').offsetHeight;
+                    $(".select-box").css('margin-top', topWidth);
+                });
+            });
+        </script>
+
+    </div>
+
+    <div class="hidden-box" style="display: none;">
+        <ol>
+            <li class="box-bg ">
+                <a href="">
+                    <div><img src="images/u-coin-icon_15.png" class="img-responsive"></div>
+                    <div><p>U币兑换</p></div>
+                </a>
+            </li>
+            <li class="box-bg box-selected">
+                <a href="">
+                    <div><img src="images/u-coin-icon_15.png" class="img-responsive"></div>
+                    <div><p>联名商家</p></div>
+                </a>
+            </li>
+            <li class="box-bg ">
+                <a href="">
+                    <div><img src="images/u-coin-icon_15.png" class="img-responsive"></div>
+                    <div><p>购物车</p></div>
+                </a>
+            </li>
+            <li class="box-bg ">
+                <a href="">
+                    <div><img src="images/u-coin-icon_15.png" class="img-responsive"></div>
+                    <div><p>会员中心</p></div>
+                </a>
+            </li>
+
+        </ol>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            $(".hidden-box ol li").hover(function () {
+                $(this).addClass("box-selected").siblings().removeClass("box-selected");
+            });
+        });
+    </script>
+</header>
+
+<section class="select-box area-box">
+    <div class="area-left pull-left">
+        <ul>
+            <li class="area-bg area-selected">全部</li>
+            <li class="area-bg">安徽</li>
+            <li class="area-bg">北京</li>
+            <li class="area-bg">浙江</li>
+            <li class="area-bg">福建</li>
+
+        </ul>
+    </div>
+    <script type="text/javascript">
+        $(".area-left ul li").click(function () {
+            $(this).addClass("area-selected").siblings().removeClass("area-selected")
+            var index = $(this).index();
+            $(".city-box>div").eq(index).stop().show().siblings().stop().hide();
+
+        });
+    </script>
+
+    <div class="area-right pull-right">
+        <div class="hot-city hot-color">热门城市</div>
+        <div class="city-box">
+            <div>
+                <ul>
+                    <li class="area-sub-bg hot-color">全部</li>
+                    <li class="area-sub-bg">全部</li>
+                </ul>
+            </div>
+
+            <div style="display: none">
+                <ul>
+                    <li class="area-sub-bg hot-color">安徽</li>
+                    <li class="area-sub-bg">安徽</li>
+                </ul>
+            </div>
+
+            <div style="display: none">
+                <ul>
+                    <li class="area-sub-bg hot-color">北京</li>
+                    <li class="area-sub-bg">北京</li>
+
+                </ul>
+            </div>
+
+            <div style="display: none">
+                <ul>
+                    <li class="area-sub-bg hot-color"><a href="lmsjfl.html">台州</a></li>
+                    <li class="area-sub-bg">丽水</li>
+                </ul>
+            </div>
+
+            <div style="display: none">
+                <ul>
+                    <li class="area-sub-bg hot-color">福建</li>
+                    <li class="area-sub-bg">福建</li>
+                </ul>
+            </div>
+
+        </div>
+
+
+    </div>
+</section>
+
+<section>
+    <div class="loading-more" style="display: none;">上拉加载更多</div>
+</section>
+
+
+<section>
+    <div class="top-home-operate" style="display: none;"><a href="javascript:void(0);" onclick="returnTop();"><img
+            src="images/u-coin-icon_36.png"
+            class="img-responsive"></a><a
+            href="javascript:void(0);" onclick="returnHome();"><img src="images/u-coin-icon_45.png"
+</section>
+<script type="text/javascript">
+    $(document).on("scroll", function () {
+        var scrollTop = $(document).scrollTop();
+        if (scrollTop > 0) {
+            $(".top-home-operate").css('display', '');
+        } else {
+            $(".top-home-operate").css('display', 'none');
+        }
+    });
+</script>
+
+</body>
+<script type="text/javascript">
+
+
+    function returnTop() {
+        window.scrollTo(0, 0);
+    }
+
+    function returnHome() {
+        location.href = "ucoin.html";
+    }
+</script>
+</html>

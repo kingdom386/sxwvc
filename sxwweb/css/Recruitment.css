@@ -1,0 +1,255 @@
+@charset "utf-8";
+* {
+    margin: 0px;
+    border: 0 none;
+    padding: 0px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    display: block;
+    color: #222;
+    text-decoration: none;
+}
+
+body {
+    font-size: 12px;
+    color: #222;
+}
+
+/***/
+.recruitment-header {
+    width: 100% !important;
+    height: 87px;
+    background: url(../images/recruitment_bg.png) repeat-x;
+}
+
+.recruitment-header .recruitment-top {
+    width: 980px;
+    height: auto;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+.recruitment-header .recruitment-top .recruitment-logo {
+    margin-top: 12px;
+    width: 215px;
+    float: left;
+}
+
+.recruitment-header .recruitment-top .recruitment-index {
+    width: 100px;
+    float: right;
+}
+
+.recruitment-header .recruitment-top .recruitment-index a {
+    color: #fff;
+    padding-top: 60px;
+}
+
+.recruitment-header .recruitment-top .recruitment-index a:hover {
+    text-decoration: underline;
+}
+
+/**line 样式*/
+.line {
+    width: 100% !important;
+    height: 6px;
+    background: #ea5816;
+
+}
+
+/**商家入驻中间内容快最小高度*/
+.body-box {
+    min-height: 578px;
+}
+
+/**商家入驻申请填写表单样式*/
+.recruitment-body {
+    width: 978px;
+    height: 442px;
+    overflow: hidden;
+    margin: 15px auto 0px;
+    border: 1px solid #d4d4d4;
+    box-shadow: 0px 1px 10px #eee;
+    -webkit-box-shadow: 0px 1px 10px #eee;
+    -moxz-box-shadow: 0px 1px 10px #eee;
+}
+
+.recruitment-body .recruitment-body-table {
+    width: 885px;
+    margin: 15px auto 0px;
+}
+
+.recruitment-body .recruitment-body-table .recruitment-body-title {
+    width: auto;
+    height: 60px;
+    line-height: 60px;
+    font-size: 23px;
+    font-family: "微软雅黑";
+    border-bottom: 1px solid #e0e0e0;
+    margin-top: 12px;
+}
+
+.recruitment-body .recruitment-body-table .recruitment-body-box {
+    overflow: hidden;
+    margin: 30px auto;
+}
+
+.recruitment-body .recruitment-body-table .recruitment-body-box .boxLeft {
+    width: 673px;
+    float: left;
+}
+
+.recruitment-body .recruitment-body-table .recruitment-body-box .boxLeft .boxLeft-name {
+    width: auto;
+    height: 36px;
+    margin: 24px 0px;
+    overflow: hidden;
+    line-height: 35px;
+}
+
+.recruitment-body .recruitment-body-table .recruitment-body-box .boxLeft .boxLeft-name .labelTxt, .recruitmentName {
+    float: left;
+    font-size: 16px;
+}
+
+.recruitment-body .recruitment-body-table .recruitment-body-box .boxLeft .boxLeft-name .labelTxt, .boxLeft-Adr .adrTxt {
+    margin-left: 20px;
+    width: 64px;
+}
+
+.recruitment-body .recruitment-body-table .recruitment-body-box .boxLeft .boxLeft-name .recruitmentName {
+    margin-left: 12px;
+}
+
+.recruitment-body .recruitment-body-table .recruitment-body-box .boxLeft .boxLeft-name .recruitmentName input {
+    width: 285px;
+    line-height: 33px;
+    height: 33px;
+    border: 1px solid #e0e0e0;
+}
+
+.recruitment-body .recruitment-body-table .recruitment-body-box .boxLeft .boxLeft-Adr {
+    width: auto;
+    height: 36px;
+    margin: 24px 0px;
+    overflow: hidden;
+    line-height: 35px;
+}
+
+.recruitment-body .recruitment-body-table .recruitment-body-box .boxLeft .boxLeft-Adr .adrTxt, .adrInput {
+    float: left;
+    font-size: 16px;
+}
+
+/*.recruitment-body .recruitment-body-table .recruitment-body-box .boxLeft .boxLeft-Adr .adrTxt {
+    margin-left: 20px;
+}*/
+
+.recruitment-body .recruitment-body-table .recruitment-body-box .boxLeft .boxLeft-Adr .adrInput {
+    margin-left: 12px;
+}
+
+.recruitment-body .recruitment-body-table .recruitment-body-box .boxLeft .boxLeft-Adr .adrInput input {
+    width: 440px;
+    line-height: 33px;
+    height: 33px;
+    border: 1px solid #e0e0e0;
+}
+
+/**提交按钮样式*/
+.recruitment-body .recruitment-body-table .recruitment-body-box .boxLeft .boxLeft-btn {
+    width: auto;
+    height: auto;
+    margin: 44px 0px;
+}
+
+.recruitment-body .recruitment-body-table .recruitment-body-box .boxLeft .boxLeft-btn a {
+    width: 94px;
+    height: 38px;
+    background: url(../images/recruitment_10.png) no-repeat;
+    line-height: 38px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    margin-left: 95px;
+}
+
+.recruitment-body .recruitment-body-table .recruitment-body-box .boxLeft .boxLeft-btn a:hover {
+    filter: alpha(opacity=80);
+    opacity: 0.8;
+}
+
+/*表单微信广告位样式*/
+.recruitment-body .recruitment-body-table .recruitment-body-box .boxRight {
+    width: 210px;
+    float: right;
+}
+
+.recruitment-body .recruitment-body-table .recruitment-body-box .boxRight .boxRight-title {
+    width: auto;
+    text-align: center;
+    color: #f26020;
+    font-size: 20px;
+    font-family: "微软雅黑";
+    margin-bottom: 12px;
+    word-spacing: 3px;
+    letter-spacing: 3px;
+}
+
+.recruitment-body .recruitment-body-table .recruitment-body-box .boxRight .boxRight-weix {
+    width: 210px;
+    text-align: center;
+}
+
+/**商家入驻底部foot样式*/
+.recruitment-foot-line {
+    width: 100% !important;
+    height: 3px;
+    background: #ea5816;
+}
+
+.recruitment-foot {
+    width: 980px;
+    height: 40px;
+    line-height: 40px;
+    margin: 15px auto;
+}
+
+.recruitment-foot .foot-box {
+    width: 350px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+.recruitment-foot .foot-box span img, em {
+    float: left;
+    display: inline-block;
+    height: 39px;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    margin-right: 5px;
+}
+
+.recruitment-foot .foot-copyRight {
+    width: 620px;
+    height: auto;
+    margin: 12px auto;
+    text-align: center;
+    color: #666;
+}
+
+
+
+
+
+
+
+
+

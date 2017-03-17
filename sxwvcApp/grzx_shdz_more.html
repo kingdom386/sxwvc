@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="css/index.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/ucoin.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/area.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/grzx.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/grzx_grzl.css" type="text/css" media="screen">
+    <link rel=" stylesheet" href="css/grzx-shdz.css" type="text/css" media="screen">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>个人中心-收货地址</title>
+</head>
+<body>
+
+<header class="top-bg" id="top-height">
+    <div class="container area-top-box">
+        <ul>
+            <li><a href=""><img src="images/mx-icon_03.png"></a></li>
+            <li><h4>收货地址</h4></li>
+            <li> <button class="btn  btn-sm btn-click">保存</button></li>
+        </ul>
+    </div>
+
+    <script type="text/javascript">
+
+        $(function () {
+            $(".top-bg").ready(function () {
+                var topHeight = document.getElementById('top-height').offsetHeight;
+                $(".grzx-skin-bg").css('margin-top', topHeight);
+            });
+        });
+
+    </script>
+</header>
+
+
+<section class="grzx-skin-bg">
+    <div class="grzx-head-pic">
+        <div><a href="javascript:void(0);"><img src="image/img_01.png" class="img-circle img-responsive"></a></div>
+        <div><p>二傻中的逗比</p></div>
+    </div>
+</section>
+
+<section class="msg-window">
+    <div class="container msg-box">
+        <div class="pull-right" style="width:30%;">
+            <a href="javascript:void(0);">
+            <span style="max-height: 45px;margin: 8px 5px 8px 0;" class="pull-left"><img
+                    src="images/grzx-shdz-icon_03.png"
+                    class="img-responsive"
+                    ></span><span class="pull-left"
+                                  style="width: 60%;font-size: x-small;line-height: 40px;color:#fd7b03;">新增地址</span></a>
+        </div>
+    </div>
+</section>
+
+<section class="shdz-center-box">
+    <section class="grzx-shdz-dzinfo">
+        <div class="container grzx-shdz-box">
+            <p><span>李欣苑1</span> <span>18877667733</span></p>
+
+            <p>浙江台州市椒江区白云街道椒江区白云街道</p>
+        </div>
+        <div class="container grzx-shdz-state">
+            <span class="pull-left" onclick="selectAdress(this);"><img src="images/grzx-shdz-icon_07.png">送到这里去1</span>
+            <span class="pull-right"><img src="images/grzx-shdz-icon_11.png">修改</span>
+        </div>
+    </section>
+
+    <section class="grzx-shdz-dzinfo">
+        <div class="container grzx-shdz-box">
+            <p><span>李欣苑2</span> <span>18877667733</span></p>
+
+            <p>浙江台州市椒江区白云街道椒江区白云街道</p>
+        </div>
+        <div class="container grzx-shdz-state">
+            <span class="pull-left" onclick="selectAdress(this);"><img src="images/grzx-shdz-icon_14.png">送到这里去2</span>
+            <span class="pull-right"><img src="images/grzx-shdz-icon_11.png">修改</span>
+        </div>
+    </section>
+
+    <section class="grzx-shdz-dzinfo">
+        <div class="container grzx-shdz-box">
+            <p><span>李欣苑3</span> <span>18877667733</span></p>
+
+            <p>浙江台州市椒江区白云街道椒江区白云街道</p>
+        </div>
+        <div class="container grzx-shdz-state">
+            <span class="pull-left" onclick="selectAdress(this);"><img src="images/grzx-shdz-icon_14.png">送到这里去3</span>
+            <span class="pull-right"><img src="images/grzx-shdz-icon_11.png">修改</span>
+        </div>
+    </section>
+</section>
+<script type="text/javascript">
+    function selectAdress(index) {
+        $(index).children("img").attr("src", "images/grzx-shdz-icon_07.png");
+        var curSpanIndex = $('>span:nth-child(1)', $('>div:nth-child(2)', $(index).parent().parent().siblings('section')));
+        $(curSpanIndex).children("img").attr('src', 'images/grzx-shdz-icon_14.png');
+
+    }
+</script>
+
+
+<footer>
+    <section class="container index-foot">
+        <div class="index-opera">
+            <div>
+                <span style="float:left"><a href="javascript:void(0);">登录</a>|<a
+                        href="javascript:void(0);">注册</a></span>
+                <span style="float: right"><a href="javascript:scroll(0,0)">回到顶部</a></span>
+            </div>
+            <div class="index-version"><a href="javascript:void(0);" class="redColor">手机版</a><a
+                    href="javascript:void(0);">电脑版</a></div>
+            <div class="index-copyRight">Copyright © 2015 上下网智能营销平台 版权所有</div>
+        </div>
+    </section>
+</footer>
+</body>
+</html>

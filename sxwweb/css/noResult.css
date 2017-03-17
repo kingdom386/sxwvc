@@ -1,0 +1,210 @@
+@charset "utf-8";
+.no-result-box {
+    width: 978px;
+    height: 145px;
+    border: 1px solid #eee;
+    margin: 10px auto;
+}
+
+.no-result-box .no-result-content {
+    width: 960px;
+    height: auto;
+    text-align: center;
+    padding: 36px 0px;
+}
+
+.no-result-box .no-result-content img {
+    vertical-align: middle;
+}
+
+.no-result-box .no-result-content .no-result-msg {
+    display: inline-block;
+    font-weight: 700;
+}
+
+.no-result-box .no-result-content .no-result-msg a {
+    display: inline-block;
+    color: #f1601f;
+}
+
+.no-result-box .no-result-content .no-result-msg a:hover {
+    text-decoration: underline;
+}
+
+/**商家推荐*/
+.no-result-merchant {
+    width: 980px;
+    height: auto;
+    overflow: hidden;
+    margin: 13px auto;
+}
+
+.no-result-merchant .no-result-merchant-left {
+    width: 718px;
+    height: auto;
+    border: 1px solid #e3e3e3;
+    float: left;
+}
+
+.no-result-merchant .no-result-merchant-left .hot-merchant-title {
+    width: 675px;
+    height: 53px;
+    line-height: 53px;
+    border-bottom: 1px solid #cfcfcf;
+    margin: 0px auto;
+    color: #1f1f1f;
+}
+
+.no-result-merchant .no-result-merchant-left .hot-merchant {
+    width: 675px;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+.no-result-merchant .no-result-merchant-left .hot-merchant .hot-merchant-contentBox {
+    width: 204px;
+    height: auto;
+    float: left;
+    margin-top: 10px;
+    margin-right: 31px; margin-bottom:18px;
+}
+
+.no-result-merchant .no-result-merchant-left .hot-merchant .hot-merchant-contentBox .hot-merchant-pic {
+    text-align: center;
+    width: 204px;
+    margin: 0px auto;
+}
+
+.no-result-merchant .no-result-merchant-left .hot-merchant .hot-merchant-contentBox .hot-merchant-name {
+    height: 30px;
+    margin-top: 5px;
+}
+
+.no-result-merchant .no-result-merchant-left .hot-merchant .hot-merchant-contentBox .hot-merchant-name a {
+    line-height: 30px;
+    font-size: 15px;
+    color: #666;
+    font-weight: bold;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.no-result-merchant .no-result-merchant-left .hot-merchant .hot-merchant-contentBox .hot-merchant-name a:hover {
+    color: #f26020;
+}
+
+.no-result-merchant .no-result-merchant-left .hot-merchant .hot-merchant-contentBox .hot-merchant-intro {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 25px;
+    height: 25px;
+    color: #999;
+}
+
+.no-result-merchant .no-result-merchant-left .hot-merchant .hot-merchant-contentBox .hot-merchant-sc {
+    height: 30px;
+    line-height: 30px;
+}
+
+.no-result-merchant .no-result-merchant-left .hot-merchant .hot-merchant-contentBox .hot-merchant-sc a .scIcon {
+    height: 30px;
+    line-height: 30px;
+    color: #9ec261;
+    font-size: 18px;
+    font-family: "宋体";
+    font-style: normal;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.no-result-merchant .no-result-merchant-left .hot-merchant .borderRight {
+    margin-right: 0px;
+}
+
+.no-result-merchant .no-result-merchant-right {
+    width: 240px;
+    height: auto;
+    border: 1px solid #e3e3e3;
+    float: right;
+}
+
+/**热门产品*/
+.no-result-merchant-right .hot-product {
+    width: 201px;
+    height: 53px;
+    margin: 0px auto;
+    line-height: 53px;
+    color: #1f1f1f;
+}
+
+.no-result-merchant-right .hot-product-box {
+    width: 201px;
+    height: auto;
+    padding: 15px 0px;
+    margin: 0px auto;
+}
+
+.no-result-merchant-right .borderLine {
+    border-bottom: 1px solid #eee;
+}
+
+.no-result-merchant-right .hot-product-box .hot-product-name a {
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    color: #666;
+    font-weight: bold;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.no-result-merchant-right .hot-product-box .hot-product-name a:hover {
+    color: #f26020;
+}
+
+.no-result-merchant-right .hot-product-box .hot-product-intro {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 25px;
+    height: 25px;
+    color: #999;
+}
+
+.no-result-merchant-right .hot-product-box .hot-product-price {
+    height: 30px;
+    overflow: hidden;
+}
+
+.no-result-merchant-right .hot-product-box .hot-product-price .hot-pp {
+
+    float: left;
+    color: #f76120;
+}
+
+.no-result-merchant-right .hot-product-box .hot-product-price .hot-pp em {
+    font-style: normal;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: "微软雅黑";
+    line-height: 30px;
+}
+
+.no-result-merchant-right .hot-product-box .hot-product-price .hot-ss {
+    float: right;
+    line-height: 30px;
+    color: #939393;
+}
+
+
+
+
+
+
+
+
+
+

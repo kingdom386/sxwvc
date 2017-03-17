@@ -1,0 +1,190 @@
+@charset "utf-8";
+* {
+    padding: 0;
+    border: 0 none;
+    margin: 0;
+}
+
+body {
+    background: #fff;
+    font-size: medium;
+    font-family: "Arail";
+}
+
+.th-bg {
+    background: #f6921c;
+    overflow: hidden;
+}
+
+.th-bg .container {
+    margin: 0px auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.th-bg .container span {
+    display: block;
+    float: left;
+    text-align: center;
+    color: #fff;
+    line-height: 33px;
+}
+
+.th-bg .container span:nth-child(1) {
+    width: 20%;
+}
+
+.th-bg .container span:nth-child(2) {
+    width: 50%;
+}
+
+.th-info-input {
+    width: 100%;
+}
+
+.th-info-input .container {
+    margin: 15px auto;
+}
+
+.th-info-input .container .btnClick {
+    background: #f6781c;
+    color: #fff;
+}
+
+.th-info-input .container .btnClick:hover {
+    color: #fff;
+}
+
+.th-info-input .container .btnClick:active {
+    color: #fff;
+}
+
+/**add by xzh 20150521 */
+.ddth-bg {
+    background: #fff;
+}
+
+.thmx-count-bg .thmx-count div {
+    width: 60%;
+    margin: 8px auto;
+    font-size: small;
+}
+
+.thmx-count-bg .thmx-count ul {
+    overflow: hidden;
+}
+
+.thmx-count-bg .thmx-count ul .colorRed {
+    color: #ff0000;
+}
+
+.thmx-count-bg .thmx-count ul li {
+    float: left;
+    width: 33.3333333%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.thmx-count-bg .thmx-count ul li:nth-child(1) {
+    border-right: 1px solid #ccc;
+}
+
+.thmx-count-bg .thmx-count ul li:nth-child(3) {
+    border-left: 1px solid #ccc;
+}
+
+.tqdd-thead {
+    background: #fff2e2;
+    overflow: hidden
+}
+
+.tqdd-thead .tqdd-box{
+    padding-top: 8px;
+}
+
+.tqdd-thead .tqdd-box ul {
+    list-style-type: none;
+}
+
+.tqdd-thead .tqdd-box ul li {
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+.tqdd-body {
+    overflow: hidden;
+    background: #fff;
+}
+
+.tqdd-body .tqdd-box ul {
+    list-style-type: none;
+}
+
+.tqdd-body .tqdd-box ul li {
+    overflow: hidden;
+}
+
+.tqdd-body .tqdd-box ul li span {
+    display: block;
+    float: left;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: xx-small;
+}
+
+.tqdd-body .tqdd-box ul li span:nth-child(1) {
+    width: 20%
+}
+
+.tqdd-body .tqdd-box ul li span:nth-child(1) img {
+    margin: 0px auto;
+}
+
+.tqdd-body .tqdd-box ul li span:nth-child(2) {
+    width: 35%
+}
+
+.tqdd-body .tqdd-box ul li span:nth-child(2) div{
+    margin-top: 5px;
+}
+
+.tqdd-body .tqdd-box ul li span:nth-child(2) .spname {
+   /* line-height: 15px;
+    height: 30px;
+    word-wrap: normal;
+    text-overflow: ellipsis;*/
+
+}
+
+.tqdd-body .tqdd-box ul li span:nth-child(2) .spname:hover {
+    text-decoration: none;
+}
+
+.tqdd-body .tqdd-box ul li span:nth-child(2) .spname:active {
+    text-decoration: none;
+}
+
+.tqdd-body .tqdd-box ul li span:nth-child(2) .spname:after {
+    text-decoration: none;
+}
+
+.tqdd-body .tqdd-box ul li .colorF {
+    color: #f6921c;
+}
+
+.tqdd-body .tqdd-box ul li span:nth-child(3) {
+    width: 20%
+}
+
+.tqdd-body .tqdd-box ul li span:nth-child(3) div{
+    margin-top: 5px;
+}
+.tqdd-body .tqdd-box ul li span:nth-child(4) {
+    width: 25%
+}
+
+.tqdd-body .tqdd-box ul li span:nth-child(4) div{
+    margin-top: 5px;
+}

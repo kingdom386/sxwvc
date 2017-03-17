@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="css/ucoin.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/area.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/cart.css" type="text/css" media="screen">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>购物车</title>
+</head>
+<body>
+<header class="top-bg" id="top-height">
+    <div class="container area-top-box">
+        <ul>
+            <li><a href=""><img src="images/mx-icon_03.png"></a></li>
+            <li><h4>购物车</h4></li>
+            <li></li>
+        </ul>
+    </div>
+</header>
+
+<script type="text/javascript">
+    $(function () {
+        $(".top-bg").ready(function () {
+            var topWidth = document.getElementById('top-height').offsetHeight;
+            $(".cart-info-bg").css('margin-top', topWidth);
+        });
+    });
+</script>
+
+<section class="cart-info-bg">
+  <div class="container cart-info-box">
+    <img src="images/cart-icon_03.png" class="img-responsive">
+    <p>购物车空空如也，快去购物吧</p>
+    <p>或者<a href="" style="color: blue;">登录</a>查看您的购物车</p>
+  </div>
+</section>
+
+<section class="operate-btn">
+  <div class="container operate-box">
+      <div class="btn-loc">
+          <button class="btn btn-default btn-browser btn-sm" onclick="javascript:void(0);">去逛逛</button>
+          <button class="btn btn-default btn-browser btn-sm" onclick="javascript:void(0);">去登录</button>
+      </div>
+  </div>
+</section>
+
+</body>
+</html>

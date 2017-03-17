@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="css/index.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/ucoin.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/area.css" type="text/css" media="screen">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>测试-分类</title>
+</head>
+<body>
+
+<header class="top-bg" id="top-height">
+    <div class="container area-top-box">
+        <ul>
+            <li><a href=""><img src="images/mx-icon_03.png"></a></li>
+            <li><h4>测试(台州)</h4></li>
+            <li><a href="javascript:void(0);" class="menuIcon">
+                <img class="img-responsive pull-leftl" src="images/u-coin-icon_06.png"/></a></li>
+        </ul>
+        <script type="text/javascript">
+            $(function () {
+                $(".menuIcon").click(function () {
+                    $(".hidden-box").toggle();
+                    var topWidth = document.getElementById('top-height').offsetHeight;
+                    $(".list-bg").css('margin-top', topWidth);
+                });
+            });
+
+            $(function () {
+                $(".top-bg").ready(function () {
+                    var topWidth = document.getElementById('top-height').offsetHeight;
+                    $(".list-box").css('margin-top', topWidth);
+                });
+            });
+        </script>
+
+    </div>
+
+    <div class="hidden-box" style="display: none;">
+        <ol>
+            <li class="box-bg ">
+                <a href="">
+                    <div><img src="images/u-coin-icon_15.png" class="img-responsive"></div>
+                    <div><p>U币兑换</p></div>
+                </a>
+            </li>
+            <li class="box-bg box-selected">
+                <a href="">
+                    <div><img src="images/u-coin-icon_15.png" class="img-responsive"></div>
+                    <div><p>联名商家</p></div>
+                </a>
+            </li>
+            <li class="box-bg ">
+                <a href="">
+                    <div><img src="images/u-coin-icon_15.png" class="img-responsive"></div>
+                    <div><p>购物车</p></div>
+                </a>
+            </li>
+            <li class="box-bg ">
+                <a href="">
+                    <div><img src="images/u-coin-icon_15.png" class="img-responsive"></div>
+                    <div><p>会员中心</p></div>
+                </a>
+            </li>
+
+        </ol>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            $(".hidden-box ol li").click(function () {
+                $(this).addClass("box-selected").siblings().removeClass("box-selected");
+            });
+        });
+    </script>
+</header>
+
+<!-- alt by xzh 20150604 -->
+<!--start-->
+<style type="text/css">
+    .list-bg { margin: 0px auto; }
+    .list-bg .list-box ul .box-select{float:left;width: 33.333333%;border: 1px solid #eee;margin-right: -1px ;}
+    .list-bg .list-box ul .box-select a{display:block; text-decoration: none; font-family: "Arail"; font-size: small;
+                                    font-style: normal; color: #8c8c8c;text-align: center;padding: 5px 3px;}
+    .list-bg .list-box ul .box-select a:hover{text-decoration: none;color: #8c8c8c;}
+    .list-bg .list-box ul .box-select a:after{text-decoration: none;color: #8c8c8c;}
+    .list-bg .list-box ul .box-select a p{display: inline-block;padding-bottom: 0px}
+    .list-bg .list-box ul .selected a{color: #ff6600;}
+    .list-bg .list-box ul .selected a:hover{text-decoration: none;color: #ff6600;}
+    .list-bg .list-box ul .box-select .sub-list-box{width: 100% !important;overflow-y:scroll;
+                                    height: 220px;background: #fff; text-align: center;margin-top:-1px; }
+    .list-bg .list-box ul .box-select .sub-list-box  a{color: #8c8c8c;display: block;width: 100% !important;}
+    .list-bg .list-box ul .box-select .sub-list-box  a:hover{color: #ff6600;text-decoration: none;width: 100% !important;}
+</style>
+<section class="list-bg">
+   <div class="list-box clearfix">
+       <ul class="clearfix">
+           <li class="box-select selected subList dropdown">
+               <a href="javascript:void(0);" data-toggle="dropdown" class="data-toggle" id="#dropMenu1">
+                   <p>全城</p>
+                   <span class="caret"></span>
+               </a>
+                   <ol class="sub-list-box dropdown-menu">
+                       <li role="presentation"><a role="menuitem" href="javascript:void(0);">全部</a></li>
+                       <li role="presentation"><a role="menuitem" href="javascript:void(0);">椒江1</a></li>
+                       <li role="presentation"><a role="menuitem" href="javascript:void(0);">椒江2</a></li>
+                       <li role="presentation"><a role="menuitem" href="javascript:void(0);">椒江3</a></li>
+                       <li role="presentation"><a role="menuitem" href="javascript:void(0);">椒江4</a></li>
+                       <li role="presentation"><a role="menuitem" href="javascript:void(0);">椒江5</a></li>
+                       <li role="presentation"><a role="menuitem" href="javascript:void(0);">椒江6</a></li>
+                       <li role="presentation"><a role="menuitem" href="javascript:void(0);">椒江7</a></li>
+                       <li role="presentation"><a role="menuitem" href="javascript:void(0);">椒江8</a></li>
+                       <li role="presentation"><a role="menuitem" href="javascript:void(0);">椒江9</a></li>
+                       <li role="presentation"><a role="menuitem" href="javascript:void(0);">椒江10</a></li>
+                       <li role="presentation"><a role="menuitem" href="javascript:void(0);">椒江11</a></li>
+                       <li role="presentation"><a role="menuitem" href="javascript:void(0);">椒江12</a></li>
+                       <li role="presentation"><a role="menuitem" href="javascript:void(0);">椒江13</a></li>
+                       <li role="presentation"><a role="menuitem" href="javascript:void(0);">椒江14</a></li>
+                       <li role="presentation"><a role="menuitem" href="javascript:void(0);">椒江15</a></li>
+                       <li role="presentation"><a role="menuitem" href="javascript:void(0);">椒江16</a></li>
+                       <li role="presentation"><a role="menuitem" href="javascript:void(0);">椒江17</a></li>
+                       <li role="presentation"><a role="menuitem" href="javascript:void(0);">椒江18</a></li>
+                       <li role="presentation"><a role="menuitem" href="javascript:void(0);">椒江19</a></li>
+                       <li role="presentation"><a role="menuitem" href="javascript:void(0);">椒江20</a></li>
+                       <li role="presentation"><a role="menuitem" href="javascript:void(0);">椒江21</a></li>
+                   </ol>
+           </li>
+
+           <li class="box-select"><a href="javascript:void(0);">好评率</a></li>
+           <li class="box-select"><a href="javascript:void(0);">全部分类</a></li>
+
+           <script type="text/javascript">
+              $(function(){
+                   $(".sub-list-box li").click(function(){
+                       var curCont = $("a",this).html();
+                       $(".subList a p").html(curCont);
+                   })
+
+               });
+           </script>
+       </ul>
+   </div>
+
+</section>
+<!--end-->
+
+
+<section class="pro-info-center">
+    <div class="pro-box">
+        <dl>
+            <dt><a href="spmx.html?id=005"><img src="image/u-coin-icon_33.png" class="img-responsive"></a></dt>
+            <dd>
+                <div class="pro-name"><a href="spmx.html">枝昌杨梅酒</a></div>
+                <div class="pro-price">
+                    <span style="font-family:'微软雅黑';color:#ff6500;">★</span>
+                    <span style="font-family:'微软雅黑';color:#ff6500;">★</span>
+                    <span style="font-family:'微软雅黑';color:#ff6500;">★</span>
+                    <span style="font-family:'微软雅黑';color:#ff6500;">★</span>
+                    <span style="font-family:'微软雅黑';color:#ff6500;">☆</span>
+                    <span class="pro-business-eva"><em>好评率：</em>99.8%</span>
+                </div>
+                <div class="pro-evaluate"><span>浙江东服务区</span><span> 5.8km</span></div>
+
+            </dd>
+        </dl>
+    </div>
+
+</section>
+
+<section>
+    <div class="loading-more" style="display: none;">上拉加载更多</div>
+</section>
+
+<footer>
+    <section class="container index-foot">
+        <div class="index-opera">
+            <div>
+                <span style="float:left"><a href="javascript:void(0);">登录</a>|<a
+                        href="javascript:void(0);">注册</a></span>
+                <span style="float: right"><!--<a href="javascript:scroll(0,0)">回到顶部</a>--></span>
+            </div>
+            <div class="index-version"><a href="javascript:void(0);" class="redColor">手机版</a><a
+                    href="javascript:void(0);">电脑版</a></div>
+            <div class="index-copyRight">Copyright © 2015 上下网智能营销平台 版权所有</div>
+        </div>
+    </section>
+</footer>
+
+<section>
+    <div class="top-home-operate" style="display: none;"><a href="javascript:void(0);" onclick="returnTop();"><img
+            src="images/u-coin-icon_36.png"
+            class="img-responsive"></a><a
+            href="javascript:void(0);" onclick="returnHome();"><img src="images/u-coin-icon_45.png"
+</section>
+<script type="text/javascript">
+    $(document).on("scroll", function () {
+        var scrollTop = $(document).scrollTop();
+        if (scrollTop > 0) {
+            $(".top-home-operate").css('display', '');
+        } else {
+            $(".top-home-operate").css('display', 'none');
+        }
+    });
+</script>
+
+</body>
+<script type="text/javascript">
+
+    function returnTop() {
+        window.scrollTo(0, 0);
+    }
+
+    function returnHome() {
+        location.href = "ucoin.html";
+    }
+</script>
+</html>

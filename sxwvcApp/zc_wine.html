@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="css/ucoin.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/index.css" type="text/css" media="screen">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>专场</title>
+</head>
+<body>
+<header class="top-bg" id="top-height">
+    <div class="container">
+        <ul class="list-inline">
+            <li class="logo-icon"><img class="img-responsive pull-right" src="images/u-coin-icon_03.png"/></li>
+            <li class="search-box">
+                <form action="" method="post" role="form">
+                    <i class="search-icon"><img src="images/u-coin-icon_09.png" class="img-responsive"></i>
+                    <input name="searchName" type="text" class="form-control keyword-space" placeholder="搜索"
+                           style="color:#fff;">
+                </form>
+            </li>
+            <li class="menu-icon "><a href="javascript:void(0);"><img class="img-responsive pull-leftl"
+                                                                      src="images/u-coin-icon_06.png"/></a>
+            </li>
+            <script type="text/javascript">
+                $(function () {
+                    $(".menu-icon").click(function () {
+                        $(".hidden-box").toggle();
+                        var topWidth = document.getElementById('top-height').offsetHeight;
+                        $(".zc-bg").css('margin-top', topWidth);
+                    });
+                });
+            </script>
+        </ul>
+    </div>
+    <div class="hidden-box" style="display: none;">
+        <ol>
+            <li class="box-bg box-selected">
+                <a href="ucoin.html">
+                    <div><img src="images/u-coin-icon_15.png" class="img-responsive"></div>
+                    <div><p>U币兑换</p></div>
+                </a>
+            </li>
+            <li class="box-bg ">
+                <a href="Area.html">
+                    <div><img src="images/u-coin-icon_15.png" class="img-responsive"></div>
+                    <div><p>联名商家</p></div>
+                </a>
+            </li>
+            <li class="box-bg ">
+                <a href="">
+                    <div><img src="images/u-coin-icon_15.png" class="img-responsive"></div>
+                    <div><p>购物车</p></div>
+                </a>
+            </li>
+            <li class="box-bg ">
+                <a href="grzx.html">
+                    <div><img src="images/u-coin-icon_15.png" class="img-responsive"></div>
+                    <div><p>会员中心</p></div>
+                </a>
+            </li>
+
+        </ol>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            $(".hidden-box ol li").click(function () {
+                $(this).addClass("box-selected").siblings().removeClass("box-selected");
+            });
+        });
+    </script>
+</header>
+
+<section class="zc-bg">
+     <img src="image/index-icon_55.png" >
+</section>
+
+<!--<section class="select-box">
+    <ol>
+        <li class="select-bg select-default" style="color: #ff6600;">
+            <a href="javascript:void(0);">默认<i style="display: none;"></i></a>
+        </li>
+        <li class="select-bg ">
+            <a href="javascript:void(0);">时间<i><img src="images/u-coin-icon_29.png"></i></a>
+        </li>
+        <li class="select-bg">
+            <a href="javascript:void(0);">价格<i><img src="images/u-coin-icon_29.png"></i></a>
+        </li>
+        <li class="select-bg">
+            <a href="javascript:void(0);">好评率<i></i></a>
+        </li>
+    </ol>
+</section>
+<script type="text/javascript">
+    $(function () {
+        $(".select-box ol li").click(function () {
+            $(this).addClass("select-default").siblings().removeClass("select-default");
+        });
+    });
+</script>-->
+
+<!-- alt by xzh 20150527 -->
+<!-- start -->
+
+<style type="text/css">
+    .select-bg {
+        overflow: hidden;
+        margin: 0px auto;
+    }
+
+    .select-bg ol {
+        /* overflow: hidden;*/
+        list-style-type: none;
+    }
+
+    .select-bg ol li {
+        float: left;
+        width: 25%;
+        border: 1px solid #eee;
+        margin-right: -1px;
+    }
+
+    .select-bg ol li .pane-split {
+        width: 95%;
+        margin: 8px auto;
+        overflow: hidden;
+    }
+
+    .select-bg ol li .pane-split i {
+        width: 25% !important;
+        line-height: 25px;
+        margin-left: 0px;
+    }
+
+    .select-bg ol li .pane-split i img {
+        margin: 3px auto;
+        vertical-align: middle;
+    }
+
+    .select-bg ol li .pane-split em {
+        width: 75%;
+        font-family: "Arail";
+        font-size: small;
+        font-style: normal;
+        text-align: center;
+        color: #8c8c8c;
+    }
+
+    .select-bg ol .orangeColor .pane-split em {
+        color: #f6781c;
+    }
+
+    /*折叠列表*/
+    .select-bg ol .sub-spary {
+        background: #fff;
+        z-index: 999999;
+        position: absolute;
+        width: 33.3333333333%;
+        margin-left: -1px;
+        border-top: 1px dotted #eee;
+        border-left: 1px solid #eee;
+        border-right: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+    }
+
+    .select-bg ol li .sub-list {
+        border-bottom: 1px dotted #eee;
+        margin-bottom: -1px;
+    }
+
+</style>
+
+<section class="select-bg">
+    <ol>
+        <li>
+            <div class="pane-split"><em>默认</em><i></i></div>
+        </li>
+        <li class="orangeColor">
+            <div class="spary" style="display: block;">
+                <div class="pane-split"><em>时间</em><i><img src="images/u-coin-icon_29.png" class="img-responsive"></i></div>
+
+            </div>
+
+        </li>
+        <li>
+
+            <div class="pane-split"><em>价格</em><i><img src="images/u-coin-icon_29.png" class="img-responsive"></i></div>
+
+        </li>
+        <li>
+
+            <div class="pane-split"><em>好评率</em><i></i></div>
+
+        </li>
+    </ol>
+</section>
+
+<script type="text/javascript">
+    $(function () {
+        $(".select-bg ol li").click(function () {
+            $(this).addClass("orangeColor").siblings('li').removeClass("orangeColor");
+        });
+    });
+
+    $(function () {
+        $(".sub-spary").hide();
+        $(".spary").click(function () {
+            $(".sub-spary").toggle();
+        });
+
+        $(".sub-spary .sub-list").click(function () {
+            var curCity = $("div>em", this).html();
+            $(".spary .pane-split em").html(curCity)
+            $(".sub-spary").toggle();
+
+        });
+
+    });
+</script>
+
+<!-- end -->
+
+
+
+
+<section class="pro-info-center">
+
+    <div class="pro-box">
+        <dl>
+            <dt><a href="javascript:void(0);"><img src="image/u-coin-icon_33.png" class="img-responsive"></a></dt>
+            <dd>
+                <div class="pro-name"><a href="javascript:void(0);">枝昌杨梅酒</a></div>
+                <div class="pro-price">
+                    <span class="pro-discount-price"><em>328</em>U币</span>
+                    <span class="pro-market-price"><em>市场价：</em>￥584</span>
+                </div>
+                <div class="pro-evaluate"><span>99%好评</span><span>（999人兑换）</span></div>
+
+            </dd>
+        </dl>
+    </div>
+
+    <div class="pro-box">
+        <dl>
+            <dt><a href="javascript:void(0);"><img src="image/u-coin-icon_33.png" class="img-responsive"></a></dt>
+            <dd>
+                <div class="pro-name"><a href="javascript:void(0);">A’CYCLE壹周期生物纤维修护面膜盒
+                    装5片装</a></div>
+                <div class="pro-price">
+                    <span class="pro-discount-price"><em>328</em>U币</span>
+                    <span class="pro-market-price"><em>市场价：</em>￥584</span>
+                </div>
+                <div class="pro-evaluate"><span>99%好评</span><span>（999人兑换）</span></div>
+
+            </dd>
+        </dl>
+    </div>
+
+
+</section>
+
+<section>
+    <div class="loading-more" style="display: none;"><a href="javascript:void(0);">上拉加载更多</a></div>
+</section>
+
+<section class="operate-section">
+    <div class="operate-pane">
+        <span onclick="javascript:location.href='login.html';">登录</span><span
+            onclick="javascript:location.href='zc.html';">注册</span><span onclick="javascript:scroll(0,0)">回到顶部</span>
+    </div>
+</section>
+
+<section class="operate-section">
+    <div class=" operate-platform">
+        <span><a href="javascript:void(0);"><img src="images/u-coin-icon_40.png" class="img-responsive"/>
+
+            <p>手机版</p></a></span>
+        <span><a href="javascript:void(0);"><img src="images/u-coin-icon_43.png" class="img-responsive"/>
+
+            <p>电脑版</p></a></span>
+    </div>
+</section>
+
+<section class="copy-right">
+    <p>Copyright&copy;2015智能营销平台 版权所有</p>
+</section>
+
+<section>
+    <div class="top-home-operate" style="display: none;"><a href="javascript:void(0);" onclick="returnTop();"><img
+            src="images/u-coin-icon_36.png"
+            class="img-responsive"></a><a
+            href="javascript:void(0);" onclick="returnHome();"><img src="images/u-coin-icon_45.png"></a></div>
+</section>
+<script type="text/javascript">
+    $(document).on("scroll", function () {
+        var scrollTop = $(document).scrollTop();
+        if (scrollTop > 0) {
+            $(".top-home-operate").css('display', '');
+        } else {
+            $(".top-home-operate").css('display', 'none');
+        }
+    });
+</script>
+
+</body>
+<script type="text/javascript">
+    $(function () {
+        $(".top-bg").ready(function () {
+            var topWidth = document.getElementById('top-height').offsetHeight;
+            $(".zc-bg").css('margin-top', topWidth);
+        });
+    });
+
+    function returnTop() {
+        window.scrollTo(0, 0);
+    }
+
+    function returnHome() {
+        location.href="ucoin.html";
+    }
+</script>
+</html>

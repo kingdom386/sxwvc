@@ -1,0 +1,160 @@
+@charset "utf-8";
+/**主体内容样式*/
+.info-left-content {
+    overflow: hidden;
+    float: left;
+    width: 339px;
+    height: auto;
+    margin-top: 25px;
+    margin-right: 18px;
+    border: 1px solid #eee;
+    cursor: pointer;
+}
+
+.info-left-content:hover {
+    border: 1px solid #f26020;
+}
+
+.info-left-content .info-img {
+    width: 348px;
+    height: 216px;
+    overflow: hidden;
+}
+
+.info-left-content div {
+    text-align: left;
+}
+
+.info-left-content .info-left-name {
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 30px;
+    height: 32px;
+    font-size: 14px;
+    font-family: "宋体";
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.info-left-content .info-left-name:hover {
+    color: orange;
+}
+
+.info-left-content .info-left-intro {
+    padding-left: 15px;
+    padding-right: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 32px;
+    color: #aaa;
+}
+
+.info-left-content .jf-sale {
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow: hidden;
+    height: 44px;
+    background: #fbfbfb;
+    line-height: 44px;
+    border-top: 1px solid #eee;
+    font-family: "Microsoft Yahei";
+    font-size: 15px;
+}
+
+.info-left-content .jf-sale em {
+    font-style: normal;
+    font-size: 22px;
+}
+
+.info-left-content .jf-sale .jf {
+    float: left;
+    color: #f76141;
+}
+
+.info-left-content .jf-sale .sj {
+    float: right;
+    color: #aaa;
+    font-size: 12px;
+    font-family: "宋体";
+}
+
+/**产品列表微信二维码样式*/
+.merchantList-info .info-right .scan-wx .wx-right p .cp-gzh {
+    width: 118px;
+    line-height: 33px;
+    background: #f26020;
+    color: #fff;
+    font-size: 12px;
+    font-family: "宋体";
+    text-align: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+.merchantList-info .info-right .scan-wx .wx-right p .cp-gzh:hover {
+    filter: alpha(opacity=80);
+    opacity: 0.8;
+}
+
+/**精品推荐样式*/
+.info-right .merchant-hot .hot-jptj {
+    width: 205px;
+    height: auto;
+    margin: 0px auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.info-right .merchant-hot .hot-jptj .jptj-name {
+    line-height: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.info-right .merchant-hot .hot-jptj .jptj-name:hover {
+    color: #f26020;
+}
+
+.info-right .merchant-hot .hot-jptj .jptj-jfjs {
+    overflow: hidden;
+}
+
+.info-right .merchant-hot .hot-jptj .jptj-jfjs .jf {
+    float: left;
+    line-height: 25px;
+    height: 30px;
+    color: #f26020;
+    font-size: 12px;
+}
+
+.info-right .merchant-hot .hot-jptj .jptj-jfjs .jf em {
+    line-height: 25px;
+    font-style: normal;
+    font-size: 22px;
+    font-family: "Arial"
+}
+
+.info-right .merchant-hot .hot-jptj .jptj-jfjs .js {
+    float: left;
+    line-height: 30px;
+    height: 30px;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.info-right .merchant-hot .hot-jptj .jptj-jfjs .js em {
+    line-height: 30px;
+    font-style: normal;
+    color: #f26020;
+}
+
+
+
+
+
+

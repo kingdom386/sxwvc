@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="css/ucoin.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/area.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/bussiness.css" type="text/css" media="screen">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/hammer.min.js"></script>
+    <script src="js/jquery.hammer.js"></script>
+    <title>商家详情</title>
+</head>
+<body>
+<header class="top-bg" id="top-height">
+    <div class="container area-top-box">
+        <ul>
+            <li><a href=""><img src="images/mx-icon_03.png"></a></li>
+            <li><h4>商家详情</h4></li>
+            <li></li>
+        </ul>
+        <script type="text/javascript">
+            $(function () {
+                $(".top-bg").ready(function () {
+                    var topWidth = document.getElementById('top-height').offsetHeight;
+                    $(".business-pic").css('margin-top', topWidth);
+                });
+            });
+        </script>
+    </div>
+</header>
+
+
+<section>
+    <div class="business-pic">
+        <!--<img src="image/business-icon_02.png" class="img-responsive">-->
+        <div class="carousel slide" id="spSlide">
+            <ol class="carousel-indicators">
+                <li data-target="#spSlide" data-slide-to="0" class="active"></li>
+                <li data-target="#spSlide" data-slide-to="1"></li>
+                <li data-target="#spSlide" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="image/business-icon_02.png" class="img-responsive">
+                </div>
+                <div class="item">
+                    <img src="image/business-icon_02.png" class="img-responsive">
+                </div>
+                <div class="item">
+                    <img src="image/business-icon_02.png" class="img-responsive">
+                </div>
+            </div>
+
+        </div>
+        <script type="text/javascript">
+            $(".carousel").carousel({
+                interval: 2000
+            });
+
+            $(document).ready(function() {
+                $('#spSlide').hammer().on('swipeleft', function(){
+                    $(this).carousel('next');
+                })
+                $('#spSlide').hammer().on('swiperight', function(){
+                    $(this).carousel('prev');
+                })
+            });
+        </script>
+
+
+    </div>
+</section>
+
+<section class="business-info-pane">
+    <div class="container">
+        <div>
+            <span class="pull-left"><img src="images/business-icon_08.png" class="img-responsive"></span>
+            <span class="pull-left">浙江省台州市新台州大厦19楼19-F</span>
+            <span class="pull-right"><a href=""><img src="images/business-icon_05.png"
+                                                     class="img-responsive"></a></span>
+        </div>
+    </div>
+</section>
+
+<section class="business-info-pane">
+    <div class="container">
+        <div>
+            <span class="pull-left"><img src="images/business-icon_12.png" class="img-responsive"></span>
+            <span class="pull-left">10:00-23:00</span>
+
+        </div>
+    </div>
+</section>
+
+<section class="business-info-pane">
+    <div class="container">
+        <div>
+            <span class="pull-left"><img src="images/business-icon_14.png" class="img-responsive"></span>
+            <span class="pull-left">0576-88888888</span>
+
+        </div>
+    </div>
+</section>
+
+<section class="business-info-detail">
+    <div class="container">
+        <span class="pull-left"><img src="images/business-icon_17.png" class="img-responsive"></span>
+        <span class="pull-left"><em>商店</em>详情</span>
+    </div>
+    <div class="container business-detail-intro">
+        <p>主要经营蛋糕、甜点、奶茶、特色异国餐饮的企业，店内装修大气，时尚、仿佛是将舞台上那个活力与激情的“小甜甜”的灵魂复制到了意大利手工冰淇淋上一样，布兰妮冰淇淋从口味到视觉都充</p>
+    </div>
+</section>
+
+
+</body>
+</html>

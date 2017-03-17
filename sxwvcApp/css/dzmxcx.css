@@ -1,0 +1,82 @@
+@charset "utf-8";
+/**initial*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0 none;
+}
+
+body {
+    background: #fff;
+    font-family: "Arail";
+    font-size: medium;
+}
+
+a {
+    text-decoration: none;
+    color: #8c8c8c;
+}
+
+a:hover {
+    color: #8c8c8c;
+    text-decoration: none;
+}
+
+ol, ul {
+    list-style-type: none;
+}
+
+/**start style*/
+.dzmxcx-info-subPane {
+    margin: 0px auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.dzmxcx-info-subPane form .input-gn {
+    overflow: hidden;
+}
+
+.dzmxcx-info-subPane form .input-gn span {
+    font-size: xx-small;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.dzmxcx-info-subPane form .input-gn span:nth-child(1) {
+    width: 25%;
+    text-align: right;
+}
+
+.dzmxcx-info-subPane form .input-gn span:nth-child(2) {
+    width: 74%;
+    text-align: left;
+}
+
+.dzmxcx-info-subPane form .input-gn .select-width {
+    width: 100%;
+}
+
+.dzmxcx-info-subPane form .input-gn .select-margin {
+    margin: 0;
+}
+
+.dzmxcx-info-subPane form .input-gn .data-width {
+    width: 74% !important;
+    overflow: hidden;
+}
+
+.dzmxcx-info-subPane form .input-gn .data-width input:nth-child(1) {
+    width: 45%;
+    float: left;
+}
+
+.dzmxcx-info-subPane form .input-gn .data-width label {
+    width: 9.8%;
+    float: left;
+    text-align: center;
+}
+
+
+
+

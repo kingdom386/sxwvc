@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="css/ucoin.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/area.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/bussiness.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/grzx.css" type="text/css" media="screen">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>会员中心</title>
+    <style type="text/css">
+        body {
+            background: #f3f5f7;
+        }
+    </style>
+</head>
+<body>
+
+<header class="top-bg" id="top-height">
+    <div class="container area-top-box">
+        <ul>
+            <li><a href=""><img src="images/mx-icon_03.png"></a></li>
+            <li><h4>个人中心</h4></li>
+            <li><a href="javascript:void(0);" class="menuIcon">
+                <img class="img-responsive pull-leftl" src="images/u-coin-icon_06.png"/></a></li>
+        </ul>
+        <script type="text/javascript">
+            $(function () {
+                $(".menuIcon").click(function () {
+                    $(".hidden-box").toggle();
+                    var topWidth = document.getElementById('top-height').offsetHeight;
+                    $(".grzx-skin-bg").css('margin-top', topWidth);
+                });
+            });
+        </script>
+    </div>
+
+    <div class="hidden-box" style="display: none;">
+        <ol>
+            <li class="box-bg ">
+                <a href="">
+                    <div><img src="images/u-coin-icon_15.png" class="img-responsive"></div>
+                    <div><p>U币兑换</p></div>
+                </a>
+            </li>
+            <li class="box-bg box-selected">
+                <a href="">
+                    <div><img src="images/u-coin-icon_15.png" class="img-responsive"></div>
+                    <div><p>联名商家</p></div>
+                </a>
+            </li>
+            <li class="box-bg ">
+                <a href="">
+                    <div><img src="images/u-coin-icon_15.png" class="img-responsive"></div>
+                    <div><p>购物车</p></div>
+                </a>
+            </li>
+            <li class="box-bg ">
+                <a href="">
+                    <div><img src="images/u-coin-icon_15.png" class="img-responsive"></div>
+                    <div><p>会员中心</p></div>
+                </a>
+            </li>
+
+        </ol>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            $(".hidden-box ol li").hover(function () {
+                $(this).addClass("box-selected").siblings().removeClass("box-selected");
+            });
+        });
+
+        $(function () {
+            $(function () {
+                $(".top-bg").ready(function () {
+                    var topWidth = document.getElementById('top-height').offsetHeight;
+                    $(".grzx-skin-bg").css('margin-top', topWidth);
+                });
+            });
+        });
+    </script>
+
+
+</header>
+
+<section class="grzx-skin-bg">
+    <div class="grzx-head-pic">
+        <div><a href=""><img src="image/img_01.png" class="img-circle img-responsive"></a></div>
+        <div><p>二傻中的逗比</p></div>
+    </div>
+</section>
+
+<section class="grzx-mgmt-pane">
+    <div class="col-xs-3 grzx-hot">会员中心</div>
+    <div class="col-xs-3">商家中心</div>
+    <div class="col-xs-3">区代中心</div>
+    <div class="col-xs-3">市管理</div>
+</section>
+
+
+<section class="grzx-mgmt-pane grzx-right-pane">
+    <div class="col-xs-3">省管理</div>
+    <div class="col-xs-3">国管理</div>
+    <div class="col-xs-3">总业务员</div>
+</section>
+
+<section class="grzx-mgmt-pane grzx-right-pane grzx-general-state">
+    <div class="col-xs-4"><a href=""><img src="images/grzx-icon_05.png" class="img-responsive">
+
+        <p>积分（999999）</p></a></div>
+    <div class="col-xs-4"><a href=""><img src="images/grzx-icon_07.png" class="img-responsive">
+
+        <p>U币（999999）</p></a></div>
+    <div class="col-xs-4"><a href=""><img src="images/grzx-icon_09.png" class="img-responsive">
+
+        <p>消费总额（999999）</p></a></div>
+</section>
+
+<section class="business-info-pane grzx-right-pane grzx-zigl">
+    <div class="container">
+        <div>
+            <span class="pull-left"><img src="images/grzx-icon_15.png" class="img-responsive"></span>
+            <span class="pull-left">个人资料</span>
+            <span class="pull-right"><a href="javascript:void(0);"><img src="images/grzx-icon_03.png"
+                                                                        class="img-responsive"></a></span>
+        </div>
+    </div>
+</section>
+
+<section class="business-info-pane  grzx-zigl">
+    <div class="container">
+        <div>
+            <span class="pull-left"><img src="images/grzx-icon_19.png" class="img-responsive"></span>
+            <span class="pull-left">密码管理</span>
+            <span class="pull-right"><a href="javascript:void(0);"><img src="images/grzx-icon_03.png"
+                                                                        class="img-responsive"></a></span>
+        </div>
+    </div>
+</section>
+
+<section class="business-info-pane  grzx-zigl">
+    <div class="container">
+        <div>
+            <span class="pull-left"><img src="images/grzx-icon_23.png" class="img-responsive"></span>
+            <span class="pull-left">动帐明细</span>
+            <span class="pull-right"><a href="javascript:void(0);"><img src="images/grzx-icon_03.png"
+                                                                        class="img-responsive"></a></span>
+        </div>
+    </div>
+</section>
+
+<section class="business-info-pane  grzx-zigl">
+    <div class="container">
+        <div>
+            <span class="pull-left"><img src="images/grzx-icon_27.png" class="img-responsive"></span>
+            <span class="pull-left">动帐明细</span>
+            <span class="pull-right"><a href="javascript:void(0);"><img src="images/grzx-icon_03.png"
+                                                                        class="img-responsive"></a></span>
+        </div>
+    </div>
+</section>
+
+<section class="business-info-pane  grzx-zigl">
+    <div class="container">
+        <div>
+            <span class="pull-left"><img src="images/grzx-icon-add_03.png" class="img-responsive"></span>
+            <span class="pull-left">我的订单</span>
+            <span class="pull-right"><a href="javascript:void(0);"><img src="images/grzx-icon_03.png"
+                                                                        class="img-responsive"></a></span>
+        </div>
+    </div>
+</section>
+
+<section class="business-info-pane  grzx-zigl">
+    <div class="container">
+        <div>
+            <span class="pull-left"><img src="images/qdzx-icon_03.png" class="img-responsive"></span>
+            <span class="pull-left">银行信息</span>
+            <span class="pull-right"><a href="javascript:void(0);"><img src="images/grzx-icon_03.png"
+                                                                        class="img-responsive"></a></span>
+        </div>
+    </div>
+</section>
+
+<section class="business-info-pane  grzx-zigl">
+    <div class="container">
+        <div>
+            <span class="pull-left"><img src="images/grzx-icon-add_07.png" class="img-responsive"></span>
+            <span class="pull-left">银行卡列表</span>
+            <span class="pull-right"><a href="javascript:void(0);"><img src="images/grzx-icon_03.png"
+                                                                        class="img-responsive"></a></span>
+        </div>
+    </div>
+</section>
+
+<section class="business-info-pane  grzx-zigl">
+    <div class="container">
+        <div>
+            <span class="pull-left"><img src="images/grzx-icon-add_11.png" class="img-responsive"></span>
+            <span class="pull-left">我的会员</span>
+            <span class="pull-right"><a href="javascript:void(0);"><img src="images/grzx-icon_03.png"
+                                                                        class="img-responsive"></a></span>
+        </div>
+    </div>
+</section>
+
+
+<section class="business-info-pane  grzx-zigl">
+    <div class="container">
+        <div>
+            <span class="pull-left"><img src="images/grzx-icon-add_15.png" class="img-responsive"></span>
+            <span class="pull-left">提取订单列表</span>
+            <span class="pull-right"><a href="javascript:void(0);"><img src="images/grzx-icon_03.png"
+                                                                        class="img-responsive"></a></span>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

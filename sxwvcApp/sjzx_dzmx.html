@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="css/ucoin.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/area.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/thgl.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/thmx.css" type="text/css" media="screen">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>商家中心-动帐明细</title>
+</head>
+<body>
+<header class="top-bg" id="top-height">
+    <div class="container area-top-box">
+        <ul>
+            <li><a href=""><img src="images/mx-icon_03.png"></a></li>
+            <li><h4>商家动帐明细</h4></li>
+            <li></li>
+        </ul>
+        <script type="text/javascript">
+            $(function () {
+                $(".menuIcon").click(function () {
+                    $(".hidden-box").toggle();
+                    var topWidth = document.getElementById('top-height').offsetHeight;
+                    $(".thmx-count-bg").css('margin-top', topWidth);
+                });
+            });
+        </script>
+
+    </div>
+</header>
+<script type="text/javascript">
+    $(function () {
+        $(".top-bg").ready(function () {
+            var topWidth = document.getElementById('top-height').offsetHeight;
+            $(".thmx-count-bg").css('margin-top', topWidth);
+        });
+    });
+</script>
+
+<section class="thmx-count-bg">
+    <div class="container thmx-count">
+        2015-05-12 至2015-05-13  <em>结算总额：500</em>， 共100条记录
+    </div>
+</section>
+
+<SECTION class="thmx-thead">
+    <div class="container dzmx-head">
+        <ul>
+            <li>消费时间<p>（备注）</p></li>
+            <li>收益额<p></p></li>
+        </ul>
+    </div>
+</SECTION>
+
+<section class="thmx-body">
+    <div class="container body-box dzmx-body">
+        <ul>
+            <li>2015-05-10 12:15<p>有会员在您商家提货成功，商品成本。</p></li>
+            <li>999999U币<p></p></li>
+        </ul>
+    </div>
+
+</section>
+
+<section class="thmx-footer">
+    <div class="container">
+        <div class="loading-more-btn">点击加载更多</div>
+        <script type="text/javascript">
+            $(".loading-more-btn").click(function(){
+                $.ajax({
+                    url:"xx.php",
+                    type:"post",
+                    dataType:"json",
+                    success:function(msgData){
+                            //TODO
+                    }
+
+                });
+            });
+        </script>
+    </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="css/ucoin.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/area.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/grzx_grzl.css" type="text/css" media="screen">
+    <link rel=" stylesheet" href="css/grzx-shdz.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/thmx.css" type="text/css" media="screen">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>省代理-添加供应商</title>
+</head>
+<body>
+<header class="top-bg" id="top-height">
+    <div class="container area-top-box">
+        <ul>
+            <li><a href=""><img src="images/mx-icon_03.png"></a></li>
+            <li><h4>添加供应商</h4></li>
+            <li></li>
+        </ul>
+        <script type="text/javascript">
+            $(function () {
+                $(".menuIcon").click(function () {
+                    $(".hidden-box").toggle();
+                    var topWidth = document.getElementById('top-height').offsetHeight;
+                    $(".select-box").css('margin-top', topWidth);
+                });
+            });
+        </script>
+
+    </div>
+</header>
+<script type="text/javascript">
+    $(function () {
+        $(".top-bg").ready(function () {
+            var topWidth = document.getElementById('top-height').offsetHeight;
+            $(".thmx-count-bg").css('margin-top', topWidth);
+        });
+    });
+</script>
+
+<section class="thmx-count-bg">
+    <div class="container thmx-count">
+        填写供应商信息确认添加
+    </div>
+</section>
+
+
+<section class="grzx-info-pane">
+    <div class="container grzx-info-box">
+        <form action="" method="get" role="form" id="grzx-shdz-form">
+            <ul>
+                <li>
+                    <div class="pull-left"><label class="control-label">供应商名称：</label>
+                    </div>
+                    <div class="pull-right "><input type="text" class="form-control input-sm TelCode"
+                                                          placeholder="供应商名称" name="telephone"></div>
+                </li>
+                <li>
+                    <div class="pull-left"><label class="control-label">联系人：</label>
+                    </div>
+                    <div class="pull-right "><input type="text" class="form-control input-sm TelCode"
+                                                          placeholder="联系人" name="telephone"></div>
+                </li>
+                <li>
+                    <div class="pull-left"><label class="control-label">供应电话：</label>
+                    </div>
+                    <div class="pull-right "><input type="text" class="form-control input-sm TelCode"
+                                                          placeholder="供应电话" name="telephone"></div>
+                </li>
+                <li>
+                    <div class="pull-left"><label class="control-label">供应商描述：</label>
+                    </div>
+                    <div class="pull-right "><input type="text" class="form-control input-sm TelCode"
+                                                          placeholder="供应商描述" name="telephone"></div>
+                </li>
+
+                <li>
+                    <div class="pull-left"></div>
+                    <div class="pull-right">
+                        <button class="btn btn-default btn-block btn-click">确认添加</button>
+                    </div>
+                </li>
+
+            </ul>
+        </form>
+    </div>
+</section>
+
+
+</body>
+</html>

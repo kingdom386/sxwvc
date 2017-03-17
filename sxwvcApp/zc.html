@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/login.css" media="screen"/>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>注册</title>
+</head>
+<body>
+<header class="top-bg">
+    <div class="container">
+        <div class="col-xs-3"><a href="login.html"><img src="images/return_02.png" class="img-responsive"></a></div>
+        <div class="col-xs-6"><h3 class="center-block zhuce-font">注册</h3></div>
+    </div>
+</header>
+
+<section class="user-info">
+    <div class="container">
+        <form action="" method="post" role="form">
+            <div class="form-group col-xs-offset-1 mobileInput">
+                <i class="user-icon"><img src="images/input-icon-01.png" class="img-responsive"></i>
+                <input name="mobileCount" class="form-control  input-lg inputMobile" type="text" placeholder="请输入手机号码" style="padding-left: 45px !important;">
+            </div>
+
+            <div class="form-group col-xs-offset-1 pwdInput">
+                <i class="user-icon"><img src="images/input-icon-02.png" class="img-responsive"></i>
+                <input name="uPassword"  class="form-control  input-lg inputPassword" type="password" placeholder="请输入密码" style="padding-left: 45px !important;">
+            </div>
+
+
+            <div class="form-group col-xs-offset-1 ">
+                <div class="row">
+                    <div class="col-xs-7 col-sm-7 codeInput">
+                        <i class="user-icon"><img src="images/input-icon-02.png" class="img-responsive"></i>
+                        <input name="yzm" class="form-control  input-lg inputCode" type="text" placeholder="验证码" style="padding-left: 45px !important;;" />
+                    </div>
+
+                    <div class="col-xs-5 col-sm-5"><button class="btn btn-lg btn-block yamBg" onclick="zcCode();">验证码</button></div>
+                    <script type="text/javascript">
+                        function zcCode(){
+                            return false;
+                        }
+                    </script>
+                </div>
+            </div>
+
+            <div class="form-group col-xs-offset-1">
+                <button type="button" class="btn  btn-lg btn-block btnClick " style="background: #666;color: #fff;">
+                    注&nbsp;&nbsp;册
+                </button>
+            </div>
+            <script type="text/javascript">
+                $(function () {
+                    $(".btnClick").click(function () {
+                        //正则表达式
+                        var countReg = /^[0-9]{11}$/;
+                        var pwdReg = /^[a-zA-Z0-9]{6,}$/;
+                        var codeReg = /^[a-zA-Z0-9]{4,}$/;
+
+                        //获取输入框的值
+                        var countVal = $(".inputMobile").val();
+                        var pwdVal = $(".inputPassword").val();
+                        var codeVal = $(".inputCode").val();
+
+                        if (!countReg.test(countVal)) {
+                            $(".mobileInput").addClass("has-error");
+                            $(".mobileInput").removeClass("has-success");
+                        } else {
+                            $(".mobileInput").addClass("has-success");
+                            $(".mobileInput").removeClass("has-error");
+                        }
+
+                        if (!pwdReg.test(pwdVal)) {
+                            $(".pwdInput").addClass("has-error");
+                            $(".pwdInput").removeClass("has-success");
+                        } else {
+                            $(".pwdInput").addClass("has-success");
+                            $(".pwdInput").removeClass("has-error");
+                        }
+
+                        if (!codeReg.test(codeVal)) {
+                            $(".codeInput").addClass("has-error");
+                            $(".codeInput").removeClass("has-success");
+                        } else {
+                            $(".codeInput").addClass("has-success");
+                            $(".codeInput").removeClass("has-error");
+                        }
+
+                    });
+                });
+            </script>
+
+
+        </form>
+    </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/index.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/ucoin.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/area.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/mx.css" type="text/css" media="screen">
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/hammer.min.js"></script>
+    <script type="text/javascript" src="js/jquery.hammer.js"></script>
+    <title>商品明细</title>
+</head>
+<body>
+
+<header class="top-bg" id="top-height">
+    <div class="container area-top-box">
+        <ul>
+            <li><a href=""><img src="images/mx-icon_03.png"></a></li>
+            <li><h4>商品明细</h4></li>
+            <li></li>
+        </ul>
+    </div>
+</header>
+
+<script type="text/javascript">
+    $(function () {
+        $(".top-bg").ready(function () {
+            var topWidth = document.getElementById('top-height').offsetHeight;
+            $(".mx-pro-general").css('margin-top', topWidth);
+        });
+    });
+</script>
+
+<section>
+    <div class="mx-pro-general">
+
+        <div class="mx-pro-pic">
+            <div class="carousel slide" id="spSlide">
+                <ol class="carousel-indicators">
+                    <li data-target="#spSlide" data-slide-to="0" class="active"></li>
+                    <li data-target="#spSlide" data-slide-to="1"></li>
+                    <li data-target="#spSlide" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="image/mx-icon_07.png" class="img-responsive"/>
+
+                    </div>
+                    <div class="item">
+                        <img src="image/mx-icon_07.png" class="img-responsive"/>
+
+                    </div>
+                    <div class="item">
+                        <img src="image/mx-icon_07.png" class="img-responsive"/>
+
+                    </div>
+                </div>
+
+            </div>
+            <script type="text/javascript">
+                $(".carousel").carousel({
+                    interval: 2000
+                });
+
+                $(document).ready(function() {
+                    $('#spSlide').hammer().on('swipeleft', function(){
+                        $(this).carousel('next');
+                    })
+                    $('#spSlide').hammer().on('swiperight', function(){
+                        $(this).carousel('prev');
+                    })
+                });
+            </script>
+        </div>
+
+
+        <div class="mx-pro-price-store">
+            <div class="mx-pro-price pull-left">
+                <span class="pull-left"><em>55555</em>U币</span><span class="pull-left ">市场价：￥44441.85</span>
+            </div>
+            <div class="pull-right mx-pro-store"><a href="javascript:void(0);">
+                <span class="glyphicon glyphicon-star pull-right one"></span><span class="msg"></span></a></div>
+            <style type="text/css">
+                .one {
+                    color: rgb(160, 160, 160);
+                    font-size: 18px;
+                }
+
+                .two {
+                    color: rgb(255, 101, 0);
+                    font-size: 18px;
+                }
+            </style>
+            <script type="text/javascript">
+                $(".mx-pro-store a").click(function () {
+                    if ($(".mx-pro-store a span").hasClass("one")) {
+                        $(".mx-pro-store a span").removeClass("one").addClass("two");
+                    } else {
+                        $(".mx-pro-store a span").removeClass("two").addClass("one");
+                    }
+                });
+
+            </script>
+
+        </div>
+    </div>
+    <div class="mx-pro-name">
+        <div style="width: 75%;margin:0px auto;font-family:'微软雅黑';padding-top: 5px;padding-bottom: 5px;">枝昌杨梅酒</div>
+    </div>
+</section>
+
+
+<section class="composite-pane">
+    <div class="mx-pro-composite">
+        <div class="mx-pro-gm">
+            <dl>
+                <dt>配送方式：</dt>
+                <dd><span class="mx-pro-post">自提</span><span class="mx-pro-post selected">快递</span></dd>
+            </dl>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(".mx-pro-gm dl dd span ").click(function () {
+            $(this).addClass("selected").siblings().removeClass("selected")
+        });
+    </script>
+
+    <div class="mx-pro-composite">
+        <div class="mx-pro-gm">
+            <dl>
+                <dt>好评率：</dt>
+                <dd>好评率95.8% 推荐98条</dd>
+            </dl>
+        </div>
+    </div>
+
+    <div class="mx-pro-composite">
+        <div class="mx-pro-gm">
+            <dl>
+                <dt>商品详情</dt>
+            </dl>
+        </div>
+    </div>
+</section>
+
+<section class="mx-pro-detail">
+    <div class="mx-detail-gm">
+        <p><img src="image/mx-icon_07.png" class="img-responsive"></p>
+    </div>
+</section>
+
+<section class="composite-pane">
+    <div class="mx-pro-composite">
+        <div class="mx-pro-gm">
+            <dl>
+                <dt>今日推荐</dt>
+            </dl>
+        </div>
+
+        <div class="mx-pro-gm">
+            <ul>
+                <li>
+                    <div class="mx-rec-box">
+                        <a href="javascript:void(0);"><img src="image/mx-icon_11.png" class="img-responsive"></a>
+
+                        <p>枝昌杨梅酒</p>
+
+                        <p>（盒装）</p>
+
+                        <p>3288U币</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="mx-rec-box">
+                        <a href="javascript:void(0);"><img src="image/mx-icon_11.png" class="img-responsive"></a>
+
+                        <p>枝昌杨梅酒</p>
+
+                        <p>（盒装）</p>
+
+                        <p>3288U币</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="mx-rec-box">
+                        <a href="javascript:void(0);"><img src="image/mx-icon_11.png" class="img-responsive"></a>
+
+                        <p>枝昌杨梅酒</p>
+
+                        <p>（盒装）</p>
+
+                        <p>3288U币</p>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+</section>
+
+
+<footer>
+    <section class="container index-foot">
+        <div class="index-opera">
+            <div>
+                <span style="float:left"><a href="javascript:void(0);">登录</a>|<a
+                        href="javascript:void(0);">注册</a></span>
+                <span style="float: right"><a href="javascript:scroll(0,0)">回到顶部</a></span>
+            </div>
+            <div class="index-version"><a href="javascript:void(0);" class="redColor">手机版</a><a
+                    href="javascript:void(0);">电脑版</a></div>
+            <div class="index-copyRight">Copyright © 2015 上下网智能营销平台 版权所有</div>
+        </div>
+    </section>
+</footer>
+<script type="text/javascript">
+    $(function () {
+        $(".index-foot").ready(function () {
+            var btomWidth = document.getElementById('btomHeight').offsetHeight;
+            $(".index-foot").css('margin-bottom', btomWidth);
+        });
+    });
+</script>
+
+<section class="mx-shop-cart" id="btomHeight">
+
+    <div class="mx-cart">
+        <div class="cart-icon">
+            <a href="javascript:void(0);"><img src="images/mx-icon_15.png" class="img-responsive"
+                                               onclick="disZzc();"></a>
+            <a href="javascript:void(0);">
+                <img src="images/mx-icon_18.png" class="img-responsive"></a>
+            <span class="mx-cart-count">3</span>
+
+        </div>
+    </div>
+</section>
+
+<!--add by xzh 20150528 -->
+<!--start-->
+<style type="text/css">
+    .cart-pro-box {
+        width: 100% !important;
+        min-height: 300px;
+        position: fixed;
+        bottom: 0px;
+        background: #fff;
+        z-index: 999999;
+    }
+
+    .cart-pro-box .cart-pro-box-close {
+        overflow: hidden;
+    }
+
+    .cart-pro-box .cart-pro-box-close span {
+        display: block;
+        font-size: 20px;
+        line-height: 25px;
+        font-family: "microsoft yahei";
+        color: #a3a3a3;
+        cursor: pointer;
+        width: 25px;
+        height: 25px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .cart-pro-box .cart-pro-list {
+        border-bottom: 1px solid #eee;
+    }
+
+    .cart-pro-box .cart-pro-list .cart-pro-title {
+        width: 100%;
+    }
+
+    .cart-pro-box .cart-pro-list .dottedLine {
+        border-bottom: 1px dotted #eee;
+    }
+
+    .cart-pro-box .cart-pro-list .cart-pro-title div .unselected {
+        background: #ebebeb;
+        text-align: center;
+    }
+
+    .cart-pro-box .cart-pro-list .cart-pro-title div {
+        padding-top: 5px;
+    }
+
+    .cart-pro-box .cart-pro-list .cart-pro-title div span {
+        display: block;
+        padding: 5px 10px;
+        margin-bottom: 5px;
+        border-radius: 2px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        float: left;
+        margin-right: 5px;
+    }
+
+    .cart-pro-box .cart-pro-list .cart-pro-title div span a {
+        display: block;
+    }
+
+    .cart-pro-box .cart-pro-list .cart-pro-title div .selected {
+        background: #ff6600;
+        color: #fff;
+        text-align: center;
+    }
+
+    .cart-pro-box .cart-pro-box-conform {
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        cursor: pointer;
+        background: #ff6600;
+        color: #fff;
+        text-align: center;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        cursor: pointer;
+    }
+
+</style>
+<section class="cart-layer" style="display: none;">
+    <!--遮罩层-->
+</section>
+
+<section class="cart-pro-box" style="display: none;">
+    <div class="cart-pro-box-close container"><span class="pull-right" onclick="disCart()">&CircleTimes;</span></div>
+    <form action="" method="post" id="CartProList">
+        <div class="cart-pro-list">
+            <div class="cart-pro-title">
+                <div class="container"><span>春夏季男士休闲裤薄款青年</span></div>
+            </div>
+        </div>
+
+        <div class="cart-pro-list">
+            <div class="cart-pro-title dottedLine">
+                <div class="container"><span>颜色:</span></div>
+            </div>
+            <div class="cart-pro-title">
+                <div class="container"><span class="selected unselected">红色</span> <span
+                        class="unselected">红色</span><span class="unselected">红色</span><span class="unselected">红色</span><span
+                        class="unselected">红色</span><span class="unselected">红色</span><span class="unselected">红色</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="cart-pro-list">
+            <div class="cart-pro-title dottedLine">
+                <div class="container"><span>颜色:</span></div>
+            </div>
+            <div class="cart-pro-title">
+                <div class="container"><span class="selected unselected">红色</span> <span
+                        class="unselected">红色</span><span class="unselected">红色</span><span class="unselected">红色</span><span
+                        class="unselected">红色</span><span class="unselected">红色</span><span class="unselected">红色</span>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="cart-pro-box-conform container">确定</div>
+    <script type="text/javascript">
+        $(function () {
+            $(".cart-pro-box-conform").click(function () {
+                document.getElementById("CartProList").submit();
+            });
+        });
+    </script>
+</section>
+
+<script type="text/javascript">
+    function disZzc() {
+        var width = window.screen.width;
+        var height = window.screen.height;
+
+        $(".mx-shop-cart").hide();
+        $(".cart-layer").show();
+        $(".cart-pro-box").slideDown();
+        /*$("html body").animate({scrollTop: "0px"}, 100);*/
+        $(".cart-layer").css({'width': width, 'height': height, 'background': '#404040',
+            'position': 'fixed', 'top': '0', 'opacity': '0.8', '-moz-opacity': '0.8',
+            'filter': 'alpha(opacity=80)', 'z-index': '99999'});
+
+        $("html body").bind("touchmove", function (e) {
+            e.preventDefault()
+        });
+    }
+
+    function disCart() {
+        $(".mx-shop-cart").show();
+        $(".cart-layer").hide();
+        $(".cart-pro-box").slideUp();
+        document.body.style.overflow = 'auto';
+        document.documentElement.style.overflow = 'auto';
+
+        $("html body").unbind("touchmove");
+    }
+
+</script>
+<!--end-->
+
+</body>
+</html>

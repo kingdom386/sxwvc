@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="css/ucoin.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/area.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/grzx_grzl.css" type="text/css" media="screen">
+    <link rel=" stylesheet" href="css/grzx-shdz.css" type="text/css" media="screen">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>结算申请</title>
+</head>
+<body>
+
+<header class="top-bg" id="top-height">
+    <div class="container area-top-box">
+        <ul>
+            <li><a href=""><img src="images/mx-icon_03.png"></a></li>
+            <li><h4>结算申请</h4></li>
+            <li></li>
+        </ul>
+        <script type="text/javascript">
+
+            $(function () {
+                $(".top-bg").ready(function () {
+                    var topWidth = document.getElementById('top-height').offsetHeight;
+                    $(".grzx-info-pane").css('margin-top', topWidth);
+                });
+            });
+        </script>
+    </div>
+</header>
+
+
+
+<section class="grzx-info-pane">
+    <div class="container grzx-info-box">
+        <form action="" method="post" role="form" id="grzx-shdz-form">
+            <ul>
+                <li>
+                    <div class="pull-left"><label class="control-label"><i class="notice-color">剩余余额：</i></label>
+                    </div>
+                    <div class="pull-right Areamsg"><i class="notice-color">524877.8544</i></div>
+                </li>
+
+                <li>
+                    <div class="pull-left"><label class="control-label"><i>开户人：</i></label>
+                    </div>
+                    <div class="pull-right Streetmsg"><i>Dicky8886</i></div>
+                </li>
+
+                <li>
+                    <div class="pull-left"><label class="control-label"><i>银行名称：</i></label>
+                    </div>
+                    <div class="pull-right Personmsg"><i>中国工商银行</i></div>
+                </li>
+
+                <li>
+                    <div class="pull-left"><label class="control-label"><i>银行卡号：</i></label>
+                    </div>
+                    <div class="pull-right Mobilemsg"><i class="notice-color">6227001731320184296</i></div>
+                </li>
+
+                <li>
+                    <div class="pull-left"><label class="control-label">支算金额：</label>
+                    </div>
+                    <div class="pull-right Telmsg"><input type="text" class="form-control input-sm TelCode"
+                                                          placeholder="支算金额" name="telephone"></div>
+                </li>
+                <li>
+                    <div class="pull-left"><label class="control-label">支付密码：</label>
+                    </div>
+                    <div class="pull-right Telmsg"><input type="password" class="form-control input-sm TelCode"
+                                                          placeholder="支付密码" name="telephone"></div>
+                </li>
+                <li>
+                    <div class="pull-left"></div>
+                    <div class="pull-right Telmsg">
+                        <button class="btn btn-default btn-block btn-click">申请结算</button>
+                    </div>
+                </li>
+
+            </ul>
+        </form>
+    </div>
+</section>
+
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="css/ucoin.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/area.css" type="text/css" media="screen">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>操作提示</title>
+</head>
+<body>
+<header class="top-bg" id="top-height">
+    <div class="container area-top-box">
+        <ul>
+            <li><a href=""><img src="images/mx-icon_03.png"></a></li>
+            <li><h4>操作提示</h4></li>
+            <li></li>
+        </ul>
+        <script type="text/javascript">
+
+            $(function () {
+                $(".top-bg").ready(function () {
+                    var topWidth = document.getElementById('top-height').offsetHeight;
+                    $(".msg-info").css('margin-top', topWidth);
+                });
+            });
+        </script>
+
+    </div>
+</header>
+
+<style>
+    .msg-info .msg-info-box p {
+        text-align: center;
+        margin: 15px auto;
+        font-family: "Microsoft yahei";
+        font-size: 15px;
+    }
+
+    .msg-info .msg-info-box p img {
+        margin: 0px auto;
+    }
+
+    .msg-other .container .msg-other-box{
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 8px 12px ;
+    }
+    .msg-other .container .msg-other-box p{
+        text-align: left;
+    }
+    .msg-other .container .msg-other-box p a{
+        color: #f78f18;
+        text-decoration: underline;
+    }
+
+    .msg-other .container .msg-other-box p a:hover{
+        color: darkorange;
+    }
+
+</style>
+<div class="msg-info">
+    <div class="container msg-info-box">
+        <p><img src="images/msg_03.png" class="img-responsive"></p>
+        <p>您的密码不正确！</p>
+    </div>
+</div>
+<!--msg-info-->
+<div class="msg-other">
+    <div class="container ">
+       <div class="msg-other-box ">
+           <p><a href="javascript:void(0);">返回上一步</a></p>
+           <p>您的密码不正确，请返回重新登录</p>
+           <P>如您忘记密码，请<a href="javascript:void(0);">找回密码</a></P>
+       </div>
+    </div>
+</div>
+<!--msg-other-->
+</body>
+</html>

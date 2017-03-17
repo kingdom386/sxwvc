@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="css/ucoin.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/area.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/thgl.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/thmx.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/ucoincx.css" type="text/css" media="screen">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>商家中心-U币消费查询</title>
+</head>
+<body>
+<header class="top-bg" id="top-height">
+    <div class="container area-top-box">
+        <ul>
+            <li><a href=""><img src="images/mx-icon_03.png"></a></li>
+            <li><h4>积分U币消费记录</h4></li>
+            <li></li>
+        </ul>
+    </div>
+</header>
+
+<script type="text/javascript">
+    $(function () {
+        $(".top-bg").ready(function () {
+            var topWidth = document.getElementById('top-height').offsetHeight;
+            $(".thmx-count-bg").css('margin-top', topWidth);
+        });
+    });
+</script>
+
+
+<section class="thmx-count-bg">
+    <div class="container thmx-count">
+        2015-05-12 至2015-05-13  <em>结算总额：500</em>， 共100条记录
+    </div>
+</section>
+
+
+<SECTION class="thmx-thead ucoin-cx">
+    <div class="container">
+        <ol>
+            <li>会员名<p>（消费时间）</p></li>
+            <li>流水号<p></p></li>
+            <li>消费金额<p>（结算额）</p></li>
+            <li>消费类型<p>（短信状态）</p></li>
+        </ol>
+    </div>
+</SECTION>
+
+<section class="ucoin-cx">
+    <div class="container body-box ">
+        <ol>
+            <li>13757675885<p></p></li>
+            <li>21432452<p></p></li>
+            <li>999999<p>999999</p></li>
+            <li>POS机<p>已发送</p></li>
+        </ol>
+    </div>
+
+    <div class="container body-box ">
+        <ol>
+            <li>13757675885<p></p></li>
+            <li>21432452<p></p></li>
+            <li>999999<p>999999</p></li>
+            <li>POS机<p>已发送</p></li>
+        </ol>
+    </div>
+
+    <div class="container body-box ">
+        <ol>
+            <li>13757675885<p></p></li>
+            <li>21432452<p></p></li>
+            <li>999999<p>999999</p></li>
+            <li>POS机<p>已发送</p></li>
+        </ol>
+    </div>
+
+    <div class="container body-box ">
+        <ol>
+            <li>13757675885<p></p></li>
+            <li>21432452<p></p></li>
+            <li>999999<p>999999</p></li>
+            <li>POS机<p>已发送</p></li>
+        </ol>
+    </div>
+
+</section>
+
+<section class="thmx-footer">
+    <div class="container">
+        <div class="loading-more-btn">点击加载更多</div>
+        <script type="text/javascript">
+            $(".loading-more-btn").click(function(){
+                $.ajax({
+                    url:"xx.php",
+                    type:"post",
+                    dataType:"json",
+                    success:function(msgData){
+
+                    }
+
+                });
+            });
+        </script>
+    </div>
+</section>
+
+</body>
+</html>

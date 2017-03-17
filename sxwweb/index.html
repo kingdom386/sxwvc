@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <title>上下网-首页</title>
+    <style type="text/css">
+        *{margin:0px;border:0;padding: 0px;}
+        ul{list-style-type:none}
+        a{display:block;text-decoration: none;}
+        body{font-size: 12px;font-family:  "宋体";color: #666;}
+        /*头部样式*/
+        .shouye-head{position:relative; width: 100% !important;min-width:1200px; min-height: 550px;background:url(images/shouye-bg.png) center center;}
+        .shouye-center{width: 1200px;height: auto;margin: 0px auto;}
+        .shouye-head .shouye-box{position: absolute;bottom: 35px;width: 1200px;height: 175px;}
+        .shouye-head .shouye-box .shouye-content{width:860px;height: auto;margin:0px auto;overflow: hidden;}
+        .shouye-head .shouye-box .shouye-content .shouye-floor-bg{overflow: hidden}
+        .shouye-head .shouye-box .shouye-content .shouye-floor-bg ul li{float: left;filter:alpha(opacity=0);-ms-filter:alpha(opacity=0);opacity:0;  width: 215px;height: 113px;background:url(images/shouye-box.png) center center;}
+        .shouye-head .shouye-box .shouye-content .shouye-floor-bg ul .on{filter:alpha(opacity=100);-ms-filter:alpha(opacity=100);opacity:1;}
+        .shouye-head .shouye-box .shouye-content .shouye-floor-bg ul li .content{padding:20px;}
+        .shouye-head .shouye-box .shouye-content .shouye-floor-bg ul li .content p{color:#fff;line-height: 22px;}
+        .shouye-head .shouye-box .shouye-content .shouye-floor-radio ul li{float:left;width: 215px;height: 63px;text-align: center;}
+        .shouye-head .shouye-box .shouye-content .shouye-floor-radio ul li a {width: 25px;height: 25px; margin: 0px auto;background:url(images/shouyewRadio.png) no-repeat 0px 0px ;}
+        .shouye-head .shouye-box .shouye-content .shouye-floor-radio ul li a:hover{background:url(images/shouye-radio.png) no-repeat 0px 0px ;}
+        .shouye-head .shouye-box .shouye-content .shouye-floor-radio ul li p{font-family: "微软雅黑";font-size:14px;line-height: 22px;color:#fff;margin-top:8px;}
+        /**active 激活状态*/
+        .shouye-head .shouye-box .shouye-content .shouye-floor-radio ul .active a{background:url(images/shouye-radio.png) no-repeat 0px 0px ;}
+
+        /**首页中部内容样式*/
+         .shouye-body{width:1200px;height: auto; overflow: hidden;margin:42px auto;}
+         .shouye-body ul li{width: auto; height: auto;float:left;}
+         .shouye-body ul .left{width: 310px; padding-left:90px;}
+         .shouye-body ul .left .left-title{width:auto;height: 50px;padding-left:20px;}
+         .shouye-body ul .left .left-content{width: 290px;padding-left:20px;}
+         .shouye-body ul .left .left-content p{line-height: 30px;text-indent:35px;}
+         .shouye-body .mid{width: 370px;padding-left:30px;}
+         .shouye-body .mid .mid-title{width: auto;height: 50px;margin-left:40px;}
+         .shouye-body .mid .mid-content{overflow: hidden}
+         .shouye-body .mid .mid-content .icon-box {min-width: 145px;height: 42px;float:left;margin-left:40px;margin-bottom: 6px;}
+         .shouye-body .mid .mid-content .icon-box em{float:left;font-style:normal;margin-top:10px;margin-left:5px;}
+         .shouye-body .mid .mid-content .icon-box .icon{display:block;float:left; width: 42px;height:42px;background-image:url(images/small.png);}
+         .shouye-body .mid .mid-content .icon-box .icon-sys{background-position: -18px -11px;}
+         .shouye-body .mid .mid-content .icon-box .icon-lt{background-position: -18px -161px;}
+         .shouye-body .mid .mid-content .icon-box .icon-group{background-position: -18px -61px;}
+         .shouye-body .mid .mid-content .icon-box .icon-weixin{background-position: -18px -212px;}
+        .shouye-body .mid .mid-content .icon-box .icon-file{background-position: -18px -111px;}
+        .shouye-body .right{width: 330px;padding-left:70px;height: auto;}
+        .shouye-body .right .shouye-signIn{width: 242px;height: 70px;border:1px solid #d5d5d5; border-radius:3px;-webkit-border-radius:3px;-o-border-radius:3px;margin-bottom: 20px;}
+        /*登录前*/
+        .shouye-body .right .shouye-signIn p{display: inline-block ;font-size:14px;font-weight: 600; color: #797979;padding:25px;}
+        .shouye-body .right .shouye-signIn p a{display:inline-block;color:#f1601f;}
+        .shouye-body .right .shouye-signIn p a:hover{text-decoration: underline;}
+        /*登陆后*/
+        .shouye-body .right .shouye-signIn .shouye-info{padding:16px;overflow: hidden;}
+        .shouye-body .right .shouye-signIn .shouye-info .info-img{float:left;width: 42px;height: 42px;text-align: center;margin-right:10px;}
+        .shouye-body .right .shouye-signIn .shouye-info .info-pane{float:left;width: 142px;height: 42px;}
+        .shouye-body .right .shouye-signIn .shouye-info .info-pane .info-floor a{line-height: 20px;display: inline-block;color:#8d8d8d;padding-left:10px;padding-right:10px;}
+        .shouye-body .right .shouye-signIn .shouye-info .info-pane .info-floor a:hover{text-decoration: underline;}
+        .shouye-body .right .shouye-signIn .shouye-info .info-pane .info-floor  .colorBlack{color:#222;}
+        .shouye-body .right .shouye-signIn .shouye-info .info-pane .info-floor  .colorOrange{color:#f1601f;}
+
+
+
+        .shouye-body .right .shouye-contact{overflow: hidden;}
+        .shouye-body .right .shouye-contact .shouye-weix{width:80px;height: auto;float:left;}
+        .shouye-body .right .shouye-contact .shouye-weix p{line-height: 22px;}
+        .shouye-body .right .shouye-contact .shouye-weix p em{font-style:normal;color:#f1601f;}
+        .shouye-body .right .shouye-contact .shouye-kf{float:left;width: 141px;height: auto;margin-left:21px;padding-top:20px;padding-bottom:20px;border-top: 1px solid #e4e4e4;border-bottom:1px solid #e4e4e4;}
+/**底部样式*/
+        .shouye-footer {border-top:2px solid #dedede;width: 100%!important;min-width:1200px;}
+        .shouye-footer .shouye-footer-link{width: 1200px;margin:12px auto;text-align: center;}
+        .shouye-footer .shouye-footer-link .borderRight{border-right: 1px solid #d8d8d8;}
+        .shouye-footer .shouye-footer-link a{display: inline-block;color:#666;width: 78px;height: 12px;line-height: 12px;}
+        .shouye-footer .shouye-footer-link a:hover{text-decoration: underline; }
+        .shouye-footer .shouye-addr{margin: 12px auto;}
+        .shouye-footer .shouye-addr p{text-align: center;}
+        .shouye-footer .shouye-copuRight{margin:12px auto;}
+        .shouye-footer .shouye-copuRight p{text-align: center;color:#9a9a9a;}
+
+    </style>
+</head>
+<body>
+<div class="shouye-head">
+    <div class="shouye-center">
+        <div class="shouye-box">
+            <div class="shouye-content">
+                <div class="shouye-floor-bg">
+                     <ul>
+                        <li class="on">
+                            <div class="content">
+                                <p>智能WIFI 吸粉神器</p>
+                                <p>留住你的每一个潜在客户</p>
+                                <p>每消费一笔，推荐商家得利润</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content">
+                                <p>智能支付终端，银联认证的智能POS机，支付即营销。刷卡自动注册成会员，银行卡即会员卡。</p>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="content">
+                                <p> 首个落地式创新型异业联盟
+                                    引领中国线下商业进化新方向
+                                    会员共享受让收益倍增</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content">
+                                <p> 异业联盟 积分通用 消费即是收益
+                                    1积分=1U币=1人民币
+                                    积分全国通用长期有效</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="shouye-floor-radio">
+                    <ul>
+                        <li class="active"><a href="javascript:void(0);"></a><p>智能WIFI</p></li>
+                        <li class="fade"><a href="javascript:void(0);"></a><p>智能POS</p></li>
+                        <li class="fade"><a href="javascript:void(0);"></a><p>联盟商家</p></li>
+                        <li class="fade"><a href="javascript:void(0);"></a><p>U币兑换</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery1.42.min.js"></script>
+<script type="text/javascript">
+      var str = $(".shouye-head .shouye-box .shouye-content .shouye-floor-radio ul li a");
+      var node = $(".shouye-head .shouye-box .shouye-content .shouye-floor-bg ul li");
+    $(function(){
+        str.hover(function(){
+            var index = $(this).parent().index();
+            $(this).parent().addClass("active").siblings().removeClass("active");
+            node.eq(index).addClass("on").siblings().removeClass("on");
+            //node.eq(index).stop().animate({opacity:"1"},550).css({filter:"alpha(opacity=100)"}).siblings().animate({opacity:"0"},550).css({filter:"alpha(opacity=0)"});
+        },function(){
+            //do nothing
+        });
+    });
+
+
+  </script>
+
+<div class="shouye-body">
+      <ul>
+          <li class="left">
+              <div class="left-title"><img src="images/shouye-intro.png"></div>
+              <div class="left-content"><p>中国首家帮助线下实体商家为上门客户打造精准营销O2O闭环模式的智能营销平台。解决实体商家生意难做，锁不定客户，没有精准智能营销工具等难题。中国首人落地式实现异业联盟，积分通用，会员共享，高忠诚度的大数据，大生态闭环系统。</p></div>
+          </li>
+          <li class="mid">
+              <div class="mid-title"><img src="images/shouye-sys.png"></div>
+              <div class="mid-content">
+                  <div class="icon-box"><i class="icon icon-sys"></i><em>智能支付终端系统</em></div>
+                  <div class="icon-box"><i class="icon icon-lt"></i><em>商家异业联盟系统</em></div>
+                  <div class="icon-box"><i class="icon icon-group"></i><em>CRM会员管理系统</em></div>
+                  <div class="icon-box"><i class="icon icon-weixin"></i><em>短信微信展推系统</em></div>
+                  <div class="icon-box"><i class="icon icon-file"></i><em>积分、U币派发核销系统</em></div>
+              </div>
+          </li>
+          <li class="right">
+              <div class="shouye-signIn">
+                  <!--登录前-->
+                  <!--<p>请<a href="">登录</a>,还没有账号？请<a href="">注册</a></p>-->
+                  <!--登陆后-->
+                  <div class="shouye-info">
+                     <div class="info-img"> <img src="images/info-bg.png" /></div>
+                      <div class="info-pane">
+                          <div class="info-floor floor1"><a href="" class="colorBlack">15757650625</a><a href="">[退出]</a></div>
+                          <div class="info-floor floor2"><a href="" class="colorOrange">进入个人中心</a></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="shouye-contact">
+                  <div class="shouye-weix"><img src="images/shouye-ewm.png"/><p><em>扫一扫</em>二维码</p></div>
+                  <div class="shouye-kf"><img src="images/shouye-tel.png"></div>
+              </div>
+          </li>
+      </ul>
+</div>
+
+<div class="shouye-footer">
+  <div class="shouye-footer-link">
+     <a href="" class="borderRight">首页</a><a href="" class="borderRight">关于我们</a><a href="" class="borderRight">联盟商家</a><a href="" class="borderRight">U币兑换</a><a href="" class="borderRight">招商联盟</a><a href="">联系我们</a>
+  </div>
+    <div class="shouye-addr">
+    <p>地址：浙江省台州市椒江区新台州大厦19-F  电话：0576-88081999  传真：0576-88888186</p>
+    </div>
+    <div class="shouye-copuRight">
+        <p>copyright© 2014-2016 上下网智能营销平台 www.sxwvc.com Inc. , All rights reserved. 浙ICP备14036505号-1</p>
+    </div>
+</div>
+
+</body>
+</html>

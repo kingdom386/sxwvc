@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head lang="en">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+    <link rel="stylesheet" href="css/Recruitment.css" type="text/css"/>
+    <script type="text/javascript" src="js/jquery1.42.min.js"></script>
+    <title>商家入驻申请</title>
+</head>
+<body>
+<!--在线客服-->
+<div class="kf-box">
+    <div id="box">
+        <div class="hid">
+            <a href=""></a>
+        </div>
+        <div class="dis" style="display:none;">
+            <a href="http://wpa.qq.com/msgrd?v=3&uin=707896515&site=qq&menu=yes" target="_blank" title="在线客服"></a>
+            <a href="javascript:void(0);"></a>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(".kf-box #box").mouseover(function () {
+        $("#box").stop();
+        $("#box").animate({marginRight: "80px"}, 1000);
+        $(".hid").css({display: "none"});
+        $(".dis").css({display: "block"});
+    });
+
+    $(".kf-box #box").mouseout(function () {
+        $("#box").stop();
+        $("#box").animate({marginRight: "0px"}, 1000);
+        $(".hid").css({display: "block"});
+        $(".dis").css({display: "none"});
+    });
+
+</script>
+<div class="recruitment-header">
+    <div class="recruitment-top">
+        <div class="recruitment-logo"><a href="index-1.html"><img src="images/recruitment_logo.png"></a></div>
+        <div class="recruitment-index"><a href="">联盟商家首页</a></div>
+    </div>
+</div>
+<!--recruitment-header-->
+<div class="line"></div>
+
+<div class="body-box">
+    <div class="recruitment-body">
+        <div class="recruitment-body-table">
+            <div class="recruitment-body-title"><span>商家申请</span></div>
+            <div class="recruitment-body-box">
+                <div class="boxLeft">
+                    <form action="" method="post">
+                        <div class="boxLeft-name">
+                         <span class="labelTxt">店&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</span>
+                        <span class="recruitmentName">
+                            <input type="text" name="recruitmentName">
+                        </span>
+                        </div>
+                        <div class="boxLeft-Adr">
+                            <span class="adrTxt">地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址</span>
+                        <span class="adrInput">
+                            <input type="text" name="recruitmentAdr">
+                        </span>
+                        </div>
+                        <div class="boxLeft-name">
+                            <span class="labelTxt">联系电话</span>
+                        <span class="recruitmentName">
+                            <input type="text" name="recruitmentPhone">
+                        </span>
+                        </div>
+                        <div class=" boxLeft-btn">
+                            <a href="javascript:void(0);"></a>
+                        </div>
+                    </form>
+                </div>
+                <div class="boxRight">
+                    <div class="boxRight-title">了解更多优惠信息</div>
+                    <div class="boxRight-weix"><img src="images/recruitment_07.png"></div>
+                </div>
+            </div>
+            <!--recruitment-body-box-->
+        </div>
+        <!--recruitment-body-table-->
+    </div>
+    <!--recruitment-body-->
+</div>
+
+<!--商家入驻footer-->
+<div class="recruitment-foot-line"></div>
+<div class="recruitment-foot">
+    <div class="foot-box">
+        <span><img src="images/recruitment_15.png"><em>商家咨询请致电: 400-0782-289</em></span>
+    </div>
+    <div class="foot-copyRight">Copyright © 2014-2016 上下网智能营销平台 www.sxwvc.com Inc. , All rights reserved. 浙ICP备14036505号-1</div>
+</div>
+
+</body>
+</html>

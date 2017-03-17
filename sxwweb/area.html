@@ -1,0 +1,446 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="css/merchant.css"/>
+    <link type="text/css" rel="stylesheet" href="css/area.css"/>
+    <script type="text/javascript" src="js/jquery1.42.min.js"></script>
+    <title>切换城市</title>
+</head>
+<body>
+
+<!--在线客服-->
+<div class="kf-box">
+    <div id="box">
+        <div class="hid">
+            <a href=""></a>
+        </div>
+        <div class="dis" style="display:none;">
+            <a href="http://wpa.qq.com/msgrd?v=3&uin=707896515&site=qq&menu=yes" target="_blank" title="在线客服"></a>
+            <a href="javascript:void(0);"></a>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(".kf-box #box").mouseover(function () {
+        $("#box").stop();
+        $("#box").animate({marginRight: "80px"}, 1000);
+        $(".hid").css({display: "none"});
+        $(".dis").css({display: "block"});
+    });
+
+    $(".kf-box #box").mouseout(function () {
+        $("#box").stop();
+        $("#box").animate({marginRight: "0px"}, 1000);
+        $(".hid").css({display: "block"});
+        $(".dis").css({display: "none"});
+    });
+
+</script>
+
+<div class="header">
+    <div class="top">
+        <div class="index-top-left">
+            <ul>
+                <li><a href="" class="colorGray">您好，欢迎进入上下网智能营销平台 ！</a></li>
+                <li><a href="" class="colorBlack">请登录</a></li>
+                <li><a href="" class="colorGreen">免费注册</a></li>
+            </ul>
+        </div>
+        <!--index-top-left-->
+        <div class="index-top-right">
+            <ul>
+                <li><a href="Recruitment.html">商家入驻</a></li>
+                <li class="borderRight"><a href="">我是商家</a></li>
+                <li class="borderRight"><a href="">我的收藏</a></li>
+                <li class="borderRight"><a href="">我的订单</a></li>
+            </ul>
+
+        </div>
+        <!--index-top-right-->
+    </div>
+    <!--top-->
+</div>
+<!--header-->
+<!--当前位置 搜索栏 标签-->
+<div class="index-head">
+    <div class="index-head-left">
+        <div class="i-head-left-logo"><a href="index-1.html"><img src="images/sxwlogo.png"></a></div>
+        <div class="i-head-left-loc">
+            <div class="i-headLeft-curLoc">台州</div>
+            <div class="i-headLeft-changeLoc"><a href="area.html">切换城市</a></div>
+        </div>
+    </div>
+    <!--index-head-left-->
+    <div class="index-head-mid">
+        <div class="index-head-mid-searchBox">
+            <div class="i-head-mid-sList">
+                <div class="s-list">
+                    <div class="index-spCp">
+                        <a href="javascript:void(0);" class="index-sp">商品</a>
+                        <a href="javascript:void(0);" class="index-cp">产品</a>
+                    </div>
+                    <div class="down-arrow arrow"></div>
+                    <script type="text/javascript" src="js/spcp.js"></script>
+
+                </div>
+            </div>
+            <div class="i-head-mid-sInput"><input type="text" placeholder="男装"></div>
+            <div class="i-head-mid-sBtn"><a href="noResult.html">搜索</a></div>
+
+        </div>
+        <div class="i-head-mid-sLabel">
+            <a href="">女装</a>
+            <a href="">男装</a>
+            <a href="" class="sHot">IPhone6</a>
+            <a href="">鞋子</a>
+        </div>
+    </div>
+    <!--index-head-mid-->
+    <div class="index-head-right">
+        <ul>
+            <li>
+                <div class="i-head-right-serverIcon"><img src="images/index_10.png"></div>
+                <div class="i-head-right-serverText">精致服务</div>
+            </li>
+            <li>
+                <div class="i-head-right-serverIcon"><img src="images/index_08.png"></div>
+                <div class="i-head-right-serverText">正品保证</div>
+            </li>
+            <li>
+                <div class="i-head-right-serverIcon"><img src="images/index_06.png"></div>
+                <div class="i-head-right-serverText">随时退</div>
+            </li>
+        </ul>
+
+    </div>
+    <!--index-head-right-->
+</div>
+<!--index-head-->
+<!--导航栏-->
+<!--navigator-->
+<div class="index-navigator">
+    <div class="index-nav-main"><a href="">全部分类</a></div>
+    <div class="index-nav-sub">
+        <ul>
+            <li><a href="index-1.html">首页</a></li>
+            <li><a href="merchant.html">联盟商家</a></li>
+            <li><a href="merchantList.html">商家产品</a></li>
+            <li><a href="">U币兑换</a></li>
+            <li><a href="">代理加盟</a></li>
+        </ul>
+    </div>
+
+</div>
+<!--index-navigator-->
+
+<!--选择地区-->
+<div class="area-box">
+    <div class="area-box-select">
+        <div class="area-txt">按省份选择：</div>
+        <div class="area-option">
+            <div class="proListBox">
+                <select>
+                    <option value="-1">省份</option>
+                    <option value="1">浙江</option>
+                    <option value="1">浙江</option>
+                    <option value="1">浙江</option>
+                    <option value="1">浙江</option>
+                    <option value="1">浙江</option>
+
+                </select>
+            </div>
+
+            <div class="proListBox">
+                <select>
+                    <option value="-1">市区</option>
+                    <option value="1">浙江</option>
+                    <option value="1">浙江</option>
+                    <option value="1">浙江</option>
+                    <option value="1">浙江</option>
+                    <option value="1">浙江</option>
+
+                </select>
+            </div>
+
+        </div>
+        <div class="conformBtn"><a href="">确认</a></div>
+    </div>
+    <!--area-box-select-->
+
+    <div class="area-box-select">
+        <div class="area-txt">直接搜索：</div>
+        <div class="area-option searchBox">
+            <!--搜索框样式-->
+            <input type="text" name="searchName" placeholder="请输入城市中文或拼音"/>
+
+        </div>
+        <div class="conformBtn"><a href="">确认</a></div>
+    </div>
+    <!--area-box-select-->
+</div>
+
+<div class="area-ty-box">
+    <dl>
+        <dt>热门城市：</dt>
+        <dd><a href="">台州市</a><a href="">绍兴市</a><a href="">上海市</a></dd>
+    </dl>
+</div>
+
+<div class="area-ty-box">
+    <dl>
+        <dt>最近访问：</dt>
+        <dd><a href="">台州市</a></dd>
+    </dl>
+</div>
+
+<div class="type-select">
+    <div class="type-box">
+        <div class="type-txt">按省份选择</div>
+        <div class="type-icon"></div>
+    </div>
+    <!--type-box-->
+    <!-- <div class="type-box">
+         <div class="type-txt">按市区选择</div>
+         <div class="type-icon"></div>
+     </div>
+     type-box-->
+</div>
+
+
+<!--城市列表-->
+<div class="city-box">
+    <div class="list-box ">
+        <div class="listBox-div">
+            <div class="box-left"><a href="javascript:void(0);">浙江</a></div>
+            <div class="box-right">
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+            </div>
+        </div>
+    </div>
+    <!--list-box-->
+    <div class="list-box">
+        <div class="listBox-div">
+            <div class="box-left"><a href="javascript:void(0);">浙江</a></div>
+            <div class="box-right">
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+            </div>
+        </div>
+    </div>
+    <!--list-box-->
+
+    <div class="list-box">
+        <div class="listBox-div">
+            <div class="box-left"><a href="javascript:void(0);">浙江</a></div>
+            <div class="box-right">
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+            </div>
+        </div>
+    </div>
+    <!--list-box-->
+
+    <div class="list-box">
+        <div class="listBox-div">
+            <div class="box-left"><a href="javascript:void(0);">新疆</a></div>
+            <div class="box-right">
+                <a href="javascript:;void(0)">乌鲁木齐</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+            </div>
+        </div>
+    </div>
+    <!--list-box-->
+
+    <div class="list-box">
+        <div class="listBox-div">
+            <div class="box-left"><a href="javascript:void(0);">内蒙古</a></div>
+            <div class="box-right">
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+                <a href="javascript:;void(0)">福建</a>
+            </div>
+        </div>
+    </div>
+    <!--list-box-->
+
+</div>
+<script type="text/javascript">
+    $(function () {
+        $(".list-box").hover(
+                function () {
+                    $(this).addClass("curSel").siblings().removeClass("curSel");
+                }
+                ,
+                function () {
+                    $(this).removeClass("curSel");
+                }
+        );
+
+        $(".box-right a").click(function () {
+            $(this).addClass("curSubSel").siblings().removeClass("curSubSel");
+        });
+
+    });
+</script>
+
+<!--没有显示当前城市的信息提示-->
+<div class="none-city">
+    <div class="msg-txt">如果以上没有您要找的城市，请<a href="">点击>></a>。当城市开通后，我们会第一时间通知您！</div>
+</div>
+
+
+<!--页底 footer-->
+<div class="index-footer"></div>
+<!--index-footer-->
+<div class="index-footer-list">
+    <div class="index-footer-listBox">
+        <ul>
+            <li class="borderLine">
+                <div class="index-footer-box">
+                    <div class="F-floor">
+                        <i class="footer-icon"></i>
+                        <em>购物指南</em>
+                    </div>
+                    <div class="S-floor">
+                        <span class="left-txt"><a href="">购物流程</a></span> <span class="right-txt"><a
+                            href="">会员介绍</a></span>
+                    </div>
+                    <div class="S-floor">
+                        <span class="left-txt"><a href="">常见问题</a></span> <span class="right-txt"><a
+                            href="">联系客户</a></span>
+                    </div>
+                </div>
+            </li>
+            <li class="borderLine">
+                <div class="index-footer-box">
+                    <div class="F-floor">
+                        <i class="pay-icon "></i>
+                        <em>支付方式</em>
+                    </div>
+                    <div class="S-floor">
+                        <span class="left-txt"><a href="">在线支付</a></span> <span class="right-txt"><a
+                            href="">公司转账</a></span>
+                    </div>
+                    <div class="S-floor">
+                        <span class="left-txt"><a href="">线下实体</a></span> <span class="right-txt"><a
+                            href="">联盟商家</a></span>
+                    </div>
+                </div>
+            </li>
+            <li class="borderLine">
+                <div class="index-footer-box">
+                    <div class="F-floor">
+                        <i class="safeguard-icon"></i>
+                        <em>服务保障</em>
+                    </div>
+                    <div class="S-floor">
+                        <span class="left-txt"><a href="">价格优惠</a></span> <span class="right-txt"><a
+                            href="">退款说明</a></span>
+                    </div>
+                    <div class="S-floor">
+                        <span class="left-txt"><a href="">返修/退换货</a></span> <span class="right-txt"><a href="">取消订单</a></span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="index-footer-box">
+                    <div class="F-floor">
+                        <i class="feature-icon"></i>
+                        <em>特色服务</em>
+                    </div>
+                    <div class="S-floor">
+                        <span class="left-txt"><a href="">微信平台</a></span> <span class="right-txt"><a
+                            href="">在线竞拍</a></span>
+                    </div>
+                    <div class="S-floor">
+                        <span class="left-txt"><a href="">1元兑换</a></span> <span class="right-txt"><a
+                            href="">申请商家</a></span>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <!--index-footer-listBox-->
+    <div class="sub-index-page">
+        <a href="" class="borderLine">首页</a>
+        <a href="" class="borderLine">关于我们</a>
+        <a href="" class="borderLine">联系我们</a>
+        <a href="" class="borderLine">人才招聘</a>
+        <a href="" class="borderLine">商家入驻</a>
+        <a href="">广告服务</a>
+    </div>
+
+    <div class="index-copyRights">Copyrigh©2014-2016 上下网智能营销平台 www.sxwvc.com Inc.,All rights reserved.
+        浙ICP备14036505号-1
+    </div>
+    <div class="index-copyRights">
+        <ul>
+            <li><a href=""><img src="images/index_82.png"></a></li>
+            <li><a href=""><img src="images/index_84.png"></a></li>
+            <li><a href=""><img src="images/index_86.png"></a></li>
+            <li><a href=""><img src="images/index_88.png"></a></li>
+        </ul>
+    </div>
+
+</div>
+<!--index-footer-list-->
+
+</body>
+</html>

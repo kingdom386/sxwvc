@@ -1,0 +1,1292 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head lang="en">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="css/merchant.css"/>
+    <link rel="stylesheet" type="text/css" href="css/merchantList.css">
+    <link rel="stylesheet" type="text/css" href="css/proList.css"/>
+    <link rel="stylesheet" type="text/css" href="css/product.css"/>
+    <script type="text/javascript" src="js/jquery1.42.min.js"></script>
+    <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+    <title>产品</title>
+</head>
+<body>
+
+<!--在线客服-->
+<div class="kf-box">
+    <div id="box">
+        <div class="hid">
+            <a href=""></a>
+        </div>
+        <div class="dis" style="display:none;">
+            <a href="http://wpa.qq.com/msgrd?v=3&uin=707896515&site=qq&menu=yes" target="_blank" title="在线客服"></a>
+            <a href="javascript:void(0);"></a>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(".kf-box #box").mouseover(function () {
+        $("#box").stop();
+        $("#box").animate({marginRight: "80px"}, 1000);
+        $(".hid").css({display: "none"});
+        $(".dis").css({display: "block"});
+    });
+
+    $(".kf-box #box").mouseout(function () {
+        $("#box").stop();
+        $("#box").animate({marginRight: "0px"}, 1000);
+        $(".hid").css({display: "block"});
+        $(".dis").css({display: "none"});
+    });
+
+</script>
+
+<div class="header">
+    <div class="top">
+        <div class="index-top-left">
+            <ul>
+                <li><a href="" class="colorGray">您好，欢迎进入上下网智能营销平台 ！</a></li>
+                <li><a href="" class="colorBlack">请登录</a></li>
+                <li><a href="" class="colorGreen">免费注册</a></li>
+            </ul>
+        </div>
+        <!--index-top-left-->
+        <div class="index-top-right">
+            <ul>
+                <li class="borderRight"><a href="Recruitment.html"><i class="cart-icon"></i><em class="cart-markup">购物车</em></a></li>
+                <li class="borderRight"><a href="">我的订单</a></li>
+                <li class="borderRight"><a href="">我的收藏</a></li>
+                <li class="borderRight"><a href="">我是商家</a></li>
+                <li><a href="Recruitment.html">商家入驻</a></li>
+            </ul>
+
+        </div>
+        <!--index-top-right-->
+    </div>
+    <!--top-->
+</div>
+<!--header-->
+<!--当前位置 搜索栏 标签-->
+<div class="index-head">
+    <div class="index-head-left">
+        <div class="i-head-left-logo"><a href="index-1.html"><img src="images/logoin.png"></a></div>
+        <div class="i-head-left-loc">
+            <div class="i-headLeft-curLoc">台州</div>
+            <div class="i-headLeft-changeLoc"><a href="area.html">切换城市</a></div>
+        </div>
+    </div>
+    <!--index-head-left-->
+    <div class="index-head-mid">
+        <div class="index-head-mid-searchBox">
+            <div class="i-head-mid-sList">
+                <div class="s-list">
+                    <div class="index-spCp">
+                        <a href="javascript:void(0);" class="index-sp">商品</a>
+                        <a href="javascript:void(0);" class="index-cp">产品</a>
+                    </div>
+                    <div class="down-arrow arrow"></div>
+                    <script type="text/javascript" src="js/spcp.js"></script>
+
+                </div>
+            </div>
+            <div class="i-head-mid-sInput"><input type="text" placeholder="男装"></div>
+            <div class="i-head-mid-sBtn"><a href="noResult.html">搜索</a></div>
+
+        </div>
+        <div class="i-head-mid-sLabel">
+            <a href="">女装</a>
+            <a href="">男装</a>
+            <a href="" class="sHot">IPhone6</a>
+            <a href="">鞋子</a>
+        </div>
+
+    </div>
+    <!--index-head-mid-->
+    <div class="index-head-right">
+        <ul>
+            <li>
+                <div class="i-head-right-serverIcon"><img src="images/index_10.png"></div>
+                <div class="i-head-right-serverText">精致服务</div>
+            </li>
+            <li>
+                <div class="i-head-right-serverIcon"><img src="images/index_08.png"></div>
+                <div class="i-head-right-serverText">正品保证</div>
+            </li>
+            <li>
+                <div class="i-head-right-serverIcon"><img src="images/index_06.png"></div>
+                <div class="i-head-right-serverText">随时退</div>
+            </li>
+        </ul>
+
+    </div>
+    <!--index-head-right-->
+
+</div>
+<!--index-head-->
+<!--导航栏-->
+<!--navigator-->
+<div class="index-navigator">
+    <div class="index-nav-main"><a href="">全部分类</a></div>
+    <div class="index-nav-sub">
+        <ul>
+            <li><a href="index-1.html">首页</a></li>
+            <li><a href="merchant.html">联盟商家</a></li>
+            <li><a href="merchantList.html">商家产品</a></li>
+            <li><a href="">U币兑换</a></li>
+            <li><a href="">代理加盟</a></li>
+        </ul>
+    </div>
+
+</div>
+<!--index-navigator-->
+
+<div class="pro-lco">
+    <div class="merchant-info-loc">
+        <a href="index-1.html" class="merchant">联盟商家首页</a><span class="merchantArrow">></span>
+        <a href="" class="merchant">浙江省</a><span class="merchantArrow">></span>
+        <a href="" class="merchant">台州市</a><span class="merchantArrow">></span>
+        <a href="" class="merchant">生活服务</a><span class="merchantArrow">></span>
+        <a href="" class="merchant colorGray">微微婚礼私人订制</a>
+    </div>
+</div>
+
+<!--产品详情-->
+<div class="pro-box">
+    <div class="pro-title">【台州】缘爱婚礼订制</div>
+    <div class="pro-simple">我们以婚礼私人定制为理念，为客户提供一对一的婚礼服务，打破传统婚礼模式，从新人的情感出发，策划只属于你们的婚礼。拥有最新的婚礼理念，为你们打造最时尚的婚礼场景和最适合的婚礼流程。
+    </div>
+    <div class="pro-float-box">
+        <!--商品轮播-->
+        <div class="f-left">
+            <div class="big-pic">
+                <ul>
+                    <li><a href=""><img src="images/product_03.png"></a></li>
+                    <li><a href=""><img src="images/product_03.png"></a></li>
+                    <li><a href=""><img src="images/product_03.png"></a></li>
+                    <li><a href=""><img src="images/product_03.png"></a></li>
+                    <li><a href=""><img src="images/product_03.png"></a></li>
+                </ul>
+            </div>
+            <div class="pre-pic hd">
+                <ul>
+                    <li class="marginRight"><a href=""><img src="images/product_21.png"></a></li>
+                    <li class="marginRight"><a href=""><img src="images/product_23.png"></a></li>
+                    <li class="marginRight"><a href=""><img src="images/product_25.png"></a></li>
+                    <li class="marginRight"><a href=""><img src="images/product_27.png"></a></li>
+                    <li><a href=""><img src="images/product_29.png"></a></li>
+
+                </ul>
+            </div>
+
+        </div>
+        <script type="text/javascript">jQuery(".f-left").slide({ mainCell: ".big-pic ul", effect: "left", autoPlay: true });</script>
+        <!--商品详情-->
+        <div class="f-right">
+            <div class="pro-price"><span class="pro-sxwPrice">上下网价</span><span
+                    class="pro-jf"><em>99584758</em>积分</span><span class="pro-orgPrice">原价9988555</span></div>
+            <div class="pro-other"><span class="pro-ys borderRight">已售<em>888555</em></span><span
+                    class="pro-hp borderRight"><em>96%</em>好评</span><span class="pro-pj"><em>1578</em>评价</span></div>
+            <div class="pro-count"><span class="pro-countLabel">数量</span>
+                <span class="pro-operaPanel">
+                    <i class="minute" onclick="min();">-</i><span class="inputBox"><input type="text" name="countN"
+                                                                                          maxlength="10" value="55"
+                                                                                          id="countNumber"
+                                                                                          onblur="ipVal()"/></span><i
+                        class="plus" onclick="pls()">+</i>
+                </span>
+            </div>
+            <div class="pro-btn">
+                <div class="pro-btnSc">
+                    <!--购买按钮 可购买状态 调用btn-true样式 不可购买状态调用样式 btn-false -->
+                    <a href="javascript:scrollTo(0,0);" class="btn btn-true"></a>
+                    <span class="pro-sc"><i class="pro-star"><a href="">☆</a></i>收藏（15888）</span>
+                </div>
+            </div>
+
+            <div class="pro-count">
+                <span class="pro-cl">服务承诺</span>
+                <span class="service-box">
+                    <span class="boxList"><i class="iCon back"></i>随时退</span>
+                     <span class="boxList"><i class="iCon overBack"></i>过期退</span>
+                     <span class="boxList"><i class="iCon zspj"></i>真实评价</span>
+                </span>
+            </div>
+
+            <script type="text/javascript">
+                //控制”-“值
+                function min() {
+                    var inputVal = parseInt(document.getElementById("countNumber").value);
+                    if (inputVal == 1) {
+                        //do nothing
+                    } else {
+                        inputVal--;
+                        document.getElementById("countNumber").value = inputVal;
+                    }
+                }
+                //控制输入框的值
+                function ipVal() {
+                    var ipvalue = parseInt(document.getElementById("countNumber").value);
+                    if ((ipvalue < 999999) && (ipvalue >= 1)) {
+                        // do nothing
+                    } else {
+                        document.getElementById("countNumber").value = 1;
+                    }
+                }
+
+                //控制”+“值
+                function pls() {
+                    var inputVal = parseInt(document.getElementById("countNumber").value);
+                    if (inputVal >= 999999) {
+                        document.getElementById("countNumber").value = inputVal;
+                    } else {
+                        ++inputVal;
+                        document.getElementById("countNumber").value = inputVal;
+                    }
+                }
+
+                $(function () {
+                    $(".btn").click(function () {
+                        //禁止屏幕滚动
+                        document.body.onmousewheel = function () {
+                            return false;
+                        }
+                        //当前遮罩层的宽度、高度
+                        var layerWidth = $(".pay-mask-layer").width();
+                        var layerHeight = $(".pay-mask-layer").height();
+                        //获取当前屏幕的宽度、高度
+                        var scrWidth = document.body.offsetWidth;
+                        var scrHeight = $(window).height();
+                        //遮罩层居中
+                        var midLeft = (scrWidth - layerWidth) / 2;
+                        var midTop = (scrHeight - layerHeight) / 2;
+                        $(".pay-mask-layer").show();
+                        $("#table_1").show();
+                        $("#table_2").hide();
+
+                        //获取商品详情中的信息数据
+
+                        $(".pay-mask-layer").css({top: midTop, left: midLeft})
+
+                    });
+                });
+                /*关闭遮罩层*/
+                function clo() {
+                    //恢复屏幕滚动
+                    document.body.onmousewheel = function () {
+                        return true;
+                    }
+                    $(".pay-mask-layer").hide();
+                }
+            </script>
+        </div>
+    </div>
+</div>
+
+<!--支付遮罩层 -->
+<div class="pay-mask-layer">
+    <!--表单一   支付订单-->
+    <form action="" method="post" class="formOne" id="table_1">
+        <div class="layer-close"><a href="javascript:void(0);" onclick="clo()">X</a></div>
+        <div class="layer-statTxt">
+            <div class="payPal">支付订单</div>
+            <div class="payPal" style="display:none">支付失败</div>
+            <div class="payPal" style="display:none">支付成功</div>
+        </div>
+        <div class="table-box">
+            <div class="layer-table lt-bg">
+                <div class="lt-colOne lt-ty">产品名称</div>
+                <div class="lt-colTwo lt-ty">单价</div>
+                <div class="lt-colThree lt-ty">数量</div>
+                <div class="lt-colFour lt-ty">总价</div>
+            </div>
+
+            <div class="layer-table lt-">
+                <div class="lt-colOne lt-ty">婚礼策划</div>
+                <div class="lt-colTwo lt-ty">88888积分</div>
+                <div class="lt-colThree lt-ty">
+                <span class="lt-count">
+                    <i class="lt-min">-</i>
+                    <input type="text" class="lt-input" value="1" maxlength="8">
+                    <i class="lt-plus">+</i>
+                </span>
+                </div>
+                <div class="lt-colFour lt-ty"><em>99999积分</em></div>
+            </div>
+            <script type="text/javascript">
+                function curVal() {
+                    var inputVal = parseInt($(".lt-input").val());
+                    return inputVal;
+                }
+
+                $(function () {
+                    $(".lt-min").click(function () {
+                        var inputVal = curVal();
+                        if (inputVal > 1) {
+                            --inputVal;
+                            $(".lt-input").val(inputVal);
+                        } else {
+
+                        }
+                    });
+                    $(".lt-input").blur(function () {
+                        var inputVal = curVal();
+                        if ((inputVal >= 999999) || (inputVal <= 1)) {
+                            $(".lt-input").val(1);
+                        } else {
+
+                        }
+                    });
+                    $(".lt-plus").click(function () {
+                        var inputVal = curVal();
+                        if (inputVal > 999999) {
+                            $(".lt-input").val(999999);
+                        } else {
+                            ++inputVal;
+                            $(".lt-input").val(inputVal);
+                        }
+                    });
+
+                    /**支付成功跳转*/
+                    $(".subForm").click(function () {
+                        //ajax 提交数据 根据返回数据跳转到支付成功界面
+                        $("#table_1").hide();
+                        $("#table_2").show();
+
+                    });
+
+                });
+            </script>
+
+        </div>
+
+        <div class="layer-payInfo">
+            <p>应付积分：<em>55555积分</em></p>
+        </div>
+        <div class="layer-pwd">
+            <span class="pay-txt">请输入支付密码：</span>
+            <input type="password" maxlength="8" class="inputPassword">
+            <input type="button" value="确认支付" class="subForm">
+        </div>
+    </form>
+    <!--表单一 -->
+
+    <!--表单二 支付成功-->
+    <div id="table_2" style="display: none">
+        <div class="layer-close"><a href="javascript:void(0);" onclick="clo()">X</a></div>
+        <div class="layer-statTxt">
+            <div class="payPal" style="display: none">支付订单</div>
+            <div class="payPal ">支付成功</div>
+        </div>
+        <div class="pay-success">
+            <p><img src="images/payIcon.png"></p>
+        </div>
+
+        <div class="pay-msg">
+            <p class="pay-yf">您已成功支付<em class="jf">888887</em>积分</p>
+
+            <p class="pay-dz">请至<em class="dz">浙江省台州州市椒江区蛋糕店158号领取订单消费</em></p>
+
+            <p class="pay-url"><a href="">已支付订单列表 </a>|<a href="">订单详情</a></p>
+        </div>
+    </div>
+
+    <!--表单二-->
+
+    <!--表单三 支付失败-->
+    <div id="table_3" style="display: none">
+        <div class="layer-close"><a href="javascript:void(0);" onclick="clo()">X</a></div>
+        <div class="layer-statTxt">
+            <div class="payPal" style="display: none">支付订单</div>
+            <div class="payPal ">支付失败</div>
+        </div>
+        <div class="pay-success">
+            <p><img src="images/wrong.png"></p>
+        </div>
+
+        <div class="pay-msg">
+            <p class="pay-yf">您已成功支付<em class="jf">888887</em>积分</p>
+
+            <p class="pay-dz">请至<em class="dz">浙江省台州州市椒江区蛋糕店158号领取订单消费</em></p>
+
+            <p class="pay-url"><a href="">已支付订单列表 </a>|<a href="">订单详情</a></p>
+        </div>
+    </div>
+
+    <!--表单三-->
+</div>
+
+
+<!--主内容块-->
+<div class="merchantList-info">
+<div class="info-left">
+<div class="pro-listBox">
+    <div class="proList-table proList-head">
+        <div class="colOne">该商家的其他产品</div>
+        <div class="colTwo">联盟价</div>
+        <div class="colThree">原价</div>
+        <div class="colFour">已售</div>
+    </div>
+    <!--proList-table-->
+    <div class="proList-table">
+        <div class="colOne">经典婚礼策划套餐</div>
+        <div class="colTwo">888积分</div>
+        <div class="colThree">98元</div>
+        <div class="colFour">888889</div>
+    </div>
+    <!--proList-table-->
+    <div class="proList-table">
+        <div class="colOne">经典婚礼策划套餐</div>
+        <div class="colTwo">888积分</div>
+        <div class="colThree">98元</div>
+        <div class="colFour">888889</div>
+    </div>
+    <!--proList-table-->
+    <div class="proList-table">
+        <div class="colOne">经典婚礼策划套餐</div>
+        <div class="colTwo">888积分</div>
+        <div class="colThree">98元</div>
+        <div class="colFour">888889</div>
+    </div>
+    <!--proList-table-->
+    <div class="proList-table">
+        <div class="colOne">经典婚礼策划套餐</div>
+        <div class="colTwo">888积分</div>
+        <div class="colThree">98元</div>
+        <div class="colFour">888889</div>
+    </div>
+    <!--proList-table-->
+    <script type="text/javascript">
+        $(function () {
+            $(".pro-listBox .proList-table").hover(
+                    function () {
+                        $(this).addClass("thisHover").siblings(".proList-table").removeClass("thisHover");
+                    }
+                    ,
+                    function () {
+                        $(this).removeClass("thisHover");
+                    });
+        });
+    </script>
+</div>
+<!--pro-listBox-->
+
+<!--商家位置  购买须知 产品详情 消费评价-->
+<div class="pro-loc-know-xqpj">
+<script type="text/javascript">
+    window.onscroll = function () {
+        //当前div距离浏览器顶部的高度
+        var top = $("#jjNav").offset().top;
+        //获取导航栏每个主题离底部的高度
+        var sjwz = $("#sjwz").offset().top - 30;
+        var fwjs = $("#fwjs").offset().top - 30;
+        var cpxq = $("#cpxq").offset().top - 30;
+        var xfpj = $("#xfpj").offset().top - 30;
+
+        //当前滚动条离浏览器顶部距离
+        var curTop = document.body.scrollTop || document.documentElement.scrollTop;
+        //alert(curTop);
+
+        if (top <= curTop) {
+            $(".fixedBg").css({display: "block"});
+            $("#jjNav ul").css({position: "fixed", top: "0px", zIndex: "999999", background: "#fff", borderRight: "1px solid #eee"});
+        } else {
+            $(".fixedBg").css({display: "none"});
+            $("#jjNav ul").css({position: "static", borderRight: "0px solid #eee"});
+        }
+
+        //位置坐标判断
+        if ((curTop >= sjwz) && (curTop < fwjs)) {
+            $(".pro-nav ul li").eq(0).addClass("selected").siblings().removeClass("selected");
+
+        } else if ((curTop >= fwjs) && (curTop < cpxq)) {
+            $(".pro-nav ul li").eq(1).addClass("selected").siblings().removeClass("selected");
+        } else if ((curTop >= cpxq) && (curTop < xfpj)) {
+            $(".pro-nav ul li").eq(2).addClass("selected").siblings().removeClass("selected");
+        } else if ((curTop >= xfpj)) {
+            $(".pro-nav ul li").eq(3).addClass("selected").siblings().removeClass("selected");
+        } else {
+            //do nothing
+        }
+
+    }
+</script>
+<div class="pro-nav" id="jjNav">
+    <div class="fixedBg"
+         style="display:none; top:0px;left:0px; background: #fff; position: fixed;height: 37px;width: 100% !important;border: 1px solid #eee;box-shadow:0px 1px 12px #eee;-webkit-box-shadow:0px 1px 12px #eee;-moz-box-shadow:0px 1px 12px #eee;"></div>
+    <ul>
+        <li class="borderLine selected"><a href="#sjwz">商家位置</a></li>
+        <li class="borderLine"><a href="#fwjs">购买须知</a></li>
+        <li class="borderLine"><a href="#cpxq">产品详情</a></li>
+        <li class="borderLine"><a href="#xfpj">消费评价</a></li>
+    </ul>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        $(".pro-nav ul li").click(function () {
+            $(this).addClass("selected").siblings().removeClass("selected");
+        });
+    });
+</script>
+
+<div class="pro-sjwz" id="sjwz">商家位置</div>
+<div class="sjwz-box">
+    <div class="box-left">
+        <div class="sjwz-map">
+            <img src="images/map_03.png">
+        </div>
+        <div class="sjwz-zoom"><a href="javascript:void(0);" class="mapZoom "><i class="zoom-icon"></i>查看完整地图</a></div>
+    </div>
+    <!--地图放大遮罩层-->
+    <script type="text/javascript">
+        $(function () {
+            $(".mapZoom").click(function () {
+                document.body.onmousewheel = function () {
+                    return false;
+                }
+                //当前遮罩层的宽度、高度
+                $(".maps-zoom").show();
+                $(".maps-box").show();
+                var layerWidth = $(".maps-box").width();
+                var layerHeight = $(".maps-box").height();
+
+                //获取当前屏幕的宽度、高度
+                var scrWidth = document.body.offsetWidth;
+                var scrHeight = $(window).height();
+
+                //遮罩层居中
+                var midLeft = (scrWidth - layerWidth) / 2;
+                var midTop = (scrHeight - layerHeight) / 2;
+                $(".maps-box").css({top: midTop, left: midLeft});
+            });
+
+            $(".maps-box .zoomClose").click(function () {
+                document.body.onmousewheel = function () {
+                    return true;
+                }
+                $(".maps-zoom").hide();
+                $(".maps-box").hide();
+            });
+
+
+        });
+    </script>
+    <!--遮罩层背景层-->
+    <div class="maps-zoom">
+    </div>
+    <div class="maps-box">
+        <!--地图内容快-->
+        <a href="javascript:void(0);" class="zoomClose">X</a>
+
+        <p class="curMerchantName">缘爱婚礼订制</p>
+
+        <div class="mapContent">
+            <img alt="地图" src="image/map.png" width="625" height="425">
+        </div>
+        <p class="curMapMsg">注：地图位置坐标仅供参考，具体情况以实际道路标识信息为准</p>
+    </div>
+
+
+    <!--地图放大遮罩层-->
+    <!--box-left-->
+    <div class="box-right">
+        <div class="sjmc">台州市黄岩缘爱婚礼订制</div>
+        <div class="box-pj"><span class="left">评价：</span><span class="right"><em>8855555</em>人评价</span>
+        </div>
+        <div class="box-dz">
+            <dl>
+                <dt>地址：</dt>
+                <dd>浙江省台州市黄岩区台州市黄岩西城新城路（米兰商务宾馆对面）</dd>
+            </dl>
+        </div>
+        <div class="box-pj"><span class="left">营业时间：</span><span class="right">9：00-12：00</span></div>
+        <div class="box-pj"><span class="left">联系人：</span><span class="right">解经理</span></div>
+        <div class="box-pj"><span class="left">电话：</span><span class="right">0576-88888888</span></div>
+        <div class="box-btn"><a href=""></a></div>
+    </div>
+    <!--box-right-->
+</div>
+<!--sjwz-box-->
+<!--服务介绍-->
+<div class="pro-sjwz" id="fwjs">服务介绍</div>
+<div class="fw-table">
+    <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+            <td>有效期</td>
+            <td><p>2015.6.24 至 2015.9.23（周末、法定节假日通用）</p></td>
+        </tr>
+        <tr>
+            <td>预约提醒</td>
+            <td><p>无需预约，消费高峰时可能需要等位</p>
+
+                <p>无需预约，消费高峰时可能需要等位</p></td>
+        </tr>
+        <tr>
+            <td>限购限用提醒</td>
+            <td><p>每张美团券限1人使用</p>
+
+                <p>无需预约，消费高峰时可能需要等位</p></td>
+        </tr>
+        <tr>
+            <td>温馨提示</td>
+            <td><p>请提前4小时购买，商家会依据购买时间验证美团券密码</p>
+
+                <p>每天上午11:00、下午15:00开漂，如遇特殊情况，以景区公示为准
+                    本次团购内容需一次性消费完成；
+                    不找零，不兑现；
+                    团购用户不可同时享受商家其他优惠
+                    美团券密码一旦验证即代表消费成功，不可申请“随时退款”和“过期退款”，请您合理安排验证时间</p></td>
+        </tr>
+        <tr>
+            <td>预约提醒</td>
+            <td><p>无需预约，消费高峰时可能需要等位</p>
+
+                <p>无需预约，消费高峰时可能需要等位</p></td>
+        </tr>
+    </table>
+</div>
+
+<!--产品详情-->
+<div class="pro-sjwz" id="cpxq">产品详情</div>
+<div class=" cpxq-box">
+    <p><img src="images/product_41.png"></p>
+
+    <p><img src="images/product_44.png"></p>
+
+    <p><img src="images/product_41.png"></p>
+
+    <p><img src="images/product_44.png"></p>
+
+    <p><img src="images/product_41.png"></p>
+
+    <p><img src="images/product_44.png"></p>
+
+</div>
+<!--cpxq-box-->
+
+<!--消费评价-->
+<div class="pro-xfpj" id="xfpj">消费评价</div>
+<div class="xfpj-box">
+    <!--有会员评分状态-->
+    <!--暂无消费评分-->
+    <!--有会员评分状态-->
+    <ul>
+        <li class="borderRight">
+            <div class="pj-tp"><em>4.7</em>分</div>
+            <div class="pj-tp">
+                <div class="star-box">
+                    <!--评分星星-->
+                    <span class="star-down"></span>
+                    <!--修改star-up样式属性中的width 即为好评率-->
+                    <span class="star-up"></span>
+                </div>
+            </div>
+            <div class="pj-tp pj-rs">共<em>5555</em>人评价</div>
+        </li>
+        <li class="borderRight">
+            <div class="kw-star">
+                <span class="kw-txt">口味</span>
+
+                <div class="star-box kw-box">
+                    <!--评分星星-->
+                    <span class="star-down"></span>
+                    <!--修改star-up样式属性中的width 即为好评率-->
+                    <span class="star-up" style="width: 84%;"></span>
+                </div>
+                2.85分
+            </div>
+            <div class="kw-star">
+                <span class="kw-txt">服务</span>
+
+                <div class="star-box kw-box">
+                    <!--评分星星-->
+                    <span class="star-down"></span>
+                    <!--修改star-up样式属性中的width 即为好评率-->
+                    <span class="star-up" style="width: 54%;"></span>
+                </div>
+                2.85分
+            </div>
+            <div class="kw-star">
+                <span class="kw-txt">环境</span>
+
+                <div class="star-box kw-box">
+                    <!--评分星星-->
+                    <span class="star-down"></span>
+                    <!--修改star-up样式属性中的width 即为好评率-->
+                    <span class="star-up" style="width: 64%;"></span>
+                </div>
+                2.85分
+            </div>
+
+        </li>
+        <li>
+            <div class="rec-box">
+                <span class="kw-txt">5分</span>
+
+                <div class="star-box kw-box">
+                    <!--评分星星-->
+                    <span class="rec-down"></span>
+                    <!--修改star-up样式属性中的width 即为好评率-->
+                    <span class="rec-up" style="width: 36%;"></span>
+                </div>
+                2547人
+            </div>
+            <div class="rec-box">
+                <span class="kw-txt">4分</span>
+
+                <div class="star-box kw-box">
+                    <!--评分星星-->
+                    <span class="rec-down"></span>
+                    <!--修改star-up样式属性中的width 即为好评率-->
+                    <span class="rec-up" style="width: 41%;"></span>
+                </div>
+                2547人
+            </div>
+            <div class="rec-box">
+                <span class="kw-txt">3分</span>
+
+                <div class="star-box kw-box">
+                    <!--评分星星-->
+                    <span class="rec-down"></span>
+                    <!--修改star-up样式属性中的width 即为好评率-->
+                    <span class="rec-up" style="width: 87%;"></span>
+                </div>
+                2547人
+            </div>
+            <div class="rec-box">
+                <span class="kw-txt">2分</span>
+
+                <div class="star-box kw-box">
+                    <!--评分星星-->
+                    <span class="rec-down"></span>
+                    <!--修改star-up样式属性中的width 即为好评率-->
+                    <span class="rec-up" style="width: 32%;"></span>
+                </div>
+                2547人
+            </div>
+            <div class="rec-box">
+                <span class="kw-txt">1分</span>
+
+                <div class="star-box kw-box">
+                    <!--评分星星-->
+                    <span class="rec-down"></span>
+                    <!--修改star-up样式属性中的width 即为好评率-->
+                    <span class="rec-up" style="width: 45%;"></span>
+                </div>
+                2547人
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div class="hypl-box">
+<!--
+
+无会员消费评价状态
+<div class="pj-none">
+    <p>暂无该产品消费评价</p>
+</div>
+
+
+<div class="pj-none-buy">
+    <span class="pj-none-jf"><em>5847</em>积分</span>
+    <span class="pj-none-yj"><p>原价</p><p style="text-decoration:line-through;color: #333;">6584</p></span>
+    <span class="pj-none-ys"><p>已售</p><p style="color: #333;">5548</p></span>
+    <span class="pj-none-btn"><a href="">抢购</a></span>
+</div>
+pj-none-buy
+-->
+
+<!--有会员消费评价状态-->
+
+<div class="hypl-list">
+    <dl>
+        <dt>
+            <a href=""><img src="images/product_47.png"></a>
+            <span class="VIP-name">玛莎拉蒂MC</span>
+        </dt>
+        <dd>
+            <div class="hypl-pfRq">
+                <div class="hypl-star-box">
+                    <span class="star-box-down"></span>
+                    <span class="star-box-up" style="width: 72%"></span>
+                </div>
+                <div class="star-txt">2015-07-20</div>
+            </div>
+            <!--hypl-pfRq-->
+
+            <div class="hypl-content">
+                试听效果不错，地理位置也很好，就在银泰五楼，服务态度也很好，吃完饭，刚好可以看电影，
+                方便快捷，里面的环境是全临海最好的，一共有7个厅，厅都挺大的，很干净卫生，员工都是年轻漂亮的美女，电影大圣归来很好看哟～～
+            </div>
+            <div class="jypl-tp">
+                <!--会员评价上传的图片-->
+                <ul>
+                    <li class="zoomB"><a href="javascript:void(0);"><img src="image/1.jpg"></a></li>
+                    <li class="zoomB"><a href="javascript:void(0);"><img src="image/2.jpg"></a></li>
+                    <li class="zoomB"><a href="javascript:void(0);"><img src="image/3.jpg"></a></li>
+                </ul>
+
+            </div>
+            <!--会员评价图片放大-->
+            <div class="hypj-zoom">
+                <div class="zoom-div">
+                    <a href="javascript:void(0);" class="prev"></a>
+                    <a href="javascript:void(0);" class="next"></a>
+                    <img src="image/1.jpg" alt="奶奶个呆皮忒难写了"/>
+                </div>
+            </div>
+
+
+        </dd>
+    </dl>
+</div>
+<!--hypl-list-->
+
+<div class="hypl-list">
+    <dl>
+        <dt>
+            <a href=""><img src="images/product_47.png"></a>
+            <span class="VIP-name">玛莎拉蒂MC</span>
+        </dt>
+        <dd>
+            <div class="hypl-pfRq">
+                <div class="hypl-star-box">
+                    <span class="star-box-down"></span>
+                    <span class="star-box-up" style="width: 72%"></span>
+                </div>
+                <div class="star-txt">2015-07-20</div>
+            </div>
+            <!--hypl-pfRq-->
+
+            <div class="hypl-content">
+                试听效果不错，地理位置也很好，就在银泰五楼，服务态度也很好，吃完饭，刚好可以看电影，
+                方便快捷，里面的环境是全临海最好的，一共有7个厅，厅都挺大的，很干净卫生，员工都是年轻漂亮的美女，电影大圣归来很好看哟～～
+            </div>
+            <div class="jypl-tp">
+                <!--会员评价上传的图片-->
+                <ul>
+                    <li class="zoomB"><a href="javascript:void(0);"><img src="image/1.jpg"></a></li>
+                    <li class="zoomB"><a href="javascript:void(0);"><img src="image/2.jpg"></a></li>
+                    <li class="zoomB"><a href="javascript:void(0);"><img src="image/3.jpg"></a></li>
+                    <li class="zoomB"><a href="javascript:void(0);"><img src="image/2.jpg"></a></li>
+                </ul>
+
+            </div>
+            <!--会员评价图片放大-->
+            <div class="hypj-zoom">
+                <div class="zoom-div">
+                    <a href="javascript:void(0);" class="prev"></a>
+                    <a href="javascript:void(0);" class="next"></a>
+                    <img src="image/1.jpg" alt="奶奶个呆皮忒难写了"/>
+                </div>
+            </div>
+
+
+        </dd>
+    </dl>
+</div>
+<!--hypl-list-->
+
+<div class="hypl-list">
+    <dl>
+        <dt>
+            <a href=""><img src="images/product_47.png"></a>
+            <span class="VIP-name">玛莎拉蒂MC</span>
+        </dt>
+        <dd>
+            <div class="hypl-pfRq">
+                <div class="hypl-star-box">
+                    <span class="star-box-down"></span>
+                    <span class="star-box-up" style="width: 72%"></span>
+                </div>
+                <div class="star-txt">2015-07-20</div>
+            </div>
+            <!--hypl-pfRq-->
+
+            <div class="hypl-content">
+                试听效果不错，地理位置也很好，就在银泰五楼，服务态度也很好，吃完饭，刚好可以看电影，
+                方便快捷，里面的环境是全临海最好的，一共有7个厅，厅都挺大的，很干净卫生，员工都是年轻漂亮的美女，电影大圣归来很好看哟～～
+            </div>
+            <div class="jypl-tp">
+                <!--会员评价上传的图片-->
+                <ul>
+                    <li class="zoomB"><a href="javascript:void(0);"><img src="image/1.jpg"></a></li>
+                    <li class="zoomB"><a href="javascript:void(0);"><img src="image/2.jpg"></a></li>
+                    <li class="zoomB"><a href="javascript:void(0);"><img src="image/3.jpg"></a></li>
+                    <li class="zoomB"><a href="javascript:void(0);"><img src="image/1.jpg"></a></li>
+                    <li class="zoomB"><a href="javascript:void(0);"><img src="image/2.jpg"></a></li>
+                </ul>
+
+            </div>
+            <!--会员评价图片放大-->
+            <div class="hypj-zoom">
+                <div class="zoom-div">
+                    <a href="javascript:void(0);" class="prev"></a>
+                    <a href="javascript:void(0);" class="next"></a>
+                    <img src="image/1.jpg" alt="奶奶个呆皮忒难写了"/>
+                </div>
+            </div>
+
+
+        </dd>
+    </dl>
+</div>
+<!--hypl-list-->
+
+<script type="text/javascript">
+    //参看图片当前索引锚点
+    var k = 0;
+    var zoomLength = 0;
+    //点击当前图片的路径
+    var i = 0;
+    $(function () {
+        $(".jypl-tp ul li").click(function () {
+            var imgSrc = $("a img", this).attr("src");
+            //当前遮罩层显示图片的路径
+            var disSrc = $(this).parent().parent().siblings(".hypj-zoom");
+            //获取当前图片组的长度
+            zoomLength = $("li", $(this).parent()).length;
+            $(".zoom-div img", disSrc).attr({src: imgSrc});
+
+            //当前点击索引
+            //k = $(this).index();
+            //20150729 add by xzh
+            var curNode = $(this).parent().parent().siblings(".hypj-zoom");
+
+            //根据样式zoomB显示
+            if ($(this).hasClass("zoomB")) {
+                $(this).addClass("zoomS").removeClass("zoomB");
+                $(this).siblings().removeClass("zoomS").addClass("zoomB");
+                $(curNode).slideDown(300);
+                $(".zoom-div",curNode).slideDown(300);
+
+            } else {
+                $(this).addClass("zoomB").removeClass("zoomS");
+                $(curNode).slideUp();
+                $(".zoom-div",curNode).slideUp();
+            }
+
+        });
+
+
+        //图片翻页查看
+        $(".prev").click(function () {
+            var liBox = $($(this).parent().parent().siblings(".jypl-tp"));
+            len(liBox);
+            //返回当前选中的li的索引项
+            if($("li ",liBox).hasClass("zoomS")){
+                k=$(".zoomS",liBox).index();
+            }
+            if (k <= 0) {
+                k = zoomLength - 1;
+                dis(k,liBox,this);
+            } else{
+                --k;
+                dis(k,liBox,this);
+            }
+        });
+
+        $(".next").click(function () {
+            var liBox = $(this).parent().parent().siblings(".jypl-tp");
+            len(liBox);
+            //返回当前选中的li的索引项
+            if($("li ",liBox).hasClass("zoomS")){
+                k=$(".zoomS",liBox).index();
+            }
+            if (k >= (zoomLength - 1)) {
+                k = 0;
+                dis(k,liBox,this);
+            } else {
+                ++k;
+                dis(k,liBox,this);
+            }
+        })
+    });
+
+    function dis(imgIndex ,liBox,THIS) {
+        var prevSrc = $("a img",$("li",liBox).eq(imgIndex)).attr("src");
+        //alert(prevSrc);
+        $(THIS).siblings("img").attr({src:prevSrc})
+        $("li",liBox).eq(imgIndex).addClass("zoomS").siblings("li").removeClass("zoomS").addClass("zoomB");
+    }
+
+    function len(liBox){
+        //获取当前图片组的长度
+        zoomLength = $("li", liBox).length;
+
+    }
+
+</script>
+
+<div class="hypj-fy">
+    <a href="" class="disabled">首页</a>
+    <a href="" class="disabled"><i
+            style="width: 0px ;height: 0px ;margin-right:2px;float:left;  border-left: 6px solid transparent;;border-right: 6px solid #ccc ;border-top: 6px solid transparent  ;border-bottom: 6px solid transparent;  "></i>上一页</a>
+    <a href="" class="selected">1</a>
+    <a href="">2</a>
+    <a href="">3</a>
+    <a href="">...</a>
+    <a href="">15</a>
+    <a href="">下一页<i
+            style="position: absolute; width: 0px ;height: 0px ;margin-left:2px;float:left;  border-left: 6px solid #f26020;;border-right: 6px solid transparent ;border-top: 6px solid transparent  ;border-bottom: 6px solid transparent;  "></i></a>
+    <a href="">尾页</a>
+</div>
+<script>
+    $(function () {
+        $(".hypj-fy a").hover(
+                function () {
+                    if (($(this).hasClass("disabled")) && ($(this).hasClass("selected"))) {
+                        //do  nothing
+                    } else {
+                        $(this).addClass("thisHover").siblings("a").removeClass("thisHover");
+                    }
+                }
+                ,
+                function () {
+                    $(this).removeClass("thisHover");
+                }
+        );
+    });
+    //处理发表评价的会员名
+    $(function () {
+        $(".hypl-list dt").ready(function () {
+            var VIP = $(".hypl-list .VIP-name").html();
+            VIP = VIP.charAt(0) + "***" + VIP.charAt(VIP.length - 1);
+            $(".hypl-list .VIP-name").html(VIP);
+        });
+    });
+</script>
+
+
+</div>
+<!--hypl-list-->
+
+<!--暂无消费评价状态-->
+
+</div>
+
+<!--上下网公众微信号广告位-->
+<div class="sxw-public ">
+    <a href=""><img src="images/banner.jpg"/> </a>
+</div>
+
+</div>
+
+
+<!--info-left-->
+<div class="info-right">
+    <!--精品推荐-->
+    <div class="merchant-hot">
+        <div class="hot-title">精品推荐</div>
+        <div class="hot-jptj borderLine">
+            <a href=""><img src="images/proList_08.png"></a>
+            <a href="" class="jptj-name">上下网蛋糕产品</a>
+
+            <P class="jptj-jfjs"><span class="jf"><em>5222244</em>积分</span><span
+                    class="js">已售 <em>888888</em></span>
+            </P>
+        </div>
+        <!--hot-jptj-->
+
+        <div class="hot-jptj borderLine">
+            <a href=""><img src="images/proList_08.png"></a>
+            <a href="" class="jptj-name">上下网蛋糕产品</a>
+
+            <P class="jptj-jfjs"><span class="jf"><em>5222244</em>积分</span><span
+                    class="js">已售 <em>888888</em></span>
+            </P>
+        </div>
+        <!--hot-jptj-->
+
+        <div class="hot-jptj borderLine">
+            <a href=""><img src="images/proList_08.png"></a>
+            <a href="" class="jptj-name">上下网蛋糕产品</a>
+
+            <P class="jptj-jfjs"><span class="jf"><em>5222244</em>积分</span><span
+                    class="js">已售 <em>888888</em></span>
+            </P>
+        </div>
+        <!--hot-jptj-->
+
+        <div class="hot-jptj borderLine">
+            <a href=""><img src="images/proList_08.png"></a>
+            <a href="" class="jptj-name">上下网蛋糕产品</a>
+
+            <P class="jptj-jfjs"><span class="jf"><em>5222244</em>积分</span><span
+                    class="js">已售 <em>888888</em></span>
+            </P>
+        </div>
+        <!--hot-jptj-->
+
+        <div class="hot-jptj">
+            <a href=""><img src="images/proList_08.png"></a>
+            <a href="" class="jptj-name">上下网蛋糕产品</a>
+
+            <P class="jptj-jfjs"><span class="jf"><em>5222244</em>积分</span><span
+                    class="js">已售 <em>888888</em></span>
+            </P>
+        </div>
+        <!--hot-jptj-->
+
+    </div>
+
+    <!--最近浏览-->
+    <div class="merchant-hot" style="margin-top:22px;">
+        <div class="hot-title">最近浏览</div>
+        <div class="hot-box borderLine">
+            <div class="box-left"><a href=""><img src="images/merchantList_18.png"></a></div>
+            <div class="box-right">
+                <p class="hot-intro"><a href="" title="台州市黄岩缘爱婚礼订制">台州市黄岩缘爱婚礼订制</a></p>
+
+                <p class="hot-count"><em>887积分</em></p>
+            </div>
+        </div>
+        <!--hot-box-->
+
+        <div class="hot-box borderLine">
+            <div class="box-left"><a href=""><img src="images/merchantList_18.png"></a></div>
+            <div class="box-right">
+                <p class="hot-intro"><a href="" title="台州市黄岩缘爱婚礼订制">台州市黄岩缘爱婚礼订制</a></p>
+
+                <p class="hot-count"><em>887积分</em></p>
+            </div>
+        </div>
+        <!--hot-box-->
+
+        <div class="hot-box borderLine">
+            <div class="box-left"><a href=""><img src="images/merchantList_18.png"></a></div>
+            <div class="box-right">
+                <p class="hot-intro"><a href="" title="台州市黄岩缘爱婚礼订制">台州市黄岩缘爱婚礼订制</a></p>
+
+                <p class="hot-count"><em>887积分</em></p>
+            </div>
+        </div>
+        <!--hot-box-->
+
+        <div class="hot-box borderLine">
+            <div class="box-left"><a href=""><img src="images/merchantList_18.png"></a></div>
+            <div class="box-right">
+                <p class="hot-intro"><a href="" title="台州市黄岩缘爱婚礼订制">台州市黄岩缘爱婚礼订制</a></p>
+
+                <p class="hot-count"><em>887积分</em></p>
+            </div>
+        </div>
+        <!--hot-box-->
+
+        <div class="hot-box">
+            <div class="box-left"><a href=""><img src="images/merchantList_18.png"></a></div>
+            <div class="box-right">
+                <p class="hot-intro"><a href="" title="台州市黄岩缘爱婚礼订制">台州市黄岩缘爱婚礼订制</a></p>
+
+                <p class="hot-count"><em>887积分</em></p>
+            </div>
+        </div>
+        <!--hot-box-->
+    </div>
+
+</div>
+</div>
+<!--merchantList-info-->
+
+
+<!--页底 footer-->
+<div class="index-footer"></div>
+<!--index-footer-->
+<div class="index-footer-list">
+    <div class="index-footer-listBox">
+        <ul>
+            <li class="borderLine">
+                <div class="index-footer-box">
+                    <div class="F-floor">
+                        <i class="footer-icon"></i>
+                        <em>购物指南</em>
+                    </div>
+                    <div class="S-floor">
+                        <span class="left-txt"><a href="">购物流程</a></span> <span class="right-txt"><a
+                            href="">会员介绍</a></span>
+                    </div>
+                    <div class="S-floor">
+                        <span class="left-txt"><a href="">常见问题</a></span> <span class="right-txt"><a
+                            href="">联系客户</a></span>
+                    </div>
+                </div>
+            </li>
+            <li class="borderLine">
+                <div class="index-footer-box">
+                    <div class="F-floor">
+                        <i class="pay-icon "></i>
+                        <em>支付方式</em>
+                    </div>
+                    <div class="S-floor">
+                        <span class="left-txt"><a href="">在线支付</a></span> <span class="right-txt"><a
+                            href="">公司转账</a></span>
+                    </div>
+                    <div class="S-floor">
+                        <span class="left-txt"><a href="">线下实体</a></span> <span class="right-txt"><a
+                            href="">联盟商家</a></span>
+                    </div>
+                </div>
+            </li>
+            <li class="borderLine">
+                <div class="index-footer-box">
+                    <div class="F-floor">
+                        <i class="safeguard-icon"></i>
+                        <em>服务保障</em>
+                    </div>
+                    <div class="S-floor">
+                        <span class="left-txt"><a href="">价格优惠</a></span> <span class="right-txt"><a
+                            href="">退款说明</a></span>
+                    </div>
+                    <div class="S-floor">
+                        <span class="left-txt"><a href="">返修/退换货</a></span> <span class="right-txt"><a href="">取消订单</a></span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="index-footer-box">
+                    <div class="F-floor">
+                        <i class="feature-icon"></i>
+                        <em>特色服务</em>
+                    </div>
+                    <div class="S-floor">
+                        <span class="left-txt"><a href="">微信平台</a></span> <span class="right-txt"><a
+                            href="">在线竞拍</a></span>
+                    </div>
+                    <div class="S-floor">
+                        <span class="left-txt"><a href="">1元兑换</a></span> <span class="right-txt"><a
+                            href="">申请商家</a></span>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <!--index-footer-listBox-->
+    <div class="sub-index-page">
+        <a href="" class="borderLine">首页</a>
+        <a href="" class="borderLine">关于我们</a>
+        <a href="" class="borderLine">联系我们</a>
+        <a href="" class="borderLine">人才招聘</a>
+        <a href="" class="borderLine">商家入驻</a>
+        <a href="">广告服务</a>
+    </div>
+
+    <div class="index-copyRights">Copyrigh©2014-2016 上下网智能营销平台 www.sxwvc.com Inc.,All rights reserved.
+        浙ICP备14036505号-1
+    </div>
+    <div class="index-copyRights">
+        <ul>
+            <li><a href=""><img src="images/index_82.png"></a></li>
+            <li><a href=""><img src="images/index_84.png"></a></li>
+            <li><a href=""><img src="images/index_86.png"></a></li>
+            <li><a href=""><img src="images/index_88.png"></a></li>
+        </ul>
+    </div>
+
+</div>
+<!--index-footer-list-->
+</body>
+</html>

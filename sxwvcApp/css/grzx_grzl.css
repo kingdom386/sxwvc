@@ -1,0 +1,113 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+}
+
+ul {
+    list-style: none;
+}
+
+.grzx-info-pane {
+    overflow: hidden;
+    background: #fff;
+}
+
+.grzx-info-pane .grzx-select-box {
+    margin: 0px auto;
+}
+
+.grzx-info-pane .grzx-select-box .grzx-select-style {
+    width: 49.5%;
+    margin: 8px auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    cursor: pointer;
+    color: #8c8c8c;
+    border: 1px solid #ccc;
+    background: #eee;
+}
+
+.grzx-info-pane .grzx-info-box {
+    margin: 10px auto;
+}
+
+.grzx-info-pane .grzx-info-box ul li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: x-small;
+    overflow: hidden;
+}
+
+.grzx-info-pane .grzx-info-box ul li div:nth-child(1) {
+    width: 28%;
+    text-align: right;
+    line-height: 30px;
+}
+
+.grzx-info-pane .grzx-info-box ul li div:nth-child(2) {
+    width: 71%;
+}
+
+.grzx-info-pane .grzx-info-box ul li div:nth-child(2) input {
+    width: 100%;
+}
+
+.top-bg .container .btn-click {
+    background: #f6921c;
+    border: #ff6600;
+    color: #fff;
+    margin-top: 3px;
+    box-shadow: #f6921c;
+    font-family: "Microsoft yahei"
+}
+
+.top-bg .container .btn-click:active {
+    background: #f6921c;
+    border: #ff6600;
+    color: #fff;
+}
+
+.top-bg .container .btn-click:hover {
+    background: #f6921c;
+    border: #ff6600;
+    color: #fff;
+}
+
+.grzx-info-pane .grzx-info-box ul li div:nth-child(1) i {
+    line-height: 30px;
+    font-style: normal;
+}
+
+.grzx-info-pane .grzx-info-box ul li div:nth-child(2) i {
+    line-height: 30px;
+    font-style: normal;
+}
+
+.notice-color {
+    color: #ff0000;
+}
+
+.grzx-info-pane .grzx-info-box ul li .btn-click {
+    background: #f6921c;
+    border: #ff6600;
+    color: #fff;
+    margin-top: 3px;
+    box-shadow: #f6921c;
+    font-family: "Microsoft yahei"
+}
+
+.grzx-info-pane .grzx-info-box ul li .btn-click:active {
+    background: #f6921c;
+    border: #ff6600;
+    color: #fff;
+}
+
+.grzx-info-pane .grzx-info-box ul li .btn-click:hover {
+    background: #f6921c;
+    border: #ff6600;
+    color: #fff;
+}
+

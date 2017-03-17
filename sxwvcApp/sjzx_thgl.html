@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="css/ucoin.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/area.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/thgl.css" type="text/css" media="screen">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>提货管理</title>
+</head>
+<body>
+<header class="top-bg" id="top-height">
+    <div class="container area-top-box">
+        <ul>
+            <li><a href=""><img src="images/mx-icon_03.png"></a></li>
+            <li><h4>提货管理</h4></li>
+            <li></li>
+        </ul>
+    </div>
+</header>
+
+<script type="text/javascript">
+    $(function () {
+        $(".top-bg").ready(function () {
+            var topWidth = document.getElementById('top-height').offsetHeight;
+            topWidth+=30;
+            $(".th-info-input").css('margin-top', topWidth);
+        });
+    });
+</script>
+
+<section class="th-info-input">
+    <div class="container" >
+        <form action="" method="post" role="form">
+            <div class="form-group col-xs-offset-1 msgCt "><input class="form-control mbct" name="mobileCount"
+                                                                 type="text"
+                                                                 placeholder="请输入手机号码"></div>
+            <div class="form-group col-xs-offset-1 msgCd "><input class="form-control mbcd" name="mobileCode" type="text"
+                                                                 placeholder="请输入提货验证码"></div>
+            <div class="form-group col-xs-offset-1">
+                <button type="button" class="btn btn-block btn-lg btnClick">提交</button>
+            </div>
+        </form>
+    </div>
+</section>
+<script type="text/javascript">
+    $(function () {
+        $(".btnClick").click(function () {
+            var ctReg=/^[0-9]{11}$/;
+            var cdReg=/^[0-9]{8}$/;
+
+            var ctVal=$(".mbct").val();
+            var cdVal=$(".mbcd").val();
+
+            if (!ctReg.test(ctVal)) {
+                $(".msgCt").addClass("has-error");
+                $(".msgCt").removeClass("has-success");
+            } else {
+                $(".msgCt").addClass("has-success");
+                $(".msgCt").removeClass("has-error");
+            }
+
+            if (!cdReg.test(cdVal)) {
+                $(".msgCd").addClass("has-error");
+                $(".msgCd").removeClass("has-success");
+            } else {
+                $(".msgCd").addClass("has-success");
+                $(".msgCd").removeClass("has-error");
+            }
+
+
+        });
+    });
+</script>
+
+
+</body>
+</html>

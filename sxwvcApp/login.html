@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/login.css" media="screen"/>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>登录</title>
+</head>
+<body>
+<header class="top-bg">
+    <div class="container">
+       <!-- <div class="col-xs-3"><a href=""><img src="images/return_02.png" class="img-responsive"></a></div>-->
+        <div class="col-xs-offset-4 col-xs-4 col-sm-4"><h3 class="center-block title-font">登&nbsp;&nbsp;录</h3></div>
+    </div>
+</header>
+
+<section class="user-info">
+    <div class="container">
+        <form action="" method="post" role="form">
+            <div class="form-group col-xs-offset-1 inputMobile ">
+                <i class="user-icon"><img src="images/input-icon-01.png" class="img-responsive"></i>
+                <input name="mobileCount" class="form-control  input-lg mobileValue" type="text" placeholder="请输入手机号码"
+                       style="padding-left: 45px;">
+            </div>
+
+            <div class="form-group col-xs-offset-1 userPwd">
+                <i class="user-icon"><img src="images/input-icon-02.png" class="img-responsive"></i>
+                <input name="uPassword" class="form-control input-lg inputPwd" type="password" placeholder="请输入密码"
+                       style="padding-left: 45px;">
+            </div>
+
+            <div class="form-group col-xs-offset-1">
+                <button type="button" class="btn  btn-lg btn-block rewardPassword"
+                        style="background: #fff;border: 1px solid #fff;">忘记密码
+                </button>
+            </div>
+            <script type="text/javascript">
+                $(function () {
+                    $(".rewardPassword").click(function () {
+                        window.location.href = "zhmm.html";
+                    })
+                });
+            </script>
+
+            <div class="form-group col-xs-offset-1">
+                <button type="button" class="btn  btn-lg btn-block btnClick" style="background: #f7771c;color: #fff;">登&nbsp;&nbsp;录</button>
+            </div>
+            <script type="text/javascript">
+                $(function () {
+                    $(".btnClick").click(function () {
+                        //正则表达式
+                        var reg = /^[0-9]{11}$/;
+                        var reg2 = /^[a-zA-Z0-9]{6,}$/;
+                        //获取输入框的值
+                        var val = $(".mobileValue").val();
+                        var val2 = $(".inputPwd").val();
+                        if (!reg.test(val)) {
+                            $(".inputMobile").addClass("has-error");
+                            $(".inputMobile").removeClass("has-success");
+                        } else {
+                            $(".inputMobile").addClass("has-success");
+                            $(".inputMobile").removeClass("has-error");
+                        }
+
+                        if (!reg2.test(val2)) {
+                            $(".userPwd").addClass("has-error");
+                            $(".userPwd").removeClass("has-success");
+                        } else {
+                            $(".userPwd").addClass("has-success");
+                            $(".userPwd").removeClass("has-error");
+                        }
+
+                    });
+                });
+            </script>
+            <div class="form-group col-xs-offset-1">
+                <button type="button" class="btn  btn-lg btn-block btnRegister" style="background: #28202d;color: #fff;">注&nbsp;&nbsp;册</button>
+                <script type="text/javascript">
+                    $(function(){
+                        $(".btnRegister").click(function(){
+                            location.href="zc.html";
+                        });
+                    });
+                </script>
+            </div>
+
+        </form>
+    </div>
+</section>
+</body>
+</html>

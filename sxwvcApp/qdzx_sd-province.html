@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+    <link rel=" stylesheet" href="css/bootstrap-datetimepicker.min.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/ucoin.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/area.css" type="text/css" media="screen">
+   <!-- <link rel="stylesheet" href="css/qyzx_gd.css" type="text/css" media="screen">-->
+    <link rel="stylesheet" href="css/grzx.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/grzx_grzl.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/thmx.css" type="text/css" media="screen">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+    <title>区代中心-省代</title>
+</head>
+<body>
+
+<header class="top-bg" id="top-height">
+    <div class="container area-top-box">
+        <ul>
+            <li><a href=""><img src="images/mx-icon_03.png"></a></li>
+            <li><h4>省代</h4></li>
+            <li></li>
+        </ul>
+        <script type="text/javascript">
+            $(function () {
+                $(".top-bg").ready(function () {
+                    var topWidth = document.getElementById("top-height").offsetHeight;
+                    $(".grzx-info-pane").css('margin-top', topWidth);
+                });
+            });
+        </script>
+    </div>
+</header>
+
+<section class="grzx-info-pane">
+    <div class="container grzx-info-box">
+        <form action="" method="post" role="form" id="grzx-grzl-form">
+            <ul>
+                <li>
+                    <div class="pull-left"><label class="control-label">地区名称：</label></div>
+                    <div class="pull-right form-control-static area-address">
+                        <span class="form-group pull-left" style="width: 47%"><select>
+                            <option>省</option>
+                            <option>省</option>
+                            <option>省</option>
+                            <option>省</option>
+                        </select></span>
+                        <span class="form-group pull-left" style="width: 47%"><select>
+                            <option>市</option>
+                        </select></span>
+
+                    </div>
+                </li>
+
+                <li>
+                    <div class="pull-left"><label class="control-label">时间：</label></div>
+                    <div class="pull-right form-control-static area-address">
+                        <span class="form-group pull-left" style="width: 43%"><input name="sd" type="text"  class="start-date"></span>
+                        <span class="form-group pull-left" style="width: 8%;border: 1px solid transparent">至</span>
+                        <span class="form-group pull-left" style="width: 43%"><input name="ed" type="text" class=" end-date"></span>
+                    </div>
+                </li>
+                <script type="text/javascript">
+                    $(function () {
+                        $(".start-date").datetimepicker({
+                            format: 'yyyy-mm-dd',
+                            language: 'fr',
+                            weekStart: 1,
+                            todayBtn: 1,
+                            autoclose: 1,
+                            todayHighlight: 1,
+                            startView: 2,
+                            minView: 2,
+                            forceParse: 0});
+
+                        $(".end-date").datetimepicker({
+                            format: 'yyyy-mm-dd',
+                            language: 'fr',
+                            weekStart: 1,
+                            todayBtn: 1,
+                            autoclose: 1,
+                            todayHighlight: 1,
+                            startView: 2,
+                            minView: 2,
+                            forceParse: 0});
+                    });
+                </script>
+
+                <li>
+
+                    <div class="pull-left"></div>
+                    <div class="pull-right form-control-static area-address">
+                        <button class="btn btn-block btn-warning">查询</button>
+                    </div>
+
+                </li>
+
+            </ul>
+        </form>
+    </div>
+
+</section>
+
+
+
+<SECTION class="thmx-thead">
+    <div class="container">
+        <ul>
+            <li>提取用户<p>（提取时间）</p></li>
+            <li>商品名称<p>（商品数量）</p></li>
+            <li>商品总价<p>（提取码）</p></li>
+        </ul>
+    </div>
+</SECTION>
+
+<section class="thmx-body">
+    <div class="container body-box">
+        <ul>
+            <li>13757675885<p>2015-07-15</p></li>
+            <li>秋季特卖帆布鞋秋季特卖帆布鞋<p>1双</p></li>
+            <li>268U币<p>01020304</p></li>
+        </ul>
+    </div>
+
+    <div class="container body-box">
+        <ul>
+            <li>13757675885<p>2015-07-15</p></li>
+            <li>秋季特卖帆布鞋秋季特卖帆布鞋<p>1双</p></li>
+            <li>268U币<p>01020304</p></li>
+        </ul>
+    </div>
+
+    <div class="container body-box">
+        <ul>
+            <li>13757675885<p>2015-07-15</p></li>
+            <li>秋季特卖帆布鞋秋季特卖帆布鞋<p>1双</p></li>
+            <li>268U币<p>01020304</p></li>
+        </ul>
+    </div>
+
+    <div class="container body-box">
+        <ul>
+            <li>13757675885<p>2015-07-15</p></li>
+            <li>秋季特卖帆布鞋秋季特卖帆布鞋<p>1双</p></li>
+            <li>268U币<p>01020304</p></li>
+        </ul>
+    </div>
+
+    <div class="container body-box">
+        <ul>
+            <li>13757675885<p>2015-07-15</p></li>
+            <li>秋季特卖帆布鞋秋季特卖帆布鞋<p>1双</p></li>
+            <li>268U币<p>01020304</p></li>
+        </ul>
+    </div>
+
+    <div class="container body-box">
+        <ul>
+            <li>13757675885<p>2015-07-15</p></li>
+            <li>秋季特卖帆布鞋秋季特卖帆布鞋<p>1双</p></li>
+            <li>268U币<p>01020304</p></li>
+        </ul>
+    </div>
+
+    <div class="container body-box">
+        <ul>
+            <li>13757675885<p>2015-07-15</p></li>
+            <li>秋季特卖帆布鞋秋季特卖帆布鞋<p>1双</p></li>
+            <li>268U币<p>01020304</p></li>
+        </ul>
+    </div>
+
+    <div class="container body-box">
+        <ul>
+            <li>13757675885<p>2015-07-15</p></li>
+            <li>秋季特卖帆布鞋秋季特卖帆布鞋<p>1双</p></li>
+            <li>268U币<p>01020304</p></li>
+        </ul>
+    </div>
+
+</section>
+
+</body>
+</html>

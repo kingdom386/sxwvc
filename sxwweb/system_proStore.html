@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head lang="en">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+    <link rel="stylesheet" href="css/system_proStore.css" type="text/css"/>
+    <script type="text/javascript" src="js/jquery1.42.min.js"></script>
+    <title>后台管理-产品收藏</title>
+</head>
+<body>
+<div class="cpsc-right-centerBox">
+    <div class="centerBox">
+        <div class="box-left"><a href="javascript:void(0);" class="tableTy tabSelected tb_1">收藏的商品</a><a
+                href="javascript:void(0);" class="tableTy tb_2">收藏的商家</a></div>
+        <script type="text/javascript">$(function () {
+            $(".box-left a").click(function () {
+                $(this).addClass("tabSelected").siblings().removeClass("tabSelected")
+                if($(this).hasClass("tb_1")){$("#tb_1").show();$("#tb_2").hide();}else{$("#tb_2").show();$("#tb_1").hide();}
+
+            });
+
+        });</script>
+        <div class="box-right"><input type="text" name="searchName" placeholder="请输入商品名称"/><a href="">搜索</a></div>
+    </div>
+
+    <div class="centerBox">
+        <div class="tab-centerBox-left">
+            <a href="javascript:void(0);" class="cancleStore"><input type="checkbox" class="checkBox"/>全选</a>
+            <a href="javascript:void(0);" class="cancleStore colorBlue">取消收藏</a>
+        </div>
+        <div class="tab-centerBox-right">
+            <span><em>5</em>/12</span><a href="" class="leftArrow"><i class="arrow"></i></a><a href="" class="leftArrow">下一页</a>
+        </div>
+    </div>
+
+    <div class="centerBox-content" id="tb_1" style="display: block">
+
+        <div class="box-centent marginRight">
+            <div class="content-box-img"><a href=""><img src="images/cpsp_03.png" /></a></div>
+            <div class="content-box-name"><a href=""><input type="checkbox" />上下网蛋糕上下网蛋糕</a></div>
+            <div class="content-box-pane"><span class="left">58积分</span><span class="right">已售5588件</span></div>
+        </div>
+        <!--box-centent-->
+        <div class="box-centent marginRight">
+            <div class="content-box-img"><a href=""><img src="images/cpsp_03.png" /></a></div>
+            <div class="content-box-name"><a href=""><input type="checkbox" />上下网蛋糕上下网蛋糕</a></div>
+            <div class="content-box-pane"><span class="left">58积分</span><span class="right">已售5588件</span></div>
+        </div>
+        <!--box-centent-->
+        <div class="box-centent marginRight">
+            <div class="content-box-img"><a href=""><img src="images/cpsp_03.png" /></a></div>
+            <div class="content-box-name"><a href=""><input type="checkbox" />上下网蛋糕上下网蛋糕</a></div>
+            <div class="content-box-pane"><span class="left">58积分</span><span class="right">已售5588件</span></div>
+        </div>
+        <!--box-centent-->
+        <div class="box-centent ">
+            <div class="content-box-img"><a href=""><img src="images/cpsp_03.png" /></a></div>
+            <div class="content-box-name"><a href=""><input type="checkbox" />上下网蛋糕上下网蛋糕</a></div>
+            <div class="content-box-pane"><span class="left">58积分</span><span class="right">已售5588件</span></div>
+        </div>
+        <!--box-centent-->
+
+    </div>
+
+    <div class="centerBox-content" id="tb_2" style="display: none;">
+        <div class="tb2-box-centent box-centent marginRight">
+            <div class="content-box-img"><a href=""><img src="images/sjsc_03.png" /></a></div>
+            <div class="content-box-name"><a href=""><input type="checkbox" />上下网蛋糕上下网蛋糕</a></div>
+            <div class="content-box-infoPane">
+                <p class="gzrq">关注人气：<em>481</em></p>
+                <p class="gzrq">关注时间：<em>2015-07-29</em></p>
+            </div>
+            <div class="content-box-homePage"><a href="">进入商家主页</a></div>
+        </div>
+        <!--box-centent-->
+        <div class="tb2-box-centent box-centent marginRight">
+            <div class="content-box-img"><a href=""><img src="images/sjsc_03.png" /></a></div>
+            <div class="content-box-name"><a href=""><input type="checkbox" />上下网蛋糕上下网蛋糕</a></div>
+            <div class="content-box-infoPane">
+                <p class="gzrq">关注人气：<em>481</em></p>
+                <p class="gzrq">关注时间：<em>2015-07-29</em></p>
+            </div>
+            <div class="content-box-homePage"><a href="">进入商家主页</a></div>
+        </div>
+        <!--box-centent-->
+        <div class="tb2-box-centent box-centent marginRight">
+            <div class="content-box-img"><a href=""><img src="images/sjsc_03.png" /></a></div>
+            <div class="content-box-name"><a href=""><input type="checkbox" />上下网蛋糕上下网蛋糕</a></div>
+            <div class="content-box-infoPane">
+                <p class="gzrq">关注人气：<em>481</em></p>
+                <p class="gzrq">关注时间：<em>2015-07-29</em></p>
+            </div>
+            <div class="content-box-homePage"><a href="">进入商家主页</a></div>
+        </div>
+        <!--box-centent-->
+        <div class="tb2-box-centent box-centent">
+            <div class="content-box-img"><a href=""><img src="images/sjsc_03.png" /></a></div>
+            <div class="content-box-name"><a href=""><input type="checkbox" />上下网蛋糕上下网蛋糕</a></div>
+            <div class="content-box-infoPane">
+                <p class="gzrq">关注人气：<em>481</em></p>
+                <p class="gzrq">关注时间：<em>2015-07-29</em></p>
+            </div>
+            <div class="content-box-homePage"><a href="">进入商家主页</a></div>
+        </div>
+        <!--box-centent-->
+
+    </div>
+
+    <div class="centerBox">
+        <div class="tab-centerBox-left">
+            <a href="javascript:void(0);" class="cancleStore"><input type="checkbox" class="checkBox"/>全选</a>
+            <a href="javascript:void(0);" class="cancleStore colorBlue">取消收藏</a>
+        </div>
+        <div class="tab-centerBox-right">
+            <a href="" class="leftArrow">上一页</a><span><a href=""><em>1</em></a></span><span><a href="">2</a></span><span><a href="">3</a></span><a href="" class="leftArrow">下一页</a>
+        </div>
+    </div>
+
+</div>
+<!--cpsc-right-centerBox-->
+
+</body>
+</html>

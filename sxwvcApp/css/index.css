@@ -1,0 +1,398 @@
+@charset "utf-8";
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0 none;
+}
+
+ul, ol {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #8c8c8c;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+body {
+    background: #f0f0f0;
+    font-family: "microsoft yahei";
+    font-size: x-small;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #fff;
+}
+
+input:-moz-placeholder, textarea:-moz-placeholder {
+    color: #fff;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color: #fff;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color: #fff;
+}
+
+/**head style */
+.index-bg {
+    background: #f6921c;
+}
+
+.index-bg .index-box {
+    margin: 0px auto;
+}
+
+.index-bg .index-box ul {
+    overflow: hidden;
+}
+
+.index-bg .index-box ul li {
+    float: left;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.index-bg .index-box ul li:nth-child(1) {
+    width: 25%;
+}
+
+.index-bg .index-box ul li:nth-child(1) img {
+    margin: 0px auto;
+}
+
+.index-bg .index-box ul li:nth-child(2) {
+    width: 73%;
+    min-height: 20px;
+}
+
+/*.index-bg .index-box ul li:nth-child(3) {
+    width: 1%;
+}*/
+
+.index-bg .index-box ul li:nth-child(2) div {
+    width: 90%;
+    background: #f6781c;
+    border-radius: 50px;
+    box-shadow: 0px 0px 1px #a0a0a0;
+    margin: 0px auto;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.index-bg .index-box ul li:nth-child(2) div span {
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.index-bg .index-box ul li:nth-child(2) div span:nth-child(1) {
+    width: 20%;
+}
+
+.index-bg .index-box ul li:nth-child(2) div span:nth-child(2) {
+    width: 70%;
+    margin-left: 3px;
+}
+
+.index-bg .index-box ul li:nth-child(2) div span i {
+    font-style: normal;
+    width: 100%;
+}
+
+.index-bg .index-box ul li:nth-child(2) div span i img {
+    margin: 0px auto;
+}
+
+.index-bg .index-box ul li:nth-child(2) div span input {
+    width: 100%;
+    background: #f6781c;
+    border-radius: 50px;
+    line-height: 20px;
+    color: #fff;
+    height: 20px;
+    margin-top: 3px;
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 1px #f6781c;
+}
+
+.index-bg .index-box ul li:nth-child(2) div span input:focus{
+    border: 1px solid #f6781c;
+    box-shadow: 0px 0px 1px #f6781c;
+}
+
+/***navigator style*/
+.index-nav-bg {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.index-nav-bg .index-nav-box {
+    margin: 0px auto;
+}
+
+.index-nav-bg .index-nav-box ul {
+    overflow: hidden;
+}
+
+.index-nav-bg .index-nav-box ul li {
+    width: 25%;
+    float: left;
+    cursor: pointer;
+}
+
+.index-nav-bg .index-nav-box ul li img {
+    margin: 5px auto;
+
+}
+
+.index-nav-bg .index-nav-box ul li p {
+    text-align: center
+}
+
+/**gn style */
+.index-gn-bg .index-gn-box {
+    margin:5px auto;
+    background: #fff;
+    overflow: hidden;
+}
+
+.index-gn-bg .index-gn-box div {
+    width: 50%;
+}
+
+
+
+.index-gn-bg .index-gn-box div:nth-child(1) img {
+    float: left;
+    margin-top:5px;
+    margin-bottom: 5px;
+    width: 98%;
+}
+
+.index-gn-bg .index-gn-box div:nth-child(2) img {
+    float: right;
+    margin-top:5px;
+    margin-bottom: 5px;
+    width: 98%;
+}
+
+/**lc style*/
+.index-lc-bg .index-lc-box {
+    background: #fff;
+}
+
+.index-lc-bg .index-lc-box .index-lc-pic {
+    margin-bottom: 5px;
+}
+
+.index-lc-bg .index-lc-box .index-lc-pic img {
+    margin: 5px auto;
+    width: 100%;
+}
+
+.index-lc-bg .zn-pos-intro{
+    text-indent: 35px;
+}
+
+/**rec style*/
+.index-rec-bg .index-rec-box {
+    margin: 5px auto;
+    background: #fff;
+}
+
+.index-rec-bg .index-rec-box .index-rec-box-title {
+    overflow: hidden;
+    border-bottom: 1px solid #eee;
+}
+
+.index-rec-bg .index-rec-box .index-rec-box-title img, em, i {
+    float: left;
+    line-height: 25px;
+}
+
+.index-rec-bg .index-rec-box .index-rec-box-title em, i {
+    margin-left: 8px;
+    font-style: normal;
+}
+
+.index-rec-bg .index-rec-box .index-rec-box-title em {
+    font-size: small;
+}
+
+.index-rec-bg .index-rec-box .index-rec-box-title i {
+    color: #ccc;
+    font-family: "Arial";
+    font-size: xx-small;
+}
+
+.index-rec-bg .index-rec-box .index-rec-pro {
+    margin-bottom: 8px;
+}
+
+.index-rec-bg .index-rec-box .index-rec-pro ul {
+    overflow: hidden;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.index-rec-bg .index-rec-box .index-rec-pro ul li {
+    float: left;
+    width: 33.333333%;
+    border: 1px solid #eee;
+    margin-right: -1px;
+    box-shadow: 0px 0px 1px #eee;
+
+}
+
+.index-rec-bg .index-rec-box .index-rec-pro ul li div {
+    text-align: center;
+}
+
+.index-rec-bg .index-rec-box .index-rec-pro ul li .index-rec-pro-pic img {
+    margin: 0px auto;
+}
+
+.index-rec-bg .index-rec-box .index-rec-pro ul li .index-rec-pro-name {
+    width: 80%;
+    height: 35px;
+    margin: 3px auto;
+}
+
+.index-rec-bg .index-rec-box .index-rec-pro ul li .index-rec-pro-name a {
+    text-decoration: none;
+    color: #8c8c8c;
+}
+
+.index-rec-bg .index-rec-box .index-rec-pro ul li .index-rec-pro-name p {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.index-rec-bg .index-rec-box .index-rec-pro ul li .index-rec-pro-name a:hover {
+    text-decoration: none;
+}
+
+.index-rec-bg .index-rec-box .index-rec-pro ul li .index-rec-pro-price {
+    background: #fa4c22;
+    color: #fff;
+    width: 80%;
+    margin: 3px auto;
+    text-align: center;
+}
+
+/**exchange style*/
+.index-rec-bg .index-rec-box .rec-pro-line {
+    border-bottom: 1px solid #eee
+}
+
+.index-rec-bg .index-rec-box .index-rec-pro .index-pro-exchange img {
+    margin: 8px auto;
+}
+
+.index-rec-bg .index-rec-box .index-rec-pro .index-pro-exchange div:nth-child(1) {
+    float: left;
+}
+
+.index-rec-bg .index-rec-box .index-rec-pro .index-pro-exchange div:nth-child(2) {
+    float: right;
+}
+
+footer {
+    background: #fff;
+}
+
+footer .index-foot {
+    margin: 0px auto;
+}
+
+footer .index-foot .index-opera {
+    margin-top: 8px;
+/*    border-bottom: 1px solid #eee;*/
+    margin-bottom: 8px;
+    padding-bottom: 5px;
+}
+
+footer .index-foot .index-opera div {
+    overflow: hidden
+}
+
+footer .index-foot .index-opera div:nth-child(1){
+/*    border-bottom: 1px solid #eee;*/
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-bottom: 5px;
+}
+
+footer .index-foot .index-opera a {
+    padding: 5px 10px;
+}
+
+footer .index-foot .index-opera .index-version {
+    width: 38%;
+    margin: 8px auto;
+    text-align: center
+}
+
+footer .index-foot .index-opera .index-version .redColor {
+    color: #ff0000;
+}
+
+footer .index-foot .index-opera .index-copyRight {
+    text-align: center;
+}
+
+/**zn-pos style */
+
+.zn-pox-spec .zn-pox-spec-box{
+margin: 5px auto;
+
+}
+.zn-pox-spec .zn-pox-spec-box .zn-pos-spec-title{
+    font-size: small;
+    color: #ff0000;
+    font-family: "microsoft yahei";
+}
+
+.zn-pox-spec .zn-pox-spec-box  .zn-pos-spec-cont{
+    margin-top: 8px;
+    font-size: x-small;
+    font-family: "microsoft yahei";
+    color: #8c8c8c;
+    margin-bottom: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="css/ucoin.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/area.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/thgl.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/thmx.css" type="text/css" media="screen">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>个人中心-订单提取</title>
+</head>
+<body>
+
+<header class="top-bg" id="top-height">
+    <div class="container area-top-box">
+        <ul>
+            <li><a href=""><img src="images/mx-icon_03.png"></a></li>
+            <li><h4>提取订单列表</h4></li>
+            <li><a href="javascript:void(0);" class="menuIcon">
+                <img class="img-responsive pull-leftl" src="images/u-coin-icon_06.png"/></a></li>
+        </ul>
+        <script type="text/javascript">
+            $(function () {
+                $(".menuIcon").click(function () {
+                    $(".hidden-box").toggle();
+                    var topWidth = document.getElementById('top-height').offsetHeight;
+                    $(".thmx-count-bg").css('margin-top', topWidth);
+                });
+            });
+        </script>
+
+    </div>
+
+    <div class="hidden-box" style="display: none;">
+        <ol>
+            <li class="box-bg ">
+                <a href="">
+                    <div><img src="images/u-coin-icon_15.png" class="img-responsive"></div>
+                    <div><p>U币兑换</p></div>
+                </a>
+            </li>
+            <li class="box-bg box-selected">
+                <a href="">
+                    <div><img src="images/u-coin-icon_15.png" class="img-responsive"></div>
+                    <div><p>联名商家</p></div>
+                </a>
+            </li>
+            <li class="box-bg ">
+                <a href="">
+                    <div><img src="images/u-coin-icon_15.png" class="img-responsive"></div>
+                    <div><p>购物车</p></div>
+                </a>
+            </li>
+            <li class="box-bg ">
+                <a href="">
+                    <div><img src="images/u-coin-icon_15.png" class="img-responsive"></div>
+                    <div><p>会员中心</p></div>
+                </a>
+            </li>
+
+        </ol>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            $(".hidden-box ol li").hover(function () {
+                $(this).addClass("box-selected").siblings().removeClass("box-selected");
+            });
+        });
+
+            $(function () {
+                $(".top-bg").ready(function () {
+                    var topHeight = document.getElementById('top-height').offsetHeight;
+                    $(".thmx-count-bg").css('margin-top', topHeight);
+                });
+            });
+
+    </script>
+</header>
+
+<section class="thmx-count-bg" style="background: #fff;">
+    <div class="container thmx-count">
+      <div>
+          <ul>
+              <li class="colorRed">全部</li>
+              <li>已发货</li>
+              <li>等发货</li>
+              <script type="text/javascript">
+                  $(function(){
+                      $(".thmx-count-bg .thmx-count ul li").click(function(){
+                          $(this).addClass("colorRed").siblings().removeClass("colorRed");
+                      })
+                  });
+
+              </script>
+          </ul>
+      </div>
+    </div>
+</section>
+
+<SECTION class="tqdd-thead">
+    <div class="container tqdd-box">
+        <ul>
+            <li>产品图片<p></p></li>
+            <li>商品名称<p>（购买时间）</p></li>
+            <li>购买U币<p>（购买数量）</p></li>
+            <li>提取码<p>（状态）</p></li>
+        </ul>
+    </div>
+</SECTION>
+
+<section class="tqdd-body">
+    <div class="container tqdd-box">
+        <ul>
+           <li>
+               <span><a href=""><img src="image/mx-icon_11.png" class="img-responsive img-thumbnail"></a></span>
+               <span>
+                   <div class="spname "><a href="javascript:void(0); " class="colorF">杨梅酒</a></div>
+                   <div>2015-05-15 12:12</div>
+               </span>
+               <span><div class=" colorF">8888988</div><div>999999</div></span>
+               <span><div class=" colorF">01234567891011</div><div>已提取</div></span>
+           </li>
+
+        </ul>
+    </div>
+
+</section>
+
+
+<section class="thmx-footer">
+    <div class="container">
+        <div class="loading-more-btn">点击加载更多</div>
+        <script type="text/javascript">
+            $(".loading-more-btn").click(function(){
+                $.ajax({
+                    url:"xx.php",
+                    type:"post",
+                    dataType:"json",
+                    success:function(msgData){
+
+                    }
+
+                });
+            });
+        </script>
+    </div>
+</section>
+</body>
+</html>

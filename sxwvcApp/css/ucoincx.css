@@ -1,0 +1,60 @@
+@charset "utf-8";
+.ucoin-cx .container ol li {
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: x-small;
+}
+
+.ucoin-cx .container ol li p {
+    margin-top: 5px;
+}
+
+.ucoin-cx .body-box ol li:nth-child(2) {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    pading-left:8px
+}
+
+.ucoin-cx .body-box ol li {
+    color: #f7992a;
+    font-family: "Microsoft yahei";
+    font-size: x-small;
+}
+
+.ucoin-cx .body-box ol li p {
+    color: #8c8c8c;
+    font-size: xx-small;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

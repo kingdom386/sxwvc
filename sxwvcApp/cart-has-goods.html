@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="css/ucoin.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/area.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/has-goods.css" type=" text/css" media="screen">
+    <link rel="stylesheet" href="css/mx.css" type="text/css" media="screen">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>购物车-有物品</title>
+</head>
+<body>
+<header class="top-bg" id="top-height">
+    <div class="container area-top-box">
+        <ul>
+            <li><a href=""><img src="images/mx-icon_03.png"></a></li>
+            <li><h4>购物车</h4></li>
+            <li></li>
+        </ul>
+        <script type="text/javascript">
+            $(function () {
+                $(".menuIcon").click(function () {
+                    $(".hidden-box").toggle();
+                    var topWidth = document.getElementById('top-height').offsetHeight;
+                    $(".select-box").css('margin-top', topWidth);
+                });
+            });
+        </script>
+
+    </div>
+</header>
+
+<script type="text/javascript">
+    $(function () {
+        $(".top-bg").ready(function () {
+            var topWidth = document.getElementById('top-height').offsetHeight;
+            $(".cart-has-goods-list").css('margin-top', topWidth);
+        });
+    });
+
+</script>
+
+<section class="cart-has-goods-list">
+    <div class=" has-goods-box">
+        <form action="" method="post">
+            <ul>
+                <li>
+                    <div class="pull-left list-left">
+                    <span><a href="javascript:void(0);">
+                        <img src="image/u-coin-icon_33.png" class="img-responsive" alt="杨梅酒"></a></span>
+                    <span>
+                        <div class="goods-name">杨梅酒</div>
+                        <div class="goods-standard">规格：ML   颜色：红色</div>
+                        <div class="goods-counts">
+                            <div class="count-min">-</div>
+                            <div><input type="text" name="counts" size="8" value="1"></div>
+                            <div class="count-plu">+</div>
+                        </div>
+                    </span>
+                    </div>
+
+                    <div class="pull-right list-right">
+                        <p>500000U币</p>
+                        <a href="javascript:void(0);"><img src="images/delete_03.png" class="img-responsive"></a>
+                    </div>
+                </li>
+            </ul>
+        </form>
+    </div>
+</section>
+
+
+<section class="mx-shop-cart" id="btmHeight">
+    <div class="pull-left cart-btm-left">总计(含运费)：200U币</div>
+    <div class="pull-right cart-btm-right"><a href="">提交订单</a></div>
+</section>
+<script type="text/javascript">
+    $(function () {
+        $(".mx-shop-cart").ready(function () {
+            var btmWidth = document.getElementById('btmHeight').offsetHeight;
+            $(".cart-has-goods-list").css('margin-bottom', btmWidth);
+
+        });
+    });
+</script>
+</body>
+</html>

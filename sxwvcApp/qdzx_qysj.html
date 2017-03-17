@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+    <link rel=" stylesheet" href="css/bootstrap-datetimepicker.min.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/ucoin.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/area.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/thgl.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/thmx.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/dzmxcx.css" type="text/css" media="screen">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+    <title>区代中心-区域商家</title>
+</head>
+<body>
+
+<header class="top-bg" id="top-height">
+    <div class="container area-top-box">
+        <ul>
+            <li><a href=""><img src="images/mx-icon_03.png"></a></li>
+            <li><h4>区域商家</h4></li>
+            <li></li>
+        </ul>
+        <script type="text/javascript">
+            $(function () {
+                $(".top-bg").ready(function () {
+                    var topWidth = document.getElementById('top-height').offsetHeight;
+                    $(".thmx-count-bg").css('margin-top', topWidth);
+                });
+            });
+        </script>
+
+    </div>
+
+
+</header>
+
+<section class="thmx-count-bg">
+    <div class="container thmx-count">
+        可选择时间段查询区域商家。
+    </div>
+</section>
+
+<section class="dzmxcx-info-subPane">
+
+    <div class="container">
+        <form action="" method="post" class="form-horizontal" id="dzmzForm">
+
+            <div class="mobilePane input-gn">
+                <span class="pull-left">商家名称：</span>
+                <span class="pull-right ctMsg">
+                    <input type="text" name="mobileCount" class="form-control input-sm mobileCt">
+                </span>
+            </div>
+
+            <div class="dz-type-pane input-gn">
+                <span class="pull-left">业务员：</span>
+                <span class="pull-right ">
+                    <div class="form-group select-margin">
+                        <select class="form-control select-width" name="dzmxType">
+                            <option value="-1">请选择</option>
+                            <option value="1">001</option>
+                            <option value="3">002</option>
+                            <option value="4">003</option>
+                            <option value="5">004</option>
+                        </select>
+                    </div>
+                </span>
+            </div>
+
+            <div class="input-gn">
+                <span class="pull-left">时间：</span>
+                <span class="pull-right data-width ">
+                   <span class="msgSd"> <input type="text" name="starDate" readonly
+                                               class="form-control input-sm start-date "></span>
+                    <label>至</label>
+                    <span class="msgEd"><input type="text" name="endDate" readonly
+                                               class="form-control input-sm end-date "
+                                               style="width: 45%;float:left;"></span>
+
+
+                </span>
+            </div>
+
+            <script type="text/javascript">
+                $(function () {
+                    $(".start-date").datetimepicker({
+                        format: 'yyyy-mm-dd',
+                        language: 'fr',
+                        weekStart: 1,
+                        todayBtn: 1,
+                        autoclose: 1,
+                        todayHighlight: 1,
+                        startView: 2,
+                        minView: 2,
+                        forceParse: 0});
+
+                    $(".end-date").datetimepicker({
+                        format: 'yyyy-mm-dd',
+                        language: 'fr',
+                        weekStart: 1,
+                        todayBtn: 1,
+                        autoclose: 1,
+                        todayHighlight: 1,
+                        startView: 2,
+                        minView: 2,
+                        forceParse: 0});
+
+
+                });
+            </script>
+
+            <div class="input-gn">
+                <div class="loading-more-btn">提交查询</div>
+            </div>
+
+            <script type="text/javascript">
+                $(".loading-more-btn").click(function () {
+                    //判断每个输入框的信息是否填写 若填写无误提交表单并跳转页面
+                    var ctReg = /^[0-9]{11}$/;
+
+                    /*获取各项值*/
+                    var ctVal = $(".mobileCt").val();
+                    var sdVal = $(".start-date").val();
+                    var edVal = $(".end-date").val();
+
+                    if ((ctReg.test(ctVal)) && (sdVal != "") && (edVal != "")) {
+                        document.getElementById("dzmzForm").submit();
+                    } else {
+                        if (!ctReg.test(ctVal)) {
+                            $(".ctMsg").addClass("has-error");
+                        } else {
+                            $(".ctMsg").removeClass("has-error");
+                        }
+                        if (sdVal == "") {
+                            $(".msgSd").addClass("has-error");
+                        } else {
+                            $(".msgSd").removeClass("has-error");
+                        }
+                        if (edVal == "") {
+                            $(".msgEd").addClass("has-error");
+                        } else {
+                            $(".msgEd").removeClass("has-error");
+                        }
+
+                        return false;
+                    }
+
+                });
+            </script>
+        </form>
+    </div>
+</section>
+
+</body>
+</html>

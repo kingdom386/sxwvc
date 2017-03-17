@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0，user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+    <!--<link rel="stylesheet" href="css/bussiness.css" type="text/css" media="screen">-->
+    <link rel="stylesheet" href="css/ucoin.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/area.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/grzx.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/grzx_grzl.css" type="text/css" media="screen">
+    <link rel=" stylesheet" href="css/grzx-shdz.css" type="text/css" media="screen">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>个人中心-收货地址-新增</title>
+</head>
+<body>
+
+<header class="top-bg" id="top-height">
+    <div class="container area-top-box">
+        <ul>
+            <li><a href=""><img src="images/mx-icon_03.png"></a></li>
+            <li><h4>新增地址</h4></li>
+            <li><button class="btn  btn-sm btn-click">提交</button></li>
+        </ul>
+
+    </div>
+
+    <script type="text/javascript">
+               $(function () {
+            $(".top-bg").ready(function () {
+                var topHeight = document.getElementById('top-height').offsetHeight;
+                $(".grzx-skin-bg").css('margin-top', topHeight);
+            });
+        });
+
+    </script>
+</header>
+
+<section class="grzx-skin-bg">
+    <div class="grzx-head-pic">
+        <div><a href="javascript:void(0);"><img src="image/img_01.png" class="img-circle img-responsive"></a></div>
+        <div><p>二傻中的逗比</p></div>
+    </div>
+</section>
+
+<section class="grzx-info-pane">
+    <div class="container grzx-info-box">
+        <form action="" method="get" role="form" id="grzx-shdz-form" >
+            <ul>
+                   <li>
+                    <div class="pull-left"><label class="control-label">区域地质：</label></div>
+                    <div class="pull-right form-control-static area-address">
+                        <span class="form-group pull-left"><select>
+                            <option>省</option>
+                            <option>省</option>
+                            <option>省</option>
+                            <option>省</option>
+                        </select></span>
+                        <span class="form-group pull-left"><select>
+                            <option>市</option>
+                        </select></span>
+                        <span class="form-group pull-left"><select>
+                            <option>区</option>
+                        </select></span>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="pull-left"><label class="control-label"><i style="font-style: normal;color: red;">
+                        *</i>街道地址：</label>
+                    </div>
+                    <div class="pull-right Streetmsg"><input type="text" class="form-control input-sm StreetCode"
+                                                             placeholder="请输入街道地址" name="street" onblur="checkStreet();"></div>
+                </li>
+
+                <li>
+                    <div class="pull-left"><label class="control-label"><i style="font-style: normal;color: red;">
+                        *</i>收货人姓名：</label>
+                    </div>
+                    <div class="pull-right Personmsg"><input type="text" class="form-control input-sm PersonCode"
+                                                             placeholder="收货人姓名" name="person" onblur="checkPerson();"></div>
+                </li>
+
+                <li>
+                    <div class="pull-left"><label class="control-label"><i style="font-style: normal;color: red;">
+                        *</i>手机号码：</label>
+                    </div>
+                    <div class="pull-right Mobilemsg form-group">
+                        <input type="text" class="form-control input-sm MobileCode"
+                                                             placeholder="手机号码" name="mobile" onblur="checkMobile();"></div>
+                </li>
+
+                <li>
+                    <div class="pull-left"><label class="control-label">电话号码：</label>
+                    </div>
+                    <div class="pull-right Telmsg"><input type="text" class="form-control input-sm TelCode"
+                                                          placeholder="电话号码" name="telephone"></div>
+                </li>
+                <li>
+                    <div class="pull-left">
+                    </div>
+                    <div class="pull-right form-group"><input type="checkbox"  name="defaultAdress" style="width: 15%"><label class="control-label">设为默认地址</label></div>
+                </li>
+            </ul>
+        </form>
+    </div>
+</section>
+
+<script type="text/javascript">
+    /*function checkArea(){
+        var areaVal = $(".AreaCode").val();
+        if(!(areaVal!="")){$(".Areamsg").addClass("has-error");$(".Areamsg").removeClass("has-success");return false;}else{$(".Areamsg").addClass("has-success");$(".Areamsg").removeClass("has-error");return true;}
+    }*/
+
+    function checkStreet(){
+        var streetVal = $(".StreetCode").val();
+        if(!(streetVal!="")){$(".Streetmsg").addClass("has-error");$(".Streetmsg").removeClass("has-success");return false;}else{$(".Streetmsg").addClass("has-success");$(".Streetmsg").removeClass("has-error");return true;}
+    }
+
+    function checkPerson(){
+        var PersonVal = $(".PersonCode").val();
+        if(!(PersonVal!="")){$(".Personmsg").addClass("has-error");$(".Personmsg").removeClass("has-success");return false;}else{$(".Personmsg").addClass("has-success");$(".Personmsg").removeClass("has-error");return true;}
+    }
+
+    function checkMobile(){
+        var MobileVal = $(".MobileCode").val();
+        if(!(MobileVal!="")){$(".Mobilemsg").addClass("has-error");$(".Mobilemsg").removeClass("has-success");return false;}else{$(".Mobilemsg").addClass("has-success");$(".Mobilemsg").removeClass("has-error");return true;}
+    }
+
+    $(function(){
+        $(".btn-click").click(function(){
+                //var f1 =  checkArea();
+                var f2 =  checkStreet();
+                var f3 =  checkPerson();
+                var f4 =  checkMobile();
+            if((f2 == true)&&(f3 == true)&&(f4 == true)){
+                document.getElementById("grzx-shdz-form").submit();
+            }else{
+                alert("提交的表单中填写的信息有误！");
+            }
+        });
+    });
+
+</script>
+
+
+<section class="grzx-shdz-operatePane">
+    <div class="container operate-box">
+        <div class="pull-left">
+            <span><a href="javascript:void(0);">15878455874</a></span>
+            <span> |</span>
+            <span><a href="javascript:void(0);">注册</a></span></div>
+        <div class="pull-right"><span><a href="javascript:scroll(0,0);">回到顶部</a></span></div>
+    </div>
+</section>
+
+<section class="sxwvc-copyright-pane">
+    <div class="container sxwvc-copyright-box">
+        <div class="sxwvc-version"><a href="javascript:void(0);"
+                                      style="color: red;text-decoration: none;margin-right:10px;">手机版</a><a
+                href="javascript:void(0);" style="color:#8c8c8c;text-decoration: none;">电脑版</a></div>
+        <div>Copyright © 2015 上下网智能营销平台 版权所有</div>
+
+    </div>
+</section>
+
+</body>
+</html>

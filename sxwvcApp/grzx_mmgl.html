@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="css/bussiness.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/ucoin.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/area.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/grzx.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/grzx_grzl.css" type="text/css" media="screen">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>个人中心-密码管理</title>
+</head>
+<body>
+<!--<header class="top-bg">
+    <div class="container">
+        <div class="col-xs-2"><a href="ucoin.html"><img src="images/mx-icon_03.png"></a></div>
+        <div class="col-xs-8"><h4 style="color: #fff;font-family: '微软雅黑';text-align: center;">密码管理</h4></div>
+        <div class="col-xs-2">
+        </div>
+
+    </div>
+</header>-->
+
+<header class="top-bg" id="top-height">
+    <div class="container area-top-box">
+        <ul>
+            <li><a href=""><img src="images/mx-icon_03.png"></a></li>
+            <li><h4>密码管理</h4></li>
+            <li><!--<a href="javascript:void(0);" class="menuIcon">
+                <img class="img-responsive pull-leftl" src="images/u-coin-icon_06.png"/></a>--></li>
+        </ul>
+        <!--<script type="text/javascript">
+            $(function () {
+                $(".menuIcon").click(function () {
+                    $(".hidden-box").toggle();
+                    var topWidth = document.getElementById('top-height').offsetHeight;
+                    $(".thmx-count-bg").css('margin-top', topWidth);
+                });
+            });
+        </script>-->
+
+    </div>
+
+    <!--<div class="hidden-box" style="display: none;">
+        <ol>
+            <li class="box-bg ">
+                <a href="">
+                    <div><img src="images/u-coin-icon_15.png" class="img-responsive"></div>
+                    <div><p>U币兑换</p></div>
+                </a>
+            </li>
+            <li class="box-bg box-selected">
+                <a href="">
+                    <div><img src="images/u-coin-icon_15.png" class="img-responsive"></div>
+                    <div><p>联名商家</p></div>
+                </a>
+            </li>
+            <li class="box-bg ">
+                <a href="">
+                    <div><img src="images/u-coin-icon_15.png" class="img-responsive"></div>
+                    <div><p>购物车</p></div>
+                </a>
+            </li>
+            <li class="box-bg ">
+                <a href="">
+                    <div><img src="images/u-coin-icon_15.png" class="img-responsive"></div>
+                    <div><p>会员中心</p></div>
+                </a>
+            </li>
+
+        </ol>
+    </div>-->
+    <script type="text/javascript">
+        /*$(function () {
+            $(".hidden-box ol li").hover(function () {
+                $(this).addClass("box-selected").siblings().removeClass("box-selected");
+            });
+        });*/
+
+        $(function () {
+            $(function () {
+                $(".top-bg").ready(function () {
+                    var topHeight = document.getElementById('top-height').offsetHeight;
+                    $(".grzx-skin-bg").css('margin-top', topHeight);
+                });
+            });
+        });
+
+    </script>
+</header>
+
+
+<section class="grzx-skin-bg">
+    <div class="grzx-head-pic">
+        <div><a href="javascript:void(0);"><img src="image/img_01.png" class="img-circle img-responsive"></a></div>
+        <div><p>二傻中的逗比</p></div>
+    </div>
+</section>
+
+<section class="grzx-info-pane">
+    <div class="container grzx-select-box">
+        <div class="col-xs-6 pull-left grzx-select-style "
+             style=" border: 1px solid #f6921c; color: #fb771c; background: #fff;">
+            重置登录密码
+        </div>
+        <div class="col-xs-6 pull-right grzx-select-style">重置支付密码</div>
+        <script type="text/javascript">
+            $(function () {
+                $(".grzx-select-box div").click(function () {
+                    $(this).css({'border': '1px solid #f6921c', 'color': '#fb771c', 'background': '#fff'}).siblings().css({'border': '1px solid #eee', 'color': '#8c8c8c', 'background': '#eee'});
+                });
+            });
+        </script>
+
+    </div>
+
+    <div class="container grzx-info-box" style="margin: 0px auto">
+        <form action="" method="post" role="form" id="grzx-grzl-form">
+            <ul>
+                <li>
+                    <div class="pull-left"><label class="control-label">原密码：</label></div>
+                    <div class="pull-right"><input type="password" class="form-control input-sm org-pwd"></div>
+                </li>
+                <script type="text/javascript">
+                    $(".org-pwd").blur(function () {
+                        //ajax 获取值
+                        $.ajax({
+                            url: "xxx.php",
+                            type: "post",
+                            dataType: "json",
+                            success: function (orgMsg) {
+                                //TODO
+                            }
+                        });
+                    });
+                    ;
+                </script>
+
+                <li>
+                    <div class="pull-left"><label class="control-label">新密码：</label></div>
+                    <div class="pull-right msgFP"><input type="password" class="form-control input-sm first-pwd ">
+                        <span style="display: none;color: red;" id="msgOne">输入的密码不符合规则！</span>
+                        <span style="display: none;color: red;" id="msgTwo">两次输入的密码不一致！</span></div>
+
+                </li>
+
+                <li>
+                    <div class="pull-left"><label class="control-label">重复密码：</label></div>
+                    <div class="pull-right msgSP"><input type="password" class="form-control input-sm sec-pwd"></div>
+                </li>
+
+                <li>
+                    <div class="pull-left"><label class="control-label"></label></div>
+                    <div class="pull-right"><input type="submit" class="btn btn-block btn-click" value="提交"></div>
+                </li>
+
+            </ul>
+        </form>
+    </div>
+</section>
+<script type="text/javascript">
+    $(function () {
+        $(".btn-click").click(function () {
+            var pwdReg = /^[a-zA-Z0-9]{6,}$/;
+
+            var fstVal = $(".first-pwd").val();
+            var secVal = $(".sec-pwd").val();
+
+            if (!pwdReg.test(fstVal)) {
+                $(".msgFP").addClass("has-error");
+                $(".msgFP").removeClass("has-success");
+                $("#msgOne").css('display', '');
+                return false;
+            } else {
+                $(".msgFP").addClass("has-success");
+                $(".msgFP").removeClass("has-error");
+                $("#msgOne").css('display', 'none');
+            }
+
+            if (!pwdReg.test(secVal)) {
+                $(".msgSP").addClass("has-error");
+                $(".msgSP").removeClass("has-success");
+                $("#msgOne").css('display', '');
+                return false;
+            } else {
+                $(".msgSP").addClass("has-success");
+                $(".msgSP").removeClass("has-error");
+                $("#msgOne").css('display', 'none');
+            }
+
+
+            if (fstVal != secVal) {
+                $("#msgOne").css('display', 'none');
+                $("#msgTwo").css('display', '');
+                return false;
+            } else {
+                $("#msgTwo").css('display', 'none');
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

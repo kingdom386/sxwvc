@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="css/ucoin.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/area.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/mx.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/cart-order.css">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <title>购物车-订单确定</title>
+</head>
+<body ondblclick="event.preventDefault();">
+<header class="top-bg" id="top-height">
+    <div class="container area-top-box">
+        <ul>
+            <li><a href=""><img src="images/mx-icon_03.png"></a></li>
+            <li><h4>订单确定</h4></li>
+            <li><!----></li>
+        </ul>
+
+
+    </div>
+
+    <div class="hidden-box" style="display: none;">
+        <ol>
+            <li class="box-bg ">
+                <a href="">
+                    <div><img src="images/u-coin-icon_15.png" class="img-responsive"></div>
+                    <div><p>U币兑换</p></div>
+                </a>
+            </li>
+            <li class="box-bg box-selected">
+                <a href="">
+                    <div><img src="images/u-coin-icon_15.png" class="img-responsive"></div>
+                    <div><p>联名商家</p></div>
+                </a>
+            </li>
+            <li class="box-bg ">
+                <a href="">
+                    <div><img src="images/u-coin-icon_15.png" class="img-responsive"></div>
+                    <div><p>购物车</p></div>
+                </a>
+            </li>
+            <li class="box-bg ">
+                <a href="">
+                    <div><img src="images/u-coin-icon_15.png" class="img-responsive"></div>
+                    <div><p>会员中心</p></div>
+                </a>
+            </li>
+
+        </ol>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            $(".hidden-box ol li").click(function () {
+                $(this).addClass("box-selected").siblings().removeClass("box-selected");
+            });
+        });
+    </script>
+</header>
+
+
+<section class="cart-label">
+    <div class="container cart-label-box">
+        您还未设置过收货地址，<a href="javascript:void(0);">立即前往添加地址</a>
+    </div>
+</section>
+
+<section class="cart-order-list">
+
+    <div class="container cart-list-box">
+        <div class="cart-list-shop-name">商店：武林外传一家店沙漠中的一家黑店</div>
+
+        <div class="cart-list-shop-list">
+            <div class="pull-left cart-list-left">
+                <img src="image/mx-icon_07.png" class="img-responsive img-thumbnail">
+            </div>
+            <div class="pull-right cart-list-right">
+                <div class="cart-list-title">杨梅酒</div>
+                <div>数量：<small>x</small>58 规格：XL 颜色 红色</div>
+                <div>价格：9999999U币</div>
+            </div>
+        </div>
+
+        <div class="cart-list-shop-list">
+            <div class="pull-left cart-list-left">
+                <img src="image/mx-icon_07.png" class="img-responsive img-thumbnail">
+            </div>
+            <div class="pull-right cart-list-right">
+                <div class="cart-list-title">杨梅酒</div>
+                <div>数量：<small>x</small>58 规格：XL 颜色 红色</div>
+                <div>价格：9999999U币</div>
+            </div>
+        </div>
+
+        <div class="cart-list-shop-list">
+            <div class="pull-left cart-list-left">
+                <img src="image/mx-icon_07.png" class="img-responsive img-thumbnail">
+            </div>
+            <div class="pull-right cart-list-right">
+                <div class="cart-list-title">杨梅酒</div>
+                <div>数量：<small>x</small>58 规格：XL 颜色 红色</div>
+                <div>价格：9999999U币</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container cart-list-box">
+        <div class="cart-list-shop-name">商店：武林外传一家店沙漠中的一家黑店</div>
+
+        <div class="cart-list-shop-list">
+            <div class="pull-left cart-list-left">
+                <img src="image/mx-icon_07.png" class="img-responsive img-thumbnail">
+            </div>
+            <div class="pull-right cart-list-right">
+                <div class="cart-list-title">杨梅酒</div>
+                <div>数量：<small>x</small>58 规格：XL 颜色 红色</div>
+                <div>价格：9999999U币</div>
+            </div>
+        </div>
+
+        <div class="cart-list-shop-list">
+            <div class="pull-left cart-list-left">
+                <img src="image/mx-icon_07.png" class="img-responsive img-thumbnail">
+            </div>
+            <div class="pull-right cart-list-right">
+                <div class="cart-list-title">杨梅酒</div>
+                <div>数量：<small>x</small>58 规格：XL 颜色 红色</div>
+                <div>价格：9999999U币</div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="container cart-post">
+        <p>配送方式：快递</p>
+    </div>
+
+</section>
+
+<section>
+    <div class="mx-toTop top-home-operate" style="display: none;">
+        <img src="images/u-coin-icon_36.png" class="img-responsive" onclick="javascript:scroll(0,0);"></div>
+</section>
+
+<section class="mx-shop-cart" id="btmHeight">
+
+    <div class="pull-left cart-btm-left">总计(含运费)：200U币</div>
+    <div class="pull-right cart-btm-right"><a href="">提交订单</a></div>
+
+</section>
+
+<script type="text/javascript">
+    $(document).on("scroll", function () {
+        var scrollTop = $(document).scrollTop();
+        if (scrollTop > 0) {
+            $(".top-home-operate").css('display', '');
+        } else {
+            $(".top-home-operate").css('display', 'none');
+        }
+    });
+</script>
+
+</body>
+</html>
+<script type="text/javascript">
+    $(function () {
+        $(".top-bg").ready(function () {
+            var topWidth = document.getElementById('top-height').offsetHeight;
+            $(".cart-label").css('margin-top', topWidth);
+
+        });
+
+        $(".mx-shop-cart").ready(function () {
+            var btmWidth = document.getElementById('btmHeight').offsetHeight + 8;
+            $(".cart-post").css('margin-bottom', btmWidth);
+
+        });
+
+    });
+
+</script>

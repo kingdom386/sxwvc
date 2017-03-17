@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="css/ucoin.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/area.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/cart.css" type="text/css">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>购物车-订单成功</title>
+</head>
+<body>
+<!--<header class="top-bg" id="top-height">
+    <div class="container">
+        <ul class="list-inline">
+            <li class="logo-icon"><img class="img-responsive pull-right" src="images/mx-icon_03.png"/></li>
+            <li class="search-box">
+                <h4 style="color: #fff;font-family: '微软雅黑';text-align: center;">订单成功</h4>
+            </li>
+            <li class="menu-icon "><a href="javascript:void(0);"><img class="img-responsive pull-leftl"
+                                                                      src="images/u-coin-icon_06.png"/></a>
+            </li>
+            <script type="text/javascript">
+                $(function () {
+                    $(".menu-icon").click(function () {
+                        $(".hidden-box").toggle();
+                        var topWidth = document.getElementById('top-height').offsetHeight;
+                        $(".cart-state-bg").css('margin-top', topWidth);
+                    });
+                });
+            </script>
+        </ul>
+    </div>
+    <div class="hidden-box" style="display: none;">
+        <ol>
+            <li class="box-bg box-selected">
+                <a href="">
+                    <div><img src="images/u-coin-icon_15.png" class="img-responsive"></div>
+                    <div><p>U币兑换</p></div>
+                </a>
+            </li>
+            <li class="box-bg ">
+                <a href="">
+                    <div><img src="images/u-coin-icon_15.png" class="img-responsive"></div>
+                    <div><p>联名商家</p></div>
+                </a>
+            </li>
+            <li class="box-bg ">
+                <a href="">
+                    <div><img src="images/u-coin-icon_15.png" class="img-responsive"></div>
+                    <div><p>购物车</p></div>
+                </a>
+            </li>
+            <li class="box-bg ">
+                <a href="">
+                    <div><img src="images/u-coin-icon_15.png" class="img-responsive"></div>
+                    <div><p>会员中心</p></div>
+                </a>
+            </li>
+
+        </ol>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            $(".hidden-box ol li").click(function () {
+                $(this).addClass("box-selected").siblings().removeClass("box-selected");
+            });
+        });
+    </script>
+</header>
+<script type="text/javascript">
+    $(function () {
+        $(".top-bg").ready(function () {
+            var topWidth = document.getElementById('top-height').offsetHeight;
+            $(".cart-state-bg").css('margin-top', topWidth);
+
+        });
+    });
+</script>-->
+
+<header class="top-bg" id="top-height">
+    <div class="container area-top-box">
+        <ul>
+            <li><a href=""><img src="images/mx-icon_03.png"></a></li>
+            <li><h4>订单成功</h4></li>
+            <li><a href="javascript:void(0);" class="menuIcon">
+                <img class="img-responsive pull-leftl" src="images/u-coin-icon_06.png"/></a></li>
+        </ul>
+        <script type="text/javascript">
+            $(function () {
+                $(".menuIcon").click(function () {
+                    $(".hidden-box").toggle();
+                    var topWidth = document.getElementById('top-height').offsetHeight;
+                    $(".cart-state-bg").css('margin-top', topWidth);
+                });
+            });
+        </script>
+
+    </div>
+
+    <div class="hidden-box" style="display: none;">
+        <ol>
+            <li class="box-bg ">
+                <a href="">
+                    <div><img src="images/u-coin-icon_15.png" class="img-responsive"></div>
+                    <div><p>U币兑换</p></div>
+                </a>
+            </li>
+            <li class="box-bg box-selected">
+                <a href="">
+                    <div><img src="images/u-coin-icon_15.png" class="img-responsive"></div>
+                    <div><p>联名商家</p></div>
+                </a>
+            </li>
+            <li class="box-bg ">
+                <a href="">
+                    <div><img src="images/u-coin-icon_15.png" class="img-responsive"></div>
+                    <div><p>购物车</p></div>
+                </a>
+            </li>
+            <li class="box-bg ">
+                <a href="">
+                    <div><img src="images/u-coin-icon_15.png" class="img-responsive"></div>
+                    <div><p>会员中心</p></div>
+                </a>
+            </li>
+
+        </ol>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            $(".hidden-box ol li").click(function () {
+                $(this).addClass("box-selected").siblings().removeClass("box-selected");
+            });
+        });
+
+        $(function(){
+            $(function () {
+                $(".top-bg").ready(function () {
+                    var topWidth = document.getElementById('top-height').offsetHeight;
+                    $(".cart-state-bg").css('margin-top', topWidth);
+                });
+            });
+        });
+
+    </script>
+</header>
+
+<section class="cart-state-bg">
+    <div class="container cart-state-box">
+        <img src="images/cart-order-success-icon_03.png" class="img-responsive">
+        <p>恭喜您，支付成功！</p>
+    </div>
+</section>
+
+<section class="cart-order-operate">
+    <div class=" order-operate-box">
+        <p style="text-align: left"><a href="javascript:void(0);">查看订单列表</a></p>
+
+        <p style="text-align: left;">如果您想查看购买记录，您可以<a href="javascript:void(0);">返回我的帐单</a></p>
+
+        <p style="text-align: left">欢迎您下次购物，<a href="javascript:void(0);">继续逛逛</a></p>
+    </div>
+</section>
+
+
+</body>
+</html>

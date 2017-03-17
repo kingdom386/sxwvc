@@ -1,0 +1,612 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/merchant.css"/>
+    <script type="text/javascript" src="js/jquery1.42.min.js"></script>
+    <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+    <title>联盟商家</title>
+</head>
+<body>
+
+<!--在线客服-->
+<div class="kf-box">
+    <div id="box">
+        <div class="hid">
+            <a href=""></a>
+        </div>
+        <div class="dis" style="display:none;">
+            <a href="http://wpa.qq.com/msgrd?v=3&uin=xxx&site=qq&menu=yes" target="_blank" title="在线客服"></a>
+            <a href="javascript:void(0);"></a>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(".kf-box #box").mouseover(function () {
+        $("#box").stop();
+        $("#box").animate({marginRight: "80px"}, 1000);
+        $(".hid").css({display: "none"});
+        $(".dis").css({display: "block"});
+    });
+
+    $(".kf-box #box").mouseout(function () {
+        $("#box").stop();
+        $("#box").animate({marginRight: "0px"}, 1000);
+        $(".hid").css({display: "block"});
+        $(".dis").css({display: "none"});
+    });
+
+</script>
+
+<div class="header">
+    <div class="top">
+        <div class="index-top-left">
+            <ul>
+                <li><a href="" class="colorGray">您好，欢迎进入上下网智能营销平台 ！</a></li>
+                <li><a href="" class="colorBlack">请登录</a></li>
+                <li><a href="" class="colorGreen">免费注册</a></li>
+            </ul>
+        </div>
+        <!--index-top-left-->
+        <div class="index-top-right">
+            <ul>
+                <li class="borderRight"><a href="Recruitment.html"><i class="cart-icon"></i><em class="cart-markup">购物车</em></a></li>
+                <li class="borderRight"><a href="">我的订单</a></li>
+                <li class="borderRight"><a href="">我的收藏</a></li>
+                <li class="borderRight"><a href="">我是商家</a></li>
+                <li><a href="Recruitment.html">商家入驻</a></li>
+            </ul>
+
+        </div>
+        <!--index-top-right-->
+    </div>
+    <!--top-->
+</div>
+<!--header-->
+<!--当前位置 搜索栏 标签-->
+<div class="index-head">
+    <div class="index-head-left">
+        <div class="i-head-left-logo"><a href="index-1.html"><img src="images/logoin.png"></a></div>
+        <div class="i-head-left-loc">
+            <div class="i-headLeft-curLoc">台州</div>
+            <div class="i-headLeft-changeLoc"><a href="area.html">切换城市</a></div>
+        </div>
+    </div>
+    <!--index-head-left-->
+    <div class="index-head-mid">
+        <div class="index-head-mid-searchBox">
+            <div class="i-head-mid-sList">
+                <div class="s-list">
+                    <div class="index-spCp">
+                        <a href="javascript:void(0);" class="index-sp">商品</a>
+                        <a href="javascript:void(0);" class="index-cp">产品</a>
+                    </div>
+                    <div class="down-arrow arrow"></div>
+                    <script type="text/javascript" src="js/spcp.js"></script>
+
+                </div>
+            </div>
+            <div class="i-head-mid-sInput"><input type="text" placeholder="男装"></div>
+            <div class="i-head-mid-sBtn"><a href="noResult.html">搜索</a></div>
+
+        </div>
+        <div class="i-head-mid-sLabel">
+            <a href="">女装</a>
+            <a href="">男装</a>
+            <a href="" class="sHot">IPhone6</a>
+            <a href="">鞋子</a>
+        </div>
+
+    </div>
+    <!--index-head-mid-->
+    <div class="index-head-right">
+        <ul>
+            <li>
+                <div class="i-head-right-serverIcon"><img src="images/index_10.png"></div>
+                <div class="i-head-right-serverText">精致服务</div>
+            </li>
+            <li>
+                <div class="i-head-right-serverIcon"><img src="images/index_08.png"></div>
+                <div class="i-head-right-serverText">正品保证</div>
+            </li>
+            <li>
+                <div class="i-head-right-serverIcon"><img src="images/index_06.png"></div>
+                <div class="i-head-right-serverText">随时退</div>
+            </li>
+        </ul>
+
+    </div>
+    <!--index-head-right-->
+
+</div>
+<!--index-head-->
+<!--导航栏-->
+<!--navigator-->
+<div class="index-navigator">
+    <div class="index-nav-main"><a href="">全部分类</a></div>
+    <div class="index-nav-sub">
+        <ul>
+            <li><a href="index-1.html">首页</a></li>
+            <li><a href="merchant.html">联盟商家</a></li>
+            <li><a href="merchantList.html">商家产品</a></li>
+            <li><a href="">U币兑换</a></li>
+            <li><a href="">代理加盟</a></li>
+        </ul>
+    </div>
+
+</div>
+<!--index-navigator-->
+
+<!--商家信息-->
+<div class="merchant-info">
+    <div class="merchant-info-loc">
+        <a href="index-1.html" class="merchant">联盟商家首页</a><span class="merchantArrow">></span>
+        <a href="" class="merchant">浙江省</a><span class="merchantArrow">></span>
+        <a href="" class="merchant">台州市</a><span class="merchantArrow">></span>
+        <a href="" class="merchant">生活服务</a><span class="merchantArrow">></span>
+        <a href="" class="merchant colorGray">微微婚礼私人订制</a>
+    </div>
+
+    <div class="merchant-info-box">
+        <div class="merchant-info-markup"><img src="images/merchant03.png"></div>
+        <div class="merchant-info-center">
+            <div class="left">
+                <div class="left-box">
+                    <dl>
+                        <dt>微微婚礼私人订制</dt>
+                        <dd><span>浙江省台州市黄岩区台州市黄岩西城新城路（米兰商务宾馆对面）</span><a href="" class="loc"></a></dd>
+                        <dd>解经理 15757650625</dd>
+                    </dl>
+                </div>
+                <!--left-box-->
+            </div>
+            <!--left-->
+            <div class="mid">
+                <div class="hot">人气指数：</div>
+                <div class="star">
+                    <div class="down-bg"></div>
+                    <div class="up-bg"></div>
+                </div>
+            </div>
+            <!--mid-->
+            <div class="right">
+                <div class="rqyy-left">
+                    <div class="consume">消费人数 55847777</div>
+                    <div class="times">营业时间 9:00-12:00</div>
+                </div>
+
+                <div class="ewm-right">
+                    <img src="images/recruitment_07.png" >
+                </div>
+
+            </div>
+            <!--right-->
+        </div>
+        <!--merchant-info-center-->
+    </div>
+</div>
+
+<!--商家介绍-->
+<div class="merchant-intro">
+    <div class="merchant-intro-title">商家介绍</div>
+    <div class="borderLine"></div>
+    <div class="merchant-intro-box">
+        <div class="merchant-introBox-left">
+            <a href="javascript:void(0);"><img src="images/merchant07.png"></a>
+            <a href="javascript:void(0);" class="findAll">参看全部23张图片</a>
+        </div>
+        <div class="merchant-introBox-right">
+            <dl>
+                <dt>商家服务：</dt>
+                <dd>免费WIFI 免费停车</dd>
+            </dl>
+            <dl style="margin-top:12px;">
+                <dt>商家简介：</dt>
+                <dd>我们以婚礼私人定制为理念，为客户提供一对一的婚礼服务，打破传统婚礼模式，从新人的情感出发，策划只属于你们的婚礼。拥有最新的婚礼理念，为你们打造最时尚的婚礼场景和最适合的婚礼流程。
+                    缘爱婚礼定制是拥有一支婚礼策划、司仪主持、摄影跟妆和布置演出的专业团队，公司面积350平方，设有接待区，洽谈区，影音室，办公区，婚礼场景展示区，近180平方的大露台，可举办生日派对，私人自助聚餐，还可做为求婚，订婚的场地。<a
+                            href="" title="查看全部">[全部]</a></dd>
+            </dl>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        $(".findAll").click(function () {
+            document.body.onmousewheel = function () { return false;}
+            //当前遮罩层的宽度、高度
+            $(".image-layer").show();
+            $(".layer-box").show();
+            var layerWidth = $(".layer-box").width();
+            var layerHeight = $(".layer-box").height();
+
+            //获取当前屏幕的宽度、高度
+            var scrWidth = document.body.offsetWidth;
+            var scrHeight = $(window).height();
+
+            //遮罩层居中
+            var midLeft = (scrWidth - layerWidth) / 2;
+            var midTop = (scrHeight - layerHeight) / 2;
+            $(".layer-box").css({top: midTop, left: midLeft});
+        });
+
+        $(".layer-box .imgClose").click(function(){
+            document.body.onmousewheel = function () { return true;}
+            $(".image-layer").hide();
+            $(".layer-box").hide();
+        });
+
+
+    });
+</script>
+<!--背景模糊层-->
+<div class="image-layer">
+</div>
+<!--start 图片遮罩层-->
+<div class="layer-box">
+    <a href="javascript:void(0);" class="imgClose">X</a>
+    <a href="javascript:void(0);" class="prev img-prev" onclick="indexMin()"></a>
+    <a href="javascript:void(0);" class="next img-next" onclick="indexPlus()"></a>
+    <span class="img-msg">当前<em class="imgCur">1</em>/<em class="imgAll"></em>张</span>
+    <!--遮罩层内容-->
+    <div class="img-box">
+       <ul>
+           <li><a href="javascript:void(0);"><img src="image/1.jpg"></a></li>
+           <li><a href="javascript:void(0);"><img src="image/2.jpg"></a></li>
+           <li><a href="javascript:void(0);"><img src="image/3.jpg"></a></li>
+           <li><a href="javascript:void(0);"><img src="image/4.jpg"></a></li>
+       </ul>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function(){
+    $(".layer-box .img-box").ready(function(){
+        $(".imgAll").html($(".layer-box .img-box ul li").length);
+        jQuery(".layer-box").slide({mainCell:".img-box ul",autoPlay:"false",defaultIndex:"0"});
+    });
+});
+
+    function indexMin(){
+      var curIndex = parseInt($(".imgCur").html());
+       if(curIndex >1){
+           $(".imgCur").html((--curIndex));
+       }else if(curIndex == 1){
+           $(".imgCur").html($(".layer-box .img-box ul li").length);
+       }
+    }
+
+    function indexPlus(){
+        var curIndex = parseInt($(".imgCur").html());
+        if(curIndex < ($(".layer-box .img-box ul li").length)){
+            $(".imgCur").html((++curIndex));
+        }else if(curIndex == ($(".layer-box .img-box ul li").length)){
+            $(".imgCur").html(1);
+        }
+    }
+
+
+</script>
+
+<!--end 图片遮罩层-->
+<!--产品列表-->
+<div class="merchant-intro merchant-pro">
+    <div class="merchant-intro-title">产品列表</div>
+    <div class="borderLine"></div>
+    <div class="merchant-intro-box merchant-pro-box">
+        <!--有产品列表状态 -->
+        <div class="list-box">
+            <div class="pro-pic"><a href=""><img src="images/merchant10.png" alt="婚纱照"></a></div>
+            <div class="pro-info">
+                <dl>
+                    <dt><a href="">5套餐服务专业策划</a></dt>
+                    <dd>我们以婚礼私人定制为理念，为客户提供一对一的婚礼服务，打破传统婚礼模式，从新人的情感出发，策划只属于你们的婚礼。拥有最新的婚礼理念，为你们打造最时尚的婚礼场景和最适合的婚礼流程。
+                    </dd>
+                </dl>
+            </div>
+            <div class="pro-sale">
+                <div class="sale-box">
+                        <span class="sale-count">
+                            <p class="merchant-jf">88885<em>积分</em></p>
+                            <P class="merchant-js">已售55555件</P>
+                        </span>
+                        <span class="sale-btn">
+                            <a href="">立即抢购</a>
+                        </span>
+                </div>
+            </div>
+        </div>
+        <!--list-box-->
+
+        <div class="list-box">
+            <div class="pro-pic"><a href=""><img src="images/merchant10.png" alt="婚纱照"></a></div>
+            <div class="pro-info">
+                <dl>
+                    <dt><a href="">5套餐服务专业策划</a></dt>
+                    <dd>我们以婚礼私人定制为理念，为客户提供一对一的婚礼服务，打破传统婚礼模式，从新人的情感出发，策划只属于你们的婚礼。拥有最新的婚礼理念，为你们打造最时尚的婚礼场景和最适合的婚礼流程。
+                    </dd>
+                </dl>
+            </div>
+            <div class="pro-sale">
+                <div class="sale-box">
+                        <span class="sale-count">
+                            <p class="merchant-jf">88885<em>积分</em></p>
+                            <P class="merchant-js">已售55555件</P>
+                        </span>
+                        <span class="sale-btn">
+                            <a href="">立即抢购</a>
+                        </span>
+                </div>
+            </div>
+        </div>
+        <!--list-box-->
+
+        <div class="list-box">
+            <div class="pro-pic"><a href=""><img src="images/merchant10.png" alt="婚纱照"></a></div>
+            <div class="pro-info">
+                <dl>
+                    <dt><a href="">5套餐服务专业策划</a></dt>
+                    <dd>我们以婚礼私人定制为理念，为客户提供一对一的婚礼服务，打破传统婚礼模式，从新人的情感出发，策划只属于你们的婚礼。拥有最新的婚礼理念，为你们打造最时尚的婚礼场景和最适合的婚礼流程。
+                    </dd>
+                </dl>
+            </div>
+            <div class="pro-sale">
+                <div class="sale-box">
+                        <span class="sale-count">
+                            <p class="merchant-jf">88885<em>积分</em></p>
+                            <P class="merchant-js">已售55555件</P>
+                        </span>
+                        <span class="sale-btn">
+                            <a href="">立即抢购</a>
+                        </span>
+                </div>
+            </div>
+        </div>
+        <!--list-box-->
+
+        <div class="list-box">
+            <div class="pro-pic"><a href=""><img src="images/merchant10.png" alt="婚纱照"></a></div>
+            <div class="pro-info">
+                <dl>
+                    <dt><a href="">5套餐服务专业策划</a></dt>
+                    <dd>我们以婚礼私人定制为理念，为客户提供一对一的婚礼服务，打破传统婚礼模式，从新人的情感出发，策划只属于你们的婚礼。拥有最新的婚礼理念，为你们打造最时尚的婚礼场景和最适合的婚礼流程。
+                    </dd>
+                </dl>
+            </div>
+            <div class="pro-sale">
+                <div class="sale-box">
+                        <span class="sale-count">
+                            <p class="merchant-jf">88885<em>积分</em></p>
+                            <P class="merchant-js">已售55555件</P>
+                        </span>
+                        <span class="sale-btn">
+                            <a href="">立即抢购</a>
+                        </span>
+                </div>
+            </div>
+        </div>
+        <!--list-box-->
+
+        <div class="list-box">
+            <div class="pro-pic"><a href=""><img src="images/merchant10.png" alt="婚纱照"></a></div>
+            <div class="pro-info">
+                <dl>
+                    <dt><a href="">5套餐服务专业策划</a></dt>
+                    <dd>我们以婚礼私人定制为理念，为客户提供一对一的婚礼服务，打破传统婚礼模式，从新人的情感出发，策划只属于你们的婚礼。拥有最新的婚礼理念，为你们打造最时尚的婚礼场景和最适合的婚礼流程。
+                    </dd>
+                </dl>
+            </div>
+            <div class="pro-sale">
+                <div class="sale-box">
+                        <span class="sale-count">
+                            <p class="merchant-jf">88885<em>积分</em></p>
+                            <P class="merchant-js">已售55555件</P>
+                        </span>
+                        <span class="sale-btn">
+                            <a href="">立即抢购</a>
+                        </span>
+                </div>
+            </div>
+        </div>
+        <!--list-box-->
+
+
+        <a href="" class="dis-other">展开剩下5个</a>
+
+        <!-- &lt;!&ndash;无产品列表状态&ndash;&gt;
+        <div class="list-none">
+            <p>该商家暂无上传商品</p>
+        </div>
+             -->
+
+    </div>
+</div>
+
+<!--感兴趣-->
+<div class="merchant-interest">
+    <div class="interest-title">您可能感兴趣的商家</div>
+    <div class="interest-box">
+        <div class="interest-list">
+            <div class="listBox">
+                <div class="interest-pic"><a href=""><img src="images/merchant14.png"></a></div>
+                <div class="interest-name"><a href="">台州市黄岩缘爱婚礼订制</a></div>
+                <div class="interest-hot">
+                    <em>人气</em>
+
+                    <div class="star-box">
+                        <div class="down-bg"></div>
+                        <div class="up-bg" style="width: 83%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--interest-list-->
+
+        <div class="interest-list">
+            <div class="listBox">
+                <div class="interest-pic"><a href=""><img src="images/merchant14.png"></a></div>
+                <div class="interest-name"><a href="">台州市黄岩缘爱婚礼订制</a></div>
+                <div class="interest-hot">
+                    <em>人气</em>
+
+                    <div class="star-box">
+                        <div class="down-bg"></div>
+                        <div class="up-bg" style="width: 95%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--interest-list-->
+
+        <div class="interest-list">
+            <div class="listBox">
+                <div class="interest-pic"><a href=""><img src="images/merchant14.png"></a></div>
+                <div class="interest-name"><a href="">台州市黄岩缘爱婚礼订制</a></div>
+                <div class="interest-hot">
+                    <em>人气</em>
+
+                    <div class="star-box">
+                        <div class="down-bg"></div>
+                        <div class="up-bg" style="width: 49%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--interest-list-->
+
+        <div class="interest-list">
+            <div class="listBox">
+                <div class="interest-pic"><a href=""><img src="images/merchant14.png"></a></div>
+                <div class="interest-name"><a href="">台州市黄岩缘爱婚礼订制</a></div>
+                <div class="interest-hot">
+                    <em>人气</em>
+
+                    <div class="star-box">
+                        <div class="down-bg"></div>
+                        <div class="up-bg" style="width: 35%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--interest-list-->
+        <div class="interest-list">
+            <div class="listBox">
+                <div class="interest-pic"><a href=""><img src="images/merchant14.png"></a></div>
+                <div class="interest-name"><a href="">台州市黄岩缘爱婚礼订制</a></div>
+                <div class="interest-hot">
+                    <em>人气</em>
+
+                    <div class="star-box">
+                        <div class="down-bg"></div>
+                        <div class="up-bg" style="width: 24%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--interest-list-->
+    </div>
+    <!--interest-box-->
+</div>
+<!--merchant-interest-->
+
+<!--页底 footer-->
+<div class="index-footer"></div>
+<!--index-footer-->
+<div class="index-footer-list">
+    <div class="index-footer-listBox">
+        <ul>
+            <li class="borderLine">
+                <div class="index-footer-box">
+                    <div class="F-floor">
+                        <i class="footer-icon"></i>
+                        <em>购物指南</em>
+                    </div>
+                    <div class="S-floor">
+                        <span class="left-txt"><a href="">购物流程</a></span> <span class="right-txt"><a
+                            href="">会员介绍</a></span>
+                    </div>
+                    <div class="S-floor">
+                        <span class="left-txt"><a href="">常见问题</a></span> <span class="right-txt"><a
+                            href="">联系客户</a></span>
+                    </div>
+                </div>
+            </li>
+            <li class="borderLine">
+                <div class="index-footer-box">
+                    <div class="F-floor">
+                        <i class="pay-icon "></i>
+                        <em>支付方式</em>
+                    </div>
+                    <div class="S-floor">
+                        <span class="left-txt"><a href="">在线支付</a></span> <span class="right-txt"><a
+                            href="">公司转账</a></span>
+                    </div>
+                    <div class="S-floor">
+                        <span class="left-txt"><a href="">线下实体</a></span> <span class="right-txt"><a
+                            href="">联盟商家</a></span>
+                    </div>
+                </div>
+            </li>
+            <li class="borderLine">
+                <div class="index-footer-box">
+                    <div class="F-floor">
+                        <i class="safeguard-icon"></i>
+                        <em>服务保障</em>
+                    </div>
+                    <div class="S-floor">
+                        <span class="left-txt"><a href="">价格优惠</a></span> <span class="right-txt"><a
+                            href="">退款说明</a></span>
+                    </div>
+                    <div class="S-floor">
+                        <span class="left-txt"><a href="">返修/退换货</a></span> <span class="right-txt"><a href="">取消订单</a></span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="index-footer-box">
+                    <div class="F-floor">
+                        <i class="feature-icon"></i>
+                        <em>特色服务</em>
+                    </div>
+                    <div class="S-floor">
+                        <span class="left-txt"><a href="">微信平台</a></span> <span class="right-txt"><a
+                            href="">在线竞拍</a></span>
+                    </div>
+                    <div class="S-floor">
+                        <span class="left-txt"><a href="">1元兑换</a></span> <span class="right-txt"><a
+                            href="">申请商家</a></span>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <!--index-footer-listBox-->
+    <div class="sub-index-page">
+        <a href="" class="borderLine">首页</a>
+        <a href="" class="borderLine">关于我们</a>
+        <a href="" class="borderLine">联系我们</a>
+        <a href="" class="borderLine">人才招聘</a>
+        <a href="" class="borderLine">商家入驻</a>
+        <a href="">广告服务</a>
+    </div>
+
+    <div class="index-copyRights">Copyrigh©2014-2016 上下网智能营销平台 www.sxwvc.com Inc.,All rights reserved.
+        浙ICP备14036505号-1
+    </div>
+    <div class="index-copyRights">
+        <ul>
+            <li><a href=""><img src="images/index_82.png"></a></li>
+            <li><a href=""><img src="images/index_84.png"></a></li>
+            <li><a href=""><img src="images/index_86.png"></a></li>
+            <li><a href=""><img src="images/index_88.png"></a></li>
+        </ul>
+    </div>
+
+</div>
+<!--index-footer-list-->
+
+</body>
+</html>

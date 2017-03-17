@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="css/ucoin.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/area.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/thgl.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/thmx.css" type="text/css" media="screen">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>区代中心-业务员</title>
+</head>
+<body>
+
+<header class="top-bg" id="top-height">
+    <div class="container area-top-box">
+        <ul>
+            <li><a href=""><img src="images/mx-icon_03.png"></a></li>
+            <li><h4>业务员</h4></li>
+            <li></li>
+        </ul>
+        <script type="text/javascript">
+            $(function () {
+                $(".top-bg").ready(function () {
+                    var topWidth = document.getElementById('top-height').offsetHeight;
+                    $(".thmx-count-bg").css('margin-top', topWidth);
+                });
+            });
+        </script>
+    </div>
+
+</header>
+
+
+<section class="thmx-count-bg">
+    <div class="container">
+        <div class="pull-right" style="width:40%;">
+            <a href="javascript:void(0);">
+                <span class="pull-right"
+                      style="width: 60%;font-size: x-small;line-height: 40px;color:#fd7b03;">添加业务员</span>
+            <span style="max-height: 45px;margin: 8px 5px 8px 0;" class="pull-right"><img
+                    src="images/grzx-shdz-icon_03.png"
+                    class="img-responsive"
+                    ></span>
+
+            </a>
+        </div>
+    </div>
+</section>
+
+<SECTION class="thmx-thead">
+    <div class="container">
+        <ul>
+            <li>供应商名称<p>（添加时间）</p></li>
+            <li>联系人<p>（联系电话）</p></li>
+            <li>状态<p>（描述）</p></li>
+        </ul>
+    </div>
+</SECTION>
+
+<section class="thmx-body">
+    <div class="container body-box">
+        <ul>
+            <li>我是hot店<p>2015-07-15 12：15</p></li>
+            <li>01855487485<p></p></li>
+            <li>999999<p>最专业的一家</p></li>
+        </ul>
+    </div>
+
+    <div class="container body-box">
+        <ul>
+            <li>我是hot店<p>2015-07-15 12：15</p></li>
+            <li>01855487485<p></p></li>
+            <li>999999<p>最专业的一家</p></li>
+        </ul>
+    </div>
+
+    <div class="container body-box">
+        <ul>
+            <li>我是hot店<p>2015-07-15 12：15</p></li>
+            <li>01855487485<p></p></li>
+            <li>999999<p>最专业的一家</p></li>
+        </ul>
+    </div>
+
+    <div class="container body-box">
+        <ul>
+            <li>我是hot店<p>2015-07-15 12：15</p></li>
+            <li>01855487485<p></p></li>
+            <li>999999<p>最专业的一家</p></li>
+        </ul>
+    </div>
+
+    <div class="container body-box">
+        <ul>
+            <li>我是hot店<p>2015-07-15 12：15</p></li>
+            <li>01855487485<p></p></li>
+            <li>999999<p>最专业的一家</p></li>
+        </ul>
+    </div>
+
+    <div class="container body-box">
+        <ul>
+            <li>我是hot店<p>2015-07-15 12：15</p></li>
+            <li>01855487485<p></p></li>
+            <li>999999<p>最专业的一家</p></li>
+        </ul>
+    </div>
+
+
+</section>
+
+<section class="thmx-footer">
+    <div class="container">
+        <div class="loading-more-btn">点击加载更多</div>
+        <script type="text/javascript">
+            $(".loading-more-btn").click(function () {
+                $.ajax({
+                    url: "xx.php",
+                    type: "post",
+                    dataType: "json",
+                    success: function (msgData) {
+
+                    }
+                });
+            });
+        </script>
+    </div>
+</section>
+</body>
+</html>

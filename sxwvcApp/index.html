@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="css/index.css" type="text/css" media="screen">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/hammer.min.js"></script>
+    <script type="text/javascript" src="js/jquery.hammer.js"></script>
+    <title>首页</title>
+</head>
+<body>
+<header class="index-bg">
+    <div class="container index-box">
+        <ul>
+            <li><a href="index.html"><img src="images/u-coin-icon_03.png" class="img-responsive"></a></li>
+            <li>
+                <div>
+                    <span> <i><img src="images/u-coin-icon_09.png" class="img-responsive"></i></span>
+                    <span> <input type="text" name="searchPro" maxlength="20" placeholder="搜索兑换产品" style="color: #fff;font-size: small"></span>
+                </div>
+
+            </li>
+            <li></li>
+        </ul>
+    </div>
+</header>
+
+<section class="index-nav-bg">
+    <div class="container index-nav-box">
+        <ul>
+            <li>
+                <div><img src="images/index-icon_06.png" class="img-responsive"></div>
+                <div><p><a href="javascript:void(0);">U币兑换</a></p></div>
+            </li>
+            <li>
+                <div><img src="images/index-icon_03.png" class="img-responsive"></div>
+                <div><p><a href="javascript:void(0);">联盟商家</a></p></div>
+            </li>
+            <li>
+                <div><img src="images/index-icon_12.png" class="img-responsive"></div>
+                <div><p><a href="javascript:void(0);">购物车</a></p></div>
+            </li>
+            <li>
+                <div><img src="images/index-icon_09.png" class="img-responsive"></div>
+                <div><p><a href="javascript:void(0);">个人中心</a></p></div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+<section class="index-lc-bg">
+
+    <div class="container index-lc-box">
+        <div class="carousel slide" id="spSlide">
+            <ol class="carousel-indicators">
+                <li data-target="#spSlide" data-slide-to="0" class="active"></li>
+                <li data-target="#spSlide" data-slide-to="1"></li>
+                <li data-target="#spSlide" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner index-lc-pic">
+                <div class="item active">
+                    <img src="image/index-icon_25.png" class="img-responsive">
+                    <img src="image/index-icon_27.png" class="img-responsive">
+                </div>
+                <div class="item">
+                    <img src="image/index-icon_25.png" class="img-responsive">
+                    <img src="image/index-icon_27.png" class="img-responsive">
+                </div>
+                <div class="item">
+                    <img src="image/index-icon_25.png" class="img-responsive">
+                    <img src="image/index-icon_27.png" class="img-responsive">
+                </div>
+            </div>
+
+        </div>
+        <script type="text/javascript">
+            $(".carousel").carousel({
+                interval: 2000
+            });
+
+            $(document).ready(function() {
+                $('#spSlide').hammer().on('swipeleft', function(){
+                    $(this).carousel('next');
+                })
+                $('#spSlide').hammer().on('swiperight', function(){
+                    $(this).carousel('prev');
+                })
+            });
+        </script>
+
+    </div>
+
+</section>
+
+
+<section class="index-gn-bg">
+    <div class="container index-gn-box">
+        <div class="pull-left"><img src="image/index-icon_19.png" class="img-responsive"></div>
+        <div class="pull-right"><img src="image/index-icon_21.png" class="img-responsive"></div>
+    </div>
+</section>
+
+<section class="index-rec-bg">
+    <div class="container index-rec-box">
+        <div class="index-rec-box-title"><img src="images/index-icon_30.png" class="img-responsive"/><em>每日推荐</em><i>每日严选
+            火爆兑换</i></div>
+        <div class="index-rec-pro">
+            <ul>
+                <li>
+                    <div class="index-rec-pro-pic"><img src="image/index-icon_34.png" class="img-responsive"></div>
+                    <div class="index-rec-pro-name"><p><a href="javascript:void(0);" title="壹周期生物纤维修护面膜盒装壹周期生物纤维修">壹周期生物纤维修护面膜盒装壹周期生物纤维修</a>
+                    </p></div>
+                    <div class="index-rec-pro-price"><p>6888U币</p></div>
+                </li>
+                <li>
+                    <div class="index-rec-pro-pic"><img src="image/index-icon_36.png" class="img-responsive"></div>
+                    <div class="index-rec-pro-name"><p><a href="javascript:void(0);" title="壹周期生物纤维修护面膜盒装壹周期生物纤维修">壹周期生物纤维修护面膜盒装壹周期生物纤维修</a>
+                    </p></div>
+                    <div class="index-rec-pro-price"><p>68888U币</p></div>
+                </li>
+                <li>
+                    <div class="index-rec-pro-pic"><img src="image/index-icon_38.png" class="img-responsive"></div>
+                    <div class="index-rec-pro-name"><p><a href="javascript:void(0);" title="壹周期生物纤维修护面膜盒装壹周期生物纤维修">壹周期生物纤维修护面膜盒装壹周期生物纤维修</a>
+                    </p></div>
+                    <div class="index-rec-pro-price"><p>68888U币</p></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="index-rec-bg">
+    <div class="container index-rec-box">
+        <div class="index-rec-box-title"><img src="images/index-icon_30.png" class="img-responsive" /><em>兑换专场</em></div>
+        <div class="index-rec-pro rec-pro-line">
+            <div class="index-pro-exchange">
+                <img src="image/index-icon_44.png" class="img-responsive" alt="杨梅酒">
+
+                <div class="">汾酒集团</div>
+                <div class="">名酒之始祖 “最早国酒”</div>
+            </div>
+
+        </div>
+
+        <div class="index-rec-pro rec-pro-line">
+            <div class="index-pro-exchange">
+                <img src="image/index-icon_47.png" class="img-responsive" alt="杨梅酒">
+
+                <div class="">汾酒集团</div>
+                <div class="">名酒之始祖 “最早国酒”</div>
+            </div>
+
+        </div>
+
+        <div class="index-rec-pro rec-pro-line">
+            <div class="index-pro-exchange">
+                <img src="image/index-icon_49.png" class="img-responsive" alt="杨梅酒">
+
+                <div class="">汾酒集团</div>
+                <div class="">名酒之始祖 “最早国酒”</div>
+            </div>
+
+        </div>
+
+        <div class="index-rec-pro rec-pro-line">
+            <div class="index-pro-exchange">
+                <img src="image/index-icon_52.png" class="img-responsive" alt="杨梅酒">
+
+                <div class="">汾酒集团</div>
+                <div class="">名酒之始祖 “最早国酒”</div>
+            </div>
+        </div>
+
+        <div class="index-rec-pro rec-pro-line">
+            <div class="index-pro-exchange">
+                <img src="image/index-icon_55.png" class="img-responsive" alt="杨梅酒">
+
+                <div class="">汾酒集团</div>
+                <div class="">名酒之始祖 “最早国酒”</div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <section class="container index-foot">
+        <div class="index-opera">
+            <div>
+                <span style="float:left"><a href="javascript:void(0);">登录</a>|<a
+                        href="javascript:void(0);">注册</a></span>
+                <span style="float: right"><a href="javascript:scroll(0,0)">回到顶部</a></span>
+            </div>
+            <div class="index-version"><a href="javascript:void(0);" class="redColor">手机版</a><a
+                    href="javascript:void(0);">电脑版</a></div>
+            <div class="index-copyRight">Copyright © 2015 上下网智能营销平台 版权所有</div>
+        </div>
+    </section>
+</footer>
+
+</body>
+</html>
